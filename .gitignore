@@ -1,0 +1,5 @@
+.cpcache/
+.m2/
+web/.next/
+web/node_modules/
+web/*.tsbuildinfo
