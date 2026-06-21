@@ -23,7 +23,13 @@ export function TeamName({ team }: { team: Team }) {
   );
 }
 
-export function GroupTable({ group }: { group: Group }) {
+export function GroupTable({
+  bestThirdSlugs,
+  group,
+}: {
+  bestThirdSlugs?: Set<string>;
+  group: Group;
+}) {
   return (
     <article className="group-card">
       <header className="group-card__header">
@@ -49,27 +55,42 @@ export function GroupTable({ group }: { group: Group }) {
             </tr>
           </thead>
           <tbody>
-            {group.teams.map((team) => (
-              <tr key={`${team.group}-${team.position}`}>
-                <td>
-                  <span className={`rank rank--${team.position}`}>
-                    {team.position}
-                  </span>
-                </td>
-                <td>
-                  <TeamName team={team} />
-                </td>
-                <td>{team.played}</td>
-                <td>{team.won}</td>
-                <td>{team.drawn}</td>
-                <td>{team.lost}</td>
-                <td>
-                  {team["goal-difference"] > 0 ? "+" : ""}
-                  {team["goal-difference"]}
-                </td>
-                <td className="points">{team.points}</td>
-              </tr>
-            ))}
+            {group.teams.map((team) => {
+              const isBestThird =
+                team.position === 3 && bestThirdSlugs?.has(team.slug);
+
+              return (
+                <tr
+                  className={isBestThird ? "is-best-third" : undefined}
+                  key={`${team.group}-${team.position}`}
+                >
+                  <td>
+                    <span
+                      className={`rank rank--${team.position} ${
+                        isBestThird ? "rank--best-third" : ""
+                      }`}
+                    >
+                      {team.position}
+                    </span>
+                  </td>
+                  <td>
+                    <TeamName team={team} />
+                    {isBestThird && (
+                      <span className="qualifier-badge">Best 3rd</span>
+                    )}
+                  </td>
+                  <td>{team.played}</td>
+                  <td>{team.won}</td>
+                  <td>{team.drawn}</td>
+                  <td>{team.lost}</td>
+                  <td>
+                    {team["goal-difference"] > 0 ? "+" : ""}
+                    {team["goal-difference"]}
+                  </td>
+                  <td className="points">{team.points}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

@@ -9,7 +9,10 @@ export default function GroupsPage() {
 
   return (
     <PageShell active="groups" source={data.source}>
-      <GroupStandingsSection groups={data.groups} />
+      <GroupStandingsSection
+        bestThirds={data.bracket.qualification["best-thirds"]}
+        groups={data.groups}
+      />
     </PageShell>
   );
 }

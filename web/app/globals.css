@@ -430,7 +430,12 @@ td:nth-child(2) { min-width: 145px; text-align: left; }
   font: 700 9px/1 var(--font-mono);
 }
 .rank--1, .rank--2 { background: #eaf0ff; color: var(--blue); }
-.rank--3 { background: #fff0eb; color: #d95327; }
+.rank--3 { background: #eeeef0; color: #777c85; }
+.rank--best-third { background: #fff0eb; color: #d95327; }
+tr.is-best-third td {
+  background: #fffaf7;
+  border-top-color: #ffd3c4;
+}
 .team-name {
   display: inline-flex;
   align-items: center;
@@ -456,6 +461,19 @@ td:nth-child(2) { min-width: 145px; text-align: left; }
 }
 .team-name__code { display: none; }
 .points { font-weight: 900; }
+.qualifier-badge {
+  display: inline-block;
+  margin-left: 9px;
+  padding: 5px 7px;
+  background: #fff0eb;
+  border: 1px solid #ffd0bf;
+  border-radius: 3px;
+  color: #d95327;
+  font-size: 7px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
 
 .bracket-section {
   background: var(--black);

@@ -3,7 +3,15 @@ import { GroupTable, TeamName } from "@/components/group-table";
 import type { Group, Match, Team } from "@/lib/types";
 import { SectionHeading } from "./section-heading";
 
-export function GroupStandingsSection({ groups }: { groups: Group[] }) {
+export function GroupStandingsSection({
+  bestThirds = [],
+  groups,
+}: {
+  bestThirds?: Team[];
+  groups: Group[];
+}) {
+  const bestThirdSlugs = new Set(bestThirds.map((team) => team.slug));
+
   return (
     <section className="content-section page-section" id="groups">
       <SectionHeading
@@ -20,7 +28,7 @@ export function GroupStandingsSection({ groups }: { groups: Group[] }) {
                 <i className="legend__direct" /> Direct
               </span>
               <span>
-                <i className="legend__third" /> Best-third race
+                <i className="legend__third" /> Qualifying third
               </span>
             </div>
           </>
@@ -29,7 +37,11 @@ export function GroupStandingsSection({ groups }: { groups: Group[] }) {
 
       <div className="groups-grid">
         {groups.map((group) => (
-          <GroupTable group={group} key={group.group} />
+          <GroupTable
+            bestThirdSlugs={bestThirdSlugs}
+            group={group}
+            key={group.group}
+          />
         ))}
       </div>
     </section>
