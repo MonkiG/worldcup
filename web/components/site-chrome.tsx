@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type NavKey = "home" | "groups" | "bracket" | "qualification";
+export type NavKey = "home" | "groups" | "bracket" | "qualification";
 
 const navItems: Array<{ key: NavKey; href: string; label: string }> = [
   { key: "groups", href: "/groups", label: "Groups" },
