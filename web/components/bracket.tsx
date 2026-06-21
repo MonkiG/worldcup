@@ -47,7 +47,7 @@ function Slot({ slot }: { slot: BracketSlot | string }) {
     <div className="match-team match-team--pending">
       <span className="team-mark">?</span>
       <span>
-        Best 3rd · {slot["candidate-groups"]?.join(", ") ?? slot.slot}
+        Best 3rd / {slot["candidate-groups"]?.join(", ") ?? slot.slot}
       </span>
       <span className="slot-token">{slot.slot}</span>
     </div>
