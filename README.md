@@ -49,6 +49,8 @@ The result is written to `data/latest.json`.
 
 ```bash
 make test
+npm --prefix scraper run scrape -- --target fixtures
+npm --prefix scraper run scrape -- --target all
 ```
 
 ## Daily schedule

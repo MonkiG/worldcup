@@ -27,7 +27,7 @@ jobs:
           npm ci --prefix web
           npm ci --prefix scraper
       - name: Scrape standings and project bracket
-        run: npm --prefix scraper run scrape
+        run: npm --prefix scraper run scrape -- --target groups
         env:
           CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
       - name: Commit changed data

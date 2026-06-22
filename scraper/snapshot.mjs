@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { buildBracket } from "./bracket.mjs";
@@ -20,6 +20,15 @@ export function buildSnapshot({ groups, matches }) {
     matches,
     bracket: buildBracket(groups),
   };
+}
+
+export async function readSnapshot() {
+  try {
+    return JSON.parse(await readFile(outputPath, "utf8"));
+  } catch (error) {
+    if (error.code === "ENOENT") return null;
+    throw error;
+  }
 }
 
 export async function writeSnapshot(snapshot) {
