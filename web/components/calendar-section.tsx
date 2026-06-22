@@ -7,6 +7,8 @@ import {
 import type { FixtureMatch } from "@/lib/types";
 import { SectionHeading } from "./section-heading";
 
+const pageSize = 24;
+
 function MatchTeams({ match }: { match: FixtureMatch }) {
   return (
     <div className="fixture-teams">
@@ -31,14 +33,26 @@ function FixtureRow({ match }: { match: FixtureMatch }) {
   );
 }
 
-export function CalendarSection({ matches }: { matches: FixtureMatch[] }) {
+export function CalendarSection({
+  matches,
+  page,
+}: {
+  matches: FixtureMatch[];
+  page?: number;
+}) {
   const { current, next, sorted } = getCalendarFocus(matches);
   const focus = current ?? next;
-  const upcoming = focus
-    ? sorted.filter(
-        (match) => new Date(match.date).getTime() >= new Date(focus.date).getTime(),
-      )
-    : sorted;
+  const pageCount = Math.max(1, Math.ceil(sorted.length / pageSize));
+  const focusIndex = focus
+    ? sorted.findIndex((match) => match.id === focus.id)
+    : 0;
+  const defaultPage = Math.floor(Math.max(0, focusIndex) / pageSize) + 1;
+  const currentPage =
+    Number.isFinite(page) && page && page > 0
+      ? Math.min(page, pageCount)
+      : defaultPage;
+  const start = (currentPage - 1) * pageSize;
+  const visibleMatches = sorted.slice(start, start + pageSize);
 
   return (
     <section className="content-section calendar-section page-section">
@@ -80,9 +94,30 @@ export function CalendarSection({ matches }: { matches: FixtureMatch[] }) {
             <span>Round</span>
             <span>Venue</span>
           </div>
-          {upcoming.slice(0, 18).map((match) => (
+          {visibleMatches.map((match) => (
             <FixtureRow key={match.id} match={match} />
           ))}
+          {pageCount > 1 ? (
+            <nav className="fixtures-pagination" aria-label="Fixture pages">
+              <a
+                aria-disabled={currentPage === 1}
+                className={currentPage === 1 ? "is-disabled" : ""}
+                href={`/calendar?page=${Math.max(1, currentPage - 1)}`}
+              >
+                Prev
+              </a>
+              <span>
+                Page {currentPage} of {pageCount}
+              </span>
+              <a
+                aria-disabled={currentPage === pageCount}
+                className={currentPage === pageCount ? "is-disabled" : ""}
+                href={`/calendar?page=${Math.min(pageCount, currentPage + 1)}`}
+              >
+                Next
+              </a>
+            </nav>
+          ) : null}
         </div>
       </div>
     </section>

@@ -672,8 +672,11 @@ tr.is-best-third td {
   margin: auto;
 }
 .fixture-focus {
+  position: sticky;
+  top: 108px;
   display: grid;
-  align-content: end;
+  align-content: start;
+  align-self: start;
   min-height: 420px;
   padding: 26px;
   background: var(--black);
@@ -776,6 +779,41 @@ tr.is-best-third td {
   font: 800 8px/1 var(--font-mono);
   text-transform: uppercase;
 }
+.fixtures-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 58px;
+  padding: 0 20px;
+  border-top: 1px solid var(--line);
+  background: #fafaf8;
+}
+.fixtures-pagination a {
+  display: inline-grid;
+  place-items: center;
+  min-width: 76px;
+  min-height: 34px;
+  padding: 0 13px;
+  background: var(--black);
+  border-radius: 4px;
+  color: white;
+  font-size: 9px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.fixtures-pagination a:hover { background: var(--blue); }
+.fixtures-pagination a.is-disabled {
+  pointer-events: none;
+  background: #e7e8ea;
+  color: #9a9fa8;
+}
+.fixtures-pagination span {
+  color: #777c85;
+  font: 800 9px/1 var(--font-mono);
+  text-transform: uppercase;
+}
 
 .site-footer {
   display: grid;
@@ -809,6 +847,7 @@ tr.is-best-third td {
   .groups-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .feature-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .calendar-layout { grid-template-columns: 1fr; }
+  .fixture-focus { position: static; min-height: 0; }
   .scoreboard-strip { grid-template-columns: repeat(4,1fr); }
   .scoreboard-strip > a { grid-column: 1 / -1; min-height: 70px; }
 }
