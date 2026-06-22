@@ -150,6 +150,11 @@ The valid targets are:
 - `fixtures`: scrape FIFA fixtures and keep the existing group data.
 - `all`: scrape both groups and fixtures.
 
+The scraper prints colored progress logs with `picocolors`, including the
+selected target, pages visited, browser launch mode, extracted data counts, and
+the snapshot write path. Set `SCRAPER_LOG=quiet` to hide progress logs while
+still showing errors.
+
 ## Data File
 
 The generated data lives in:
