@@ -27,13 +27,6 @@ make front-build
 make check
 ```
 
-To change the scraper output or parse saved HTML:
-
-```bash
-make scrape DATA_FILE=data/2026-06-19.json
-make scrape-from HTML=test/fixtures/fifa-standings.html
-```
-
 The output is deliberately marked `provisional` until every team has played
 three group matches. FIFA tie-break order is points, goal difference, goals
 scored, then team conduct score. A final tie can require drawing lots, so the
@@ -52,11 +45,9 @@ make install
 make scrape
 ```
 
-The result is written to `data/latest.json`. Other useful options:
+The result is written to `data/latest.json`.
 
 ```bash
-make scrape DATA_FILE=data/2026-06-19.json
-make scrape-from HTML=test/fixtures/fifa-standings.html
 make test
 ```
 

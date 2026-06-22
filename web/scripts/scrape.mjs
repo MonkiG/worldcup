@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
@@ -10,41 +10,7 @@ const projectRoot = path.resolve(import.meta.dirname, "../..");
 export const standingsUrl =
   "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings";
 
-function usage() {
-  return `FIFA World Cup 2026 standings scraper and bracket projector
-
-Usage:
-  node web/scripts/scrape.mjs [options]
-
-Options:
-  -o, --output FILE  Output JSON file (default: data/latest.json)
-  -i, --input FILE   Parse saved rendered HTML instead of downloading
-  -h, --help         Show this help
-`;
-}
-
-export function parseArgs(args) {
-  const options = {
-    output: path.join(projectRoot, "data", "latest.json"),
-  };
-
-  for (let index = 0; index < args.length; index += 1) {
-    const argument = args[index];
-    if (argument === "-h" || argument === "--help") options.help = true;
-    else if (argument === "-o" || argument === "--output") {
-      const value = args[++index];
-      if (!value) throw new Error(`${argument} requires a file path`);
-      options.output = value;
-    } else if (argument === "-i" || argument === "--input") {
-      const value = args[++index];
-      if (!value) throw new Error(`${argument} requires a file path`);
-      options.input = value;
-    }
-    else throw new Error(`Unknown argument: ${argument}`);
-  }
-
-  return options;
-}
+const outputPath = path.join(projectRoot, "data", "latest.json");
 
 function browserLaunchOptions() {
   const executablePath =
@@ -59,32 +25,26 @@ function browserLaunchOptions() {
   };
 }
 
-export async function scrapeGroups({ input } = {}) {
+export async function scrapeGroups() {
   const browser = await chromium.launch(browserLaunchOptions());
 
   try {
     const page = await browser.newPage();
 
-    if (input) {
-      await page.setContent(await readFile(input, "utf8"), {
-        waitUntil: "domcontentloaded",
-      });
-    } else {
-      await page.goto(standingsUrl, {
-        waitUntil: "domcontentloaded",
-        timeout: 45_000,
-      });
-      await page.waitForFunction(
-        () =>
-          [...document.querySelectorAll("table caption")].filter((caption) =>
-            caption.textContent?.startsWith(
-              "Standings and Group Tables - Group ",
-            ),
-          ).length === 12,
-        undefined,
-        { timeout: 45_000 },
-      );
-    }
+    await page.goto(standingsUrl, {
+      waitUntil: "domcontentloaded",
+      timeout: 45_000,
+    });
+    await page.waitForFunction(
+      () =>
+        [...document.querySelectorAll("table caption")].filter((caption) =>
+          caption.textContent?.startsWith(
+            "Standings and Group Tables - Group ",
+          ),
+        ).length === 12,
+      undefined,
+      { timeout: 45_000 },
+    );
 
     const groups = await page.evaluate(() => {
       const integer = (value) => Number.parseInt(value.trim(), 10);
@@ -156,21 +116,15 @@ export async function scrapeGroups({ input } = {}) {
   }
 }
 
-export async function run(args = process.argv.slice(2)) {
-  const options = parseArgs(args);
-  if (options.help) {
-    console.log(usage());
-    return;
-  }
-
-  const groups = await scrapeGroups({ input: options.input });
+export async function run() {
+  const groups = await scrapeGroups();
   const result = {
     source: standingsUrl,
     "generated-at": new Date().toISOString(),
     groups,
     bracket: buildBracket(groups),
   };
-  const output = path.resolve(options.output);
+  const output = path.resolve(outputPath);
 
   await mkdir(path.dirname(output), { recursive: true });
   await writeFile(output, `${JSON.stringify(result, null, 2)}\n`);
