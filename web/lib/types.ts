@@ -35,10 +35,31 @@ export type Match = {
   away: BracketSlot | string;
 };
 
+export type FixtureTeam = {
+  name: string;
+  slug: string;
+};
+
+export type FixtureMatch = {
+  id: string;
+  match?: number;
+  date: string;
+  round?: string;
+  home?: FixtureTeam;
+  away?: FixtureTeam;
+  venue?: string;
+  label?: string;
+};
+
 export type WorldCupData = {
   source: string;
+  sources?: {
+    standings: string;
+    fixtures: string;
+  };
   "generated-at": string;
   groups: Group[];
+  matches?: FixtureMatch[];
   bracket: {
     qualification: {
       automatic: Team[];

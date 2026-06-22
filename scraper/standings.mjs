@@ -1,20 +1,7 @@
-import { chromium } from "playwright-core";
+import { launchBrowser } from "./browser.mjs";
 
 export const standingsUrl =
   "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings";
-
-function browserLaunchOptions() {
-  const executablePath =
-    process.env.CHROME_BIN ??
-    process.env.CHROME_PATH ??
-    process.env.GOOGLE_CHROME_BIN;
-
-  return {
-    ...(executablePath ? { executablePath } : { channel: "chrome" }),
-    headless: true,
-    args: ["--disable-dev-shm-usage", "--no-sandbox"],
-  };
-}
 
 function extractGroupsFromDocument() {
   const integer = (value) => Number.parseInt(value.trim(), 10);
@@ -83,7 +70,7 @@ function validateGroups(groups) {
 }
 
 export async function scrapeGroups() {
-  const browser = await chromium.launch(browserLaunchOptions());
+  const browser = await launchBrowser();
 
   try {
     const page = await browser.newPage();

@@ -3,16 +3,18 @@ import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
 import { formatGeneratedAt } from "@/lib/format";
 import { getWorldCupData } from "@/lib/data";
+import { getCalendarFocus } from "@/lib/calendar";
 
 export const dynamic = "force-dynamic";
 
 export default function Home() {
   const data = getWorldCupData();
   const generated = formatGeneratedAt(data["generated-at"]);
+  const { next } = getCalendarFocus(data.matches ?? []);
 
   return (
     <PageShell active="home" source={data.source}>
-      <DashboardHero generated={generated} />
+      <DashboardHero generated={generated} nextMatch={next} />
 
       <section className="content-section">
         <SectionHeading

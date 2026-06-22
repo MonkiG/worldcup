@@ -1,9 +1,10 @@
 import Link from "next/link";
 
-export type NavKey = "home" | "groups" | "bracket" | "qualification";
+export type NavKey = "home" | "groups" | "bracket" | "qualification" | "calendar";
 
 const navItems: Array<{ key: NavKey; href: string; label: string }> = [
   { key: "groups", href: "/groups", label: "Groups" },
+  { key: "calendar", href: "/calendar", label: "Calendar" },
   { key: "bracket", href: "/bracket", label: "Knockout" },
   { key: "qualification", href: "/qualification", label: "Best thirds" },
 ];

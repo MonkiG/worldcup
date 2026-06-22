@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { formatMatchDate, formatMatchTime, matchTitle } from "@/lib/calendar";
+import type { FixtureMatch } from "@/lib/types";
 
 const stats = [
   { label: "Groups", value: "12", detail: "A to L" },
@@ -15,21 +17,33 @@ const featureCards = [
     detail: "All twelve tables with direct and third-place markers.",
   },
   {
-    href: "/bracket",
+    href: "/calendar",
     index: "02",
+    title: "Match calendar",
+    detail: "Upcoming kickoffs, venues and the next match window.",
+  },
+  {
+    href: "/bracket",
+    index: "03",
     title: "Knockout bracket",
     detail: "Round of 32 through the final in one bracket view.",
     dark: true,
   },
   {
     href: "/qualification",
-    index: "03",
+    index: "04",
     title: "Best thirds",
     detail: "The current qualification race and the cut line.",
   },
 ];
 
-export function DashboardHero({ generated }: { generated: string }) {
+export function DashboardHero({
+  generated,
+  nextMatch,
+}: {
+  generated: string;
+  nextMatch?: FixtureMatch | null;
+}) {
   return (
     <section className="dashboard-hero">
       <div className="dashboard-hero__grid" />
@@ -48,18 +62,34 @@ export function DashboardHero({ generated }: { generated: string }) {
           </p>
         </div>
 
-        <aside className="next-stage">
-          <span className="next-stage__label">Next stage</span>
-          <div className="next-stage__round">Round of 32</div>
+          <aside className="next-stage">
+          <span className="next-stage__label">Next match</span>
+          <div className="next-stage__round">{matchTitle(nextMatch)}</div>
           <div className="next-stage__date">
-            <strong>28</strong>
+            <strong>
+              {nextMatch
+                ? new Intl.DateTimeFormat("en", { day: "2-digit" }).format(
+                    new Date(nextMatch.date),
+                  )
+                : "28"}
+            </strong>
             <span>
-              Jun
-              <br />
-              2026
+              {nextMatch ? (
+                <>
+                  {formatMatchDate(nextMatch.date)}
+                  <br />
+                  {formatMatchTime(nextMatch.date)}
+                </>
+              ) : (
+                <>
+                  Jun
+                  <br />
+                  2026
+                </>
+              )}
             </span>
           </div>
-          <small>32 qualified teams / 16 fixtures</small>
+          <small>{nextMatch?.venue || "Calendar refresh pending"}</small>
         </aside>
       </div>
 
@@ -71,8 +101,8 @@ export function DashboardHero({ generated }: { generated: string }) {
             <small>{stat.detail}</small>
           </article>
         ))}
-        <Link href="/bracket">
-          Open bracket
+          <Link href="/calendar">
+          Open calendar
           <span>-&gt;</span>
         </Link>
       </div>

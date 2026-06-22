@@ -1,8 +1,8 @@
 # FIFA World Cup 2026 bracket tracker
 
-A Node.js scraper and Next.js dashboard for FIFA's official standings page. It
-stores the 12 group tables, ranks the eight best third-place teams, and projects
-the 32-team knockout bracket.
+A Node.js scraper and Next.js dashboard for FIFA's official standings and
+fixtures pages. It stores the 12 group tables, match calendar, ranks the eight
+best third-place teams, and projects the 32-team knockout bracket.
 
 See [docs/TABLE_RULES.md](docs/TABLE_RULES.md) for an explanation of points,
 group positions, tie-breakers, best-third-place qualification, and bracket
@@ -102,6 +102,7 @@ The main Node files are intentionally separated:
 
 - `scraper/scrape.mjs` is the scraper entrypoint.
 - `scraper/standings.mjs` handles Playwright and FIFA table extraction.
+- `scraper/fixtures.mjs` handles FIFA fixture and kickoff extraction.
 - `scraper/snapshot.mjs` writes `data/latest.json`.
 - `scraper/bracket.mjs` calculates bracket slots.
 - `scraper/qualification.mjs` calculates qualifiers.
