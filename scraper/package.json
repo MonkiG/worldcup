@@ -4,7 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "scrape": "node scrape.mjs",
+    "scrape": "npm run scrape:groups",
+    "scrape:groups": "node scrape.mjs --target groups",
+    "scrape:fixtures": "node scrape.mjs --target fixtures",
+    "scrape:all": "node scrape.mjs --target all",
     "test": "node --test test/*.test.mjs"
   },
   "dependencies": {

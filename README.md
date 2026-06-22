@@ -14,7 +14,7 @@ Run `make help` to see all commands. The main workflow is:
 
 ```bash
 make install       # install app and scraper dependencies
-make scrape        # refresh data/latest.json
+make scrape        # refresh data/latest.json with group standings
 make front         # start http://localhost:3000
 ```
 
@@ -49,8 +49,8 @@ The result is written to `data/latest.json`.
 
 ```bash
 make test
-npm --prefix scraper run scrape -- --target fixtures
-npm --prefix scraper run scrape -- --target all
+make scrape-fixtures
+make scrape-all
 ```
 
 ## Daily schedule

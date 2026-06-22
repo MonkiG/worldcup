@@ -8,6 +8,9 @@
     "start": "next start",
     "check": "tsc --noEmit",
     "scrape": "npm --prefix ../scraper run scrape",
+    "scrape:groups": "npm --prefix ../scraper run scrape:groups",
+    "scrape:fixtures": "npm --prefix ../scraper run scrape:fixtures",
+    "scrape:all": "npm --prefix ../scraper run scrape:all",
     "test:scraper": "npm --prefix ../scraper run test"
   },
   "dependencies": {
