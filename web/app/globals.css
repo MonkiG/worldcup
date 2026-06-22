@@ -740,9 +740,14 @@ tr.is-best-third td {
   text-transform: uppercase;
 }
 .fixture-row {
+  scroll-margin-top: 96px;
   min-height: 72px;
   border-top: 1px solid var(--line);
   font-size: 11px;
+}
+.fixture-row--focused {
+  background: #f8ffe4;
+  box-shadow: inset 4px 0 0 var(--acid);
 }
 .fixture-row > div:first-child {
   display: grid;

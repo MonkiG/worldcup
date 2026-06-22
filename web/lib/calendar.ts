@@ -1,5 +1,7 @@
 import type { FixtureMatch } from "./types";
 
+export const calendarPageSize = 24;
+
 export function sortMatches(matches: FixtureMatch[] = []) {
   return [...matches].sort((left, right) => left.date.localeCompare(right.date));
 }

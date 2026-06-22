@@ -1,13 +1,12 @@
 import {
   formatMatchDate,
   formatMatchTime,
+  calendarPageSize,
   getCalendarFocus,
   matchTitle,
 } from "@/lib/calendar";
 import type { FixtureMatch } from "@/lib/types";
 import { SectionHeading } from "./section-heading";
-
-const pageSize = 24;
 
 function MatchTeams({ match }: { match: FixtureMatch }) {
   return (
@@ -19,9 +18,18 @@ function MatchTeams({ match }: { match: FixtureMatch }) {
   );
 }
 
-function FixtureRow({ match }: { match: FixtureMatch }) {
+function FixtureRow({
+  match,
+  focused,
+}: {
+  match: FixtureMatch;
+  focused: boolean;
+}) {
   return (
-    <article className="fixture-row">
+    <article
+      className={`fixture-row${focused ? " fixture-row--focused" : ""}`}
+      id={match.id}
+    >
       <div>
         <span className="fixture-row__date">{formatMatchDate(match.date)}</span>
         <strong>{formatMatchTime(match.date)}</strong>
@@ -42,17 +50,17 @@ export function CalendarSection({
 }) {
   const { current, next, sorted } = getCalendarFocus(matches);
   const focus = current ?? next;
-  const pageCount = Math.max(1, Math.ceil(sorted.length / pageSize));
+  const pageCount = Math.max(1, Math.ceil(sorted.length / calendarPageSize));
   const focusIndex = focus
     ? sorted.findIndex((match) => match.id === focus.id)
     : 0;
-  const defaultPage = Math.floor(Math.max(0, focusIndex) / pageSize) + 1;
+  const defaultPage = Math.floor(Math.max(0, focusIndex) / calendarPageSize) + 1;
   const currentPage =
     Number.isFinite(page) && page && page > 0
       ? Math.min(page, pageCount)
       : defaultPage;
-  const start = (currentPage - 1) * pageSize;
-  const visibleMatches = sorted.slice(start, start + pageSize);
+  const start = (currentPage - 1) * calendarPageSize;
+  const visibleMatches = sorted.slice(start, start + calendarPageSize);
 
   return (
     <section className="content-section calendar-section page-section">
@@ -95,7 +103,11 @@ export function CalendarSection({
             <span>Venue</span>
           </div>
           {visibleMatches.map((match) => (
-            <FixtureRow key={match.id} match={match} />
+            <FixtureRow
+              key={match.id}
+              match={match}
+              focused={match.id === focus?.id}
+            />
           ))}
           {pageCount > 1 ? (
             <nav className="fixtures-pagination" aria-label="Fixture pages">
