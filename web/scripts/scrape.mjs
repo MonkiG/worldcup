@@ -1,26 +1,14 @@
-import { access, mkdir, readFile, writeFile } from "node:fs/promises";
-import { constants } from "node:fs";
-import { execFile } from "node:child_process";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
-import { promisify } from "node:util";
+import { fileURLToPath } from "node:url";
 import { chromium } from "playwright-core";
 import { buildBracket } from "./bracket.mjs";
 
 const projectRoot = path.resolve(import.meta.dirname, "../..");
-const execFileAsync = promisify(execFile);
 
 export const standingsUrl =
   "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings";
-
-const browserCandidates = [
-  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-  "/Applications/Chromium.app/Contents/MacOS/Chromium",
-  "/usr/bin/google-chrome",
-  "/usr/bin/google-chrome-stable",
-  "/usr/bin/chromium",
-  "/usr/bin/chromium-browser",
-];
 
 function usage() {
   return `FIFA World Cup 2026 standings scraper and bracket projector
@@ -58,48 +46,21 @@ export function parseArgs(args) {
   return options;
 }
 
-async function findBrowser() {
-  const configuredBrowser =
+function browserLaunchOptions() {
+  const executablePath =
     process.env.CHROME_BIN ??
     process.env.CHROME_PATH ??
     process.env.GOOGLE_CHROME_BIN;
-  if (configuredBrowser) return configuredBrowser;
 
-  for (const candidate of browserCandidates) {
-    try {
-      await access(candidate, constants.X_OK);
-      return candidate;
-    } catch {
-      // Try the next standard installation path.
-    }
-  }
-
-  for (const command of [
-    "google-chrome",
-    "google-chrome-stable",
-    "chrome",
-    "chromium",
-    "chromium-browser",
-  ]) {
-    try {
-      const { stdout } = await execFileAsync("which", [command]);
-      if (stdout.trim()) return stdout.trim();
-    } catch {
-      // Try the next executable available on PATH.
-    }
-  }
-
-  throw new Error(
-    `Chrome/Chromium was not found. Set CHROME_BIN or install it in one of:\n${browserCandidates.join("\n")}`,
-  );
+  return {
+    ...(executablePath ? { executablePath } : { channel: "chrome" }),
+    headless: true,
+    args: ["--disable-dev-shm-usage", "--no-sandbox"],
+  };
 }
 
 export async function scrapeGroups({ input } = {}) {
-  const browser = await chromium.launch({
-    executablePath: await findBrowser(),
-    headless: true,
-    args: ["--disable-dev-shm-usage", "--no-sandbox"],
-  });
+  const browser = await chromium.launch(browserLaunchOptions());
 
   try {
     const page = await browser.newPage();
@@ -216,7 +177,7 @@ export async function run(args = process.argv.slice(2)) {
   console.log(`Wrote ${path.relative(process.cwd(), output)}`);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   run().catch((error) => {
     console.error(error.message);
     process.exitCode = 1;
