@@ -4,7 +4,7 @@ import process from "node:process";
 import { buildBracket } from "./bracket.mjs";
 import { standingsUrl } from "./standings.mjs";
 
-const projectRoot = path.resolve(import.meta.dirname, "../..");
+const projectRoot = path.resolve(import.meta.dirname, "..");
 const outputPath = path.join(projectRoot, "data", "latest.json");
 
 export function buildSnapshot(groups) {

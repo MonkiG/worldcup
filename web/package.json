@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "check": "tsc --noEmit",
-    "scrape": "node scripts/scrape.mjs",
+    "scrape": "node ../scraper/scrape.mjs",
     "test:scraper": "node --test test/*.test.mjs"
   },
   "dependencies": {

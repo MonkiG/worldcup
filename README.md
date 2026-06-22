@@ -84,9 +84,10 @@ each and exits with an error if that contract changes.
 
 ## Next.js dashboard
 
-The `web` directory contains both the scraper scripts and the responsive
-dashboard for the group tables, best-third-place ranking, and projected
-knockout bracket.
+The `web` directory contains the responsive dashboard for the group tables,
+best-third-place ranking, and projected knockout bracket. The `scraper`
+directory contains the scripts used by the scheduled action to refresh
+`data/latest.json`.
 
 ```bash
 cd web
@@ -99,6 +100,9 @@ server render, so refreshing the page after a scraper run shows the new data.
 
 The main Node files are intentionally separated:
 
-- `web/scripts/scrape.mjs` handles the browser, CLI and JSON file.
-- `web/scripts/bracket.mjs` calculates qualifiers and bracket slots.
+- `scraper/scrape.mjs` is the scraper entrypoint.
+- `scraper/standings.mjs` handles Playwright and FIFA table extraction.
+- `scraper/snapshot.mjs` writes `data/latest.json`.
+- `scraper/bracket.mjs` calculates bracket slots.
+- `scraper/qualification.mjs` calculates qualifiers.
 - `web/test/bracket.test.mjs` tests the pure bracket logic.

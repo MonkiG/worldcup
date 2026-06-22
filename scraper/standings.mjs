@@ -1,4 +1,13 @@
-import { chromium } from "playwright-core";
+import { createRequire } from "node:module";
+import path from "node:path";
+
+const projectRoot = path.resolve(import.meta.dirname, "..");
+const require = createRequire(import.meta.url);
+const { chromium } = require(
+  require.resolve("playwright-core", {
+    paths: [path.join(projectRoot, "web")],
+  }),
+);
 
 export const standingsUrl =
   "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings";
