@@ -2,6 +2,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { Command, InvalidArgumentError } from "commander";
 import { scrapeFixtures } from "./fixtures.mjs";
+import { logger } from "./logger.mjs";
 import { scrapeGroups } from "./standings.mjs";
 import { buildSnapshot, readSnapshot, writeSnapshot } from "./snapshot.mjs";
 
@@ -24,11 +25,9 @@ export function parseCliArgs(args = process.argv.slice(2), { silent = false } = 
       "groups",
     );
 
-  if (silent) {
-    program.configureOutput({
-      writeErr: () => {},
-    });
-  }
+  program.configureOutput({
+    writeErr: () => {},
+  });
 
   program.parse(args, { from: "user" });
   return program.opts();
@@ -36,9 +35,25 @@ export function parseCliArgs(args = process.argv.slice(2), { silent = false } = 
 
 export async function run(args = process.argv.slice(2)) {
   const { target } = parseCliArgs(args);
+  logger.start(`Running scraper target "${target}"`);
+
   const existing = await readSnapshot();
+  if (existing) {
+    logger.info(
+      `Loaded existing snapshot from ${existing["generated-at"] ?? "unknown date"}`,
+    );
+  } else {
+    logger.warn("No existing snapshot found");
+  }
+
   const shouldScrapeGroups = target === "groups" || target === "all";
   const shouldScrapeFixtures = target === "fixtures" || target === "all";
+  logger.info(
+    `Plan: groups=${shouldScrapeGroups ? "scrape" : "reuse"}, fixtures=${
+      shouldScrapeFixtures ? "scrape" : "reuse"
+    }`,
+  );
+
   const [groups, matches] = await Promise.all([
     shouldScrapeGroups ? scrapeGroups() : existing?.groups,
     shouldScrapeFixtures ? scrapeFixtures() : existing?.matches,
@@ -48,8 +63,13 @@ export async function run(args = process.argv.slice(2)) {
     throw new Error("No existing groups found. Run with --target groups first.");
   }
 
-  const output = await writeSnapshot(buildSnapshot({ groups, matches }));
-  console.log(`Wrote ${output}`);
+  logger.data(`Snapshot groups: ${groups.length}`);
+  logger.data(`Snapshot fixtures: ${matches?.length ?? 0}`);
+
+  const snapshot = buildSnapshot({ groups, matches });
+  logger.info("Writing data/latest.json");
+  const output = await writeSnapshot(snapshot);
+  logger.success(`Wrote ${output}`);
 }
 
 if (
@@ -57,7 +77,7 @@ if (
   path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)
 ) {
   run().catch((error) => {
-    console.error(error.message);
+    logger.error(error.message);
     process.exitCode = 1;
   });
 }

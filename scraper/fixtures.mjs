@@ -1,4 +1,5 @@
 import { launchBrowser } from "./browser.mjs";
+import { logger } from "./logger.mjs";
 
 export const fixturesUrl =
   "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=&wtw-filter=ALL";
@@ -12,81 +13,119 @@ function extractFixturesFromDocument() {
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "");
   const cleanText = (value) => value?.replace(/\s+/g, " ").trim() ?? "";
-  const teamFromText = (value) => {
-    const team = cleanText(value).replace(/\s[A-Z]{3}$/, "");
+  const datePattern =
+    /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) \d{1,2} [A-Z][a-z]+ 2026$/;
+  const timePattern = /^\d{1,2}:\d{2}$/;
+  const scorePattern = /^\d+$/;
+  const stopLabels = new Set(["View groups", "View brackets", "·"]);
+  const teamFromName = (value) => {
+    const team = cleanText(value);
     return team ? { name: team, slug: slugify(team) } : undefined;
   };
-  const nodes = [
-    ...document.querySelectorAll(
-      "article, li, [data-testid*='match'], [data-testid*='fixture'], [class*='match'], [class*='fixture']",
-    ),
-  ];
-  const fixturesByKey = new Map();
 
-  for (const node of nodes) {
-    const time = node.querySelector("time[datetime]");
-    const date = time?.getAttribute("datetime");
-    if (!date) continue;
-
-    const text = cleanText(node.textContent);
-    if (!text || text.length > 800) continue;
-
-    const teamLinks = [
-      ...node.querySelectorAll("a[href*='/teams/'], a[href*='/team/']"),
-    ];
-    const teams = teamLinks
-      .map((link) => teamFromText(link.textContent))
-      .filter(Boolean);
-    const uniqueTeams = [
-      ...new Map(teams.map((team) => [team.slug, team])).values(),
-    ];
-
-    const matchNumber = text.match(/\bM(?:atch)?\s*(\d{1,3})\b/i)?.[1];
-    const round =
-      text.match(
-        /(Group [A-L]|Round of 32|Round of 16|Quarter-finals?|Semi-finals?|Third place|Final)/i,
-      )?.[1] ?? "";
-    const venue =
-      text.match(
-        /(MetLife Stadium|AT&T Stadium|SoFi Stadium|Mercedes-Benz Stadium|NRG Stadium|Lincoln Financial Field|Lumen Field|Levi'?s Stadium|Gillette Stadium|Hard Rock Stadium|BC Place|BMO Field|Estadio Azteca|Estadio Guadalajara|Estadio BBVA)[^,]*/i,
-      )?.[0] ?? "";
-
-    const fixture = {
-      id: matchNumber ? `match-${matchNumber}` : `${date}-${slugify(text).slice(0, 60)}`,
-      match: matchNumber ? Number(matchNumber) : undefined,
-      date,
-      round,
-      home: uniqueTeams[0],
-      away: uniqueTeams[1],
-      venue,
-      label: text,
-    };
-
-    fixturesByKey.set(fixture.id, fixture);
+  function isMatchStart(lines, index) {
+    return (
+      lines[index] &&
+      !stopLabels.has(lines[index]) &&
+      (timePattern.test(lines[index + 1]) ||
+        (scorePattern.test(lines[index + 1]) && lines[index + 2] === "FT"))
+    );
   }
 
-  return [...fixturesByKey.values()].sort((left, right) =>
-    left.date.localeCompare(right.date),
-  );
+  function toIsoDate(dateLine, time) {
+    return new Date(`${dateLine} ${time}`).toISOString();
+  }
+
+  const lines = document.body.innerText
+    .split("\n")
+    .map((line) => cleanText(line))
+    .filter(Boolean);
+  const fixtures = [];
+  let currentDate = "";
+  let matchNumber = 1;
+
+  for (let index = 0; index < lines.length; index += 1) {
+    if (datePattern.test(lines[index])) {
+      currentDate = lines[index];
+      continue;
+    }
+
+    if (!currentDate || !isMatchStart(lines, index)) continue;
+
+    const homeName = lines[index];
+    const isScheduled = timePattern.test(lines[index + 1]);
+    const kickoff = isScheduled ? lines[index + 1] : "12:00";
+    const awayName = isScheduled ? lines[index + 2] : lines[index + 4];
+    const status = isScheduled ? "scheduled" : lines[index + 2];
+    const roundIndex = isScheduled ? index + 3 : index + 5;
+    const roundName = lines[roundIndex] ?? "";
+    const metaStart = roundIndex + 1;
+    const nextMatchIndex = lines.findIndex(
+      (line, nextIndex) =>
+        nextIndex > metaStart &&
+        (datePattern.test(line) || isMatchStart(lines, nextIndex)),
+    );
+    const metaLines = lines
+      .slice(metaStart, nextMatchIndex === -1 ? lines.length : nextMatchIndex)
+      .filter((line) => !stopLabels.has(line));
+    const group = metaLines.find((line) => /^Group [A-L]$/.test(line));
+    const venue =
+      metaLines.find((line) => line !== group && !line.startsWith("(")) ?? "";
+    const round = group ?? roundName;
+    const date = toIsoDate(currentDate, kickoff);
+
+    fixtures.push({
+      id: `fixture-${matchNumber}`,
+      match: matchNumber,
+      date,
+      round,
+      home: teamFromName(homeName),
+      away: teamFromName(awayName),
+      venue,
+      label: `${homeName} vs ${awayName}`,
+      status,
+    });
+
+    matchNumber += 1;
+    index = (nextMatchIndex === -1 ? lines.length : nextMatchIndex) - 1;
+  }
+
+  return fixtures.sort((left, right) => left.date.localeCompare(right.date));
 }
 
 export async function scrapeFixtures() {
+  logger.start("Scraping fixtures");
   const browser = await launchBrowser();
 
   try {
     const page = await browser.newPage();
+    logger.visit(fixturesUrl);
     await page.goto(fixturesUrl, {
       waitUntil: "domcontentloaded",
       timeout: 45_000,
     });
+    logger.info("Waiting for rendered fixture dates");
     await page.waitForFunction(
-      () => document.querySelectorAll("time[datetime]").length > 0,
+      () =>
+        /(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) \d{1,2} [A-Z][a-z]+ 2026/.test(
+          document.body.innerText,
+        ),
       undefined,
       { timeout: 45_000 },
     );
 
-    return page.evaluate(extractFixturesFromDocument);
+    const fixtures = await page.evaluate(extractFixturesFromDocument);
+    logger.data(`Extracted ${fixtures.length} fixtures`);
+    if (fixtures.length > 0) {
+      logger.value("Fixture date range", {
+        first: fixtures[0].date,
+        last: fixtures.at(-1).date,
+      });
+    }
+
+    return fixtures;
   } finally {
     await browser.close();
+    logger.info("Closed fixtures browser");
   }
 }

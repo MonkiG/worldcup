@@ -1,4 +1,5 @@
 import { chromium } from "playwright-core";
+import { logger } from "./logger.mjs";
 
 export function browserLaunchOptions() {
   const executablePath =
@@ -14,5 +15,12 @@ export function browserLaunchOptions() {
 }
 
 export function launchBrowser() {
-  return chromium.launch(browserLaunchOptions());
+  const options = browserLaunchOptions();
+  logger.info(
+    `Launching Chrome with ${
+      options.executablePath ? `executable ${options.executablePath}` : "channel chrome"
+    }`,
+  );
+
+  return chromium.launch(options);
 }

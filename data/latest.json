@@ -1,6 +1,10 @@
 {
   "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
-  "generated-at": "2026-06-22T00:23:35.092Z",
+  "sources": {
+    "standings": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
+    "fixtures": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=&wtw-filter=ALL"
+  },
+  "generated-at": "2026-06-22T01:36:19.391Z",
   "groups": [
     {
       "group": "A",
@@ -781,6 +785,1759 @@
           "goal-difference": -2
         }
       ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "fixture-1",
+      "match": 1,
+      "date": "2026-06-11T18:00:00.000Z",
+      "round": "Group A",
+      "home": {
+        "name": "Mexico",
+        "slug": "mexico"
+      },
+      "away": {
+        "name": "South Africa",
+        "slug": "south-africa"
+      },
+      "venue": "Mexico City Stadium",
+      "label": "Mexico vs South Africa",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-2",
+      "match": 2,
+      "date": "2026-06-11T18:00:00.000Z",
+      "round": "Group A",
+      "home": {
+        "name": "Korea Republic",
+        "slug": "korea-republic"
+      },
+      "away": {
+        "name": "Czechia",
+        "slug": "czechia"
+      },
+      "venue": "Guadalajara Stadium",
+      "label": "Korea Republic vs Czechia",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-3",
+      "match": 3,
+      "date": "2026-06-12T18:00:00.000Z",
+      "round": "Group B",
+      "home": {
+        "name": "Canada",
+        "slug": "canada"
+      },
+      "away": {
+        "name": "Bosnia and Herzegovina",
+        "slug": "bosnia-and-herzegovina"
+      },
+      "venue": "Toronto Stadium",
+      "label": "Canada vs Bosnia and Herzegovina",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-4",
+      "match": 4,
+      "date": "2026-06-12T18:00:00.000Z",
+      "round": "Group D",
+      "home": {
+        "name": "USA",
+        "slug": "usa"
+      },
+      "away": {
+        "name": "Paraguay",
+        "slug": "paraguay"
+      },
+      "venue": "Los Angeles Stadium",
+      "label": "USA vs Paraguay",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-5",
+      "match": 5,
+      "date": "2026-06-13T18:00:00.000Z",
+      "round": "Group B",
+      "home": {
+        "name": "Qatar",
+        "slug": "qatar"
+      },
+      "away": {
+        "name": "Switzerland",
+        "slug": "switzerland"
+      },
+      "venue": "San Francisco Bay Area Stadium",
+      "label": "Qatar vs Switzerland",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-6",
+      "match": 6,
+      "date": "2026-06-13T18:00:00.000Z",
+      "round": "Group C",
+      "home": {
+        "name": "Brazil",
+        "slug": "brazil"
+      },
+      "away": {
+        "name": "Morocco",
+        "slug": "morocco"
+      },
+      "venue": "New York/New Jersey Stadium",
+      "label": "Brazil vs Morocco",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-7",
+      "match": 7,
+      "date": "2026-06-13T18:00:00.000Z",
+      "round": "Group C",
+      "home": {
+        "name": "Haiti",
+        "slug": "haiti"
+      },
+      "away": {
+        "name": "Scotland",
+        "slug": "scotland"
+      },
+      "venue": "Boston Stadium",
+      "label": "Haiti vs Scotland",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-8",
+      "match": 8,
+      "date": "2026-06-13T18:00:00.000Z",
+      "round": "Group D",
+      "home": {
+        "name": "Australia",
+        "slug": "australia"
+      },
+      "away": {
+        "name": "Türkiye",
+        "slug": "turkiye"
+      },
+      "venue": "BC Place Vancouver",
+      "label": "Australia vs Türkiye",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-9",
+      "match": 9,
+      "date": "2026-06-14T18:00:00.000Z",
+      "round": "Group E",
+      "home": {
+        "name": "Germany",
+        "slug": "germany"
+      },
+      "away": {
+        "name": "Curaçao",
+        "slug": "curacao"
+      },
+      "venue": "Houston Stadium",
+      "label": "Germany vs Curaçao",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-10",
+      "match": 10,
+      "date": "2026-06-14T18:00:00.000Z",
+      "round": "Group F",
+      "home": {
+        "name": "Netherlands",
+        "slug": "netherlands"
+      },
+      "away": {
+        "name": "Japan",
+        "slug": "japan"
+      },
+      "venue": "Dallas Stadium",
+      "label": "Netherlands vs Japan",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-11",
+      "match": 11,
+      "date": "2026-06-14T18:00:00.000Z",
+      "round": "Group E",
+      "home": {
+        "name": "Côte d'Ivoire",
+        "slug": "cote-d-ivoire"
+      },
+      "away": {
+        "name": "Ecuador",
+        "slug": "ecuador"
+      },
+      "venue": "Philadelphia Stadium",
+      "label": "Côte d'Ivoire vs Ecuador",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-12",
+      "match": 12,
+      "date": "2026-06-14T18:00:00.000Z",
+      "round": "Group F",
+      "home": {
+        "name": "Sweden",
+        "slug": "sweden"
+      },
+      "away": {
+        "name": "Tunisia",
+        "slug": "tunisia"
+      },
+      "venue": "Monterrey Stadium",
+      "label": "Sweden vs Tunisia",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-13",
+      "match": 13,
+      "date": "2026-06-15T18:00:00.000Z",
+      "round": "Group H",
+      "home": {
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "away": {
+        "name": "Cabo Verde",
+        "slug": "cabo-verde"
+      },
+      "venue": "Atlanta Stadium",
+      "label": "Spain vs Cabo Verde",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-14",
+      "match": 14,
+      "date": "2026-06-15T18:00:00.000Z",
+      "round": "Group G",
+      "home": {
+        "name": "Belgium",
+        "slug": "belgium"
+      },
+      "away": {
+        "name": "Egypt",
+        "slug": "egypt"
+      },
+      "venue": "Seattle Stadium",
+      "label": "Belgium vs Egypt",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-15",
+      "match": 15,
+      "date": "2026-06-15T18:00:00.000Z",
+      "round": "Group H",
+      "home": {
+        "name": "Saudi Arabia",
+        "slug": "saudi-arabia"
+      },
+      "away": {
+        "name": "Uruguay",
+        "slug": "uruguay"
+      },
+      "venue": "Miami Stadium",
+      "label": "Saudi Arabia vs Uruguay",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-16",
+      "match": 16,
+      "date": "2026-06-15T18:00:00.000Z",
+      "round": "Group G",
+      "home": {
+        "name": "IR Iran",
+        "slug": "ir-iran"
+      },
+      "away": {
+        "name": "New Zealand",
+        "slug": "new-zealand"
+      },
+      "venue": "Los Angeles Stadium",
+      "label": "IR Iran vs New Zealand",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-17",
+      "match": 17,
+      "date": "2026-06-16T18:00:00.000Z",
+      "round": "Group I",
+      "home": {
+        "name": "France",
+        "slug": "france"
+      },
+      "away": {
+        "name": "Senegal",
+        "slug": "senegal"
+      },
+      "venue": "New York/New Jersey Stadium",
+      "label": "France vs Senegal",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-18",
+      "match": 18,
+      "date": "2026-06-16T18:00:00.000Z",
+      "round": "Group I",
+      "home": {
+        "name": "Iraq",
+        "slug": "iraq"
+      },
+      "away": {
+        "name": "Norway",
+        "slug": "norway"
+      },
+      "venue": "Boston Stadium",
+      "label": "Iraq vs Norway",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-19",
+      "match": 19,
+      "date": "2026-06-16T18:00:00.000Z",
+      "round": "Group J",
+      "home": {
+        "name": "Argentina",
+        "slug": "argentina"
+      },
+      "away": {
+        "name": "Algeria",
+        "slug": "algeria"
+      },
+      "venue": "Kansas City Stadium",
+      "label": "Argentina vs Algeria",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-20",
+      "match": 20,
+      "date": "2026-06-16T18:00:00.000Z",
+      "round": "Group J",
+      "home": {
+        "name": "Austria",
+        "slug": "austria"
+      },
+      "away": {
+        "name": "Jordan",
+        "slug": "jordan"
+      },
+      "venue": "San Francisco Bay Area Stadium",
+      "label": "Austria vs Jordan",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-21",
+      "match": 21,
+      "date": "2026-06-17T18:00:00.000Z",
+      "round": "Group K",
+      "home": {
+        "name": "Portugal",
+        "slug": "portugal"
+      },
+      "away": {
+        "name": "Congo DR",
+        "slug": "congo-dr"
+      },
+      "venue": "Houston Stadium",
+      "label": "Portugal vs Congo DR",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-22",
+      "match": 22,
+      "date": "2026-06-17T18:00:00.000Z",
+      "round": "Group L",
+      "home": {
+        "name": "England",
+        "slug": "england"
+      },
+      "away": {
+        "name": "Croatia",
+        "slug": "croatia"
+      },
+      "venue": "Dallas Stadium",
+      "label": "England vs Croatia",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-23",
+      "match": 23,
+      "date": "2026-06-17T18:00:00.000Z",
+      "round": "Group L",
+      "home": {
+        "name": "Ghana",
+        "slug": "ghana"
+      },
+      "away": {
+        "name": "Panama",
+        "slug": "panama"
+      },
+      "venue": "Toronto Stadium",
+      "label": "Ghana vs Panama",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-24",
+      "match": 24,
+      "date": "2026-06-17T18:00:00.000Z",
+      "round": "Group K",
+      "home": {
+        "name": "Uzbekistan",
+        "slug": "uzbekistan"
+      },
+      "away": {
+        "name": "Colombia",
+        "slug": "colombia"
+      },
+      "venue": "Mexico City Stadium",
+      "label": "Uzbekistan vs Colombia",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-25",
+      "match": 25,
+      "date": "2026-06-18T18:00:00.000Z",
+      "round": "Group A",
+      "home": {
+        "name": "Czechia",
+        "slug": "czechia"
+      },
+      "away": {
+        "name": "South Africa",
+        "slug": "south-africa"
+      },
+      "venue": "Atlanta Stadium",
+      "label": "Czechia vs South Africa",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-26",
+      "match": 26,
+      "date": "2026-06-18T18:00:00.000Z",
+      "round": "Group B",
+      "home": {
+        "name": "Switzerland",
+        "slug": "switzerland"
+      },
+      "away": {
+        "name": "Bosnia and Herzegovina",
+        "slug": "bosnia-and-herzegovina"
+      },
+      "venue": "Los Angeles Stadium",
+      "label": "Switzerland vs Bosnia and Herzegovina",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-27",
+      "match": 27,
+      "date": "2026-06-18T18:00:00.000Z",
+      "round": "Group B",
+      "home": {
+        "name": "Canada",
+        "slug": "canada"
+      },
+      "away": {
+        "name": "Qatar",
+        "slug": "qatar"
+      },
+      "venue": "BC Place Vancouver",
+      "label": "Canada vs Qatar",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-28",
+      "match": 28,
+      "date": "2026-06-18T18:00:00.000Z",
+      "round": "Group A",
+      "home": {
+        "name": "Mexico",
+        "slug": "mexico"
+      },
+      "away": {
+        "name": "Korea Republic",
+        "slug": "korea-republic"
+      },
+      "venue": "Guadalajara Stadium",
+      "label": "Mexico vs Korea Republic",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-29",
+      "match": 29,
+      "date": "2026-06-19T18:00:00.000Z",
+      "round": "Group D",
+      "home": {
+        "name": "USA",
+        "slug": "usa"
+      },
+      "away": {
+        "name": "Australia",
+        "slug": "australia"
+      },
+      "venue": "Seattle Stadium",
+      "label": "USA vs Australia",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-30",
+      "match": 30,
+      "date": "2026-06-19T18:00:00.000Z",
+      "round": "Group C",
+      "home": {
+        "name": "Scotland",
+        "slug": "scotland"
+      },
+      "away": {
+        "name": "Morocco",
+        "slug": "morocco"
+      },
+      "venue": "Boston Stadium",
+      "label": "Scotland vs Morocco",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-31",
+      "match": 31,
+      "date": "2026-06-19T18:00:00.000Z",
+      "round": "Group C",
+      "home": {
+        "name": "Brazil",
+        "slug": "brazil"
+      },
+      "away": {
+        "name": "Haiti",
+        "slug": "haiti"
+      },
+      "venue": "Philadelphia Stadium",
+      "label": "Brazil vs Haiti",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-32",
+      "match": 32,
+      "date": "2026-06-19T18:00:00.000Z",
+      "round": "Group D",
+      "home": {
+        "name": "Türkiye",
+        "slug": "turkiye"
+      },
+      "away": {
+        "name": "Paraguay",
+        "slug": "paraguay"
+      },
+      "venue": "San Francisco Bay Area Stadium",
+      "label": "Türkiye vs Paraguay",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-33",
+      "match": 33,
+      "date": "2026-06-20T18:00:00.000Z",
+      "round": "Group F",
+      "home": {
+        "name": "Netherlands",
+        "slug": "netherlands"
+      },
+      "away": {
+        "name": "Sweden",
+        "slug": "sweden"
+      },
+      "venue": "Houston Stadium",
+      "label": "Netherlands vs Sweden",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-34",
+      "match": 34,
+      "date": "2026-06-20T18:00:00.000Z",
+      "round": "Group E",
+      "home": {
+        "name": "Germany",
+        "slug": "germany"
+      },
+      "away": {
+        "name": "Côte d'Ivoire",
+        "slug": "cote-d-ivoire"
+      },
+      "venue": "Toronto Stadium",
+      "label": "Germany vs Côte d'Ivoire",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-35",
+      "match": 35,
+      "date": "2026-06-20T18:00:00.000Z",
+      "round": "Group E",
+      "home": {
+        "name": "Ecuador",
+        "slug": "ecuador"
+      },
+      "away": {
+        "name": "Curaçao",
+        "slug": "curacao"
+      },
+      "venue": "Kansas City Stadium",
+      "label": "Ecuador vs Curaçao",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-36",
+      "match": 36,
+      "date": "2026-06-20T18:00:00.000Z",
+      "round": "Group F",
+      "home": {
+        "name": "Tunisia",
+        "slug": "tunisia"
+      },
+      "away": {
+        "name": "Japan",
+        "slug": "japan"
+      },
+      "venue": "Monterrey Stadium",
+      "label": "Tunisia vs Japan",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-37",
+      "match": 37,
+      "date": "2026-06-21T18:00:00.000Z",
+      "round": "Group H",
+      "home": {
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "away": {
+        "name": "Saudi Arabia",
+        "slug": "saudi-arabia"
+      },
+      "venue": "Atlanta Stadium",
+      "label": "Spain vs Saudi Arabia",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-38",
+      "match": 38,
+      "date": "2026-06-21T18:00:00.000Z",
+      "round": "Group G",
+      "home": {
+        "name": "Belgium",
+        "slug": "belgium"
+      },
+      "away": {
+        "name": "IR Iran",
+        "slug": "ir-iran"
+      },
+      "venue": "Los Angeles Stadium",
+      "label": "Belgium vs IR Iran",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-39",
+      "match": 39,
+      "date": "2026-06-21T18:00:00.000Z",
+      "round": "Group H",
+      "home": {
+        "name": "Uruguay",
+        "slug": "uruguay"
+      },
+      "away": {
+        "name": "Cabo Verde",
+        "slug": "cabo-verde"
+      },
+      "venue": "Miami Stadium",
+      "label": "Uruguay vs Cabo Verde",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-40",
+      "match": 40,
+      "date": "2026-06-22T17:00:00.000Z",
+      "round": "Group J",
+      "home": {
+        "name": "Argentina",
+        "slug": "argentina"
+      },
+      "away": {
+        "name": "Austria",
+        "slug": "austria"
+      },
+      "venue": "Dallas Stadium",
+      "label": "Argentina vs Austria",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-41",
+      "match": 41,
+      "date": "2026-06-22T21:00:00.000Z",
+      "round": "Group I",
+      "home": {
+        "name": "France",
+        "slug": "france"
+      },
+      "away": {
+        "name": "Iraq",
+        "slug": "iraq"
+      },
+      "venue": "Philadelphia Stadium",
+      "label": "France vs Iraq",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-42",
+      "match": 42,
+      "date": "2026-06-23T00:00:00.000Z",
+      "round": "Group I",
+      "home": {
+        "name": "Norway",
+        "slug": "norway"
+      },
+      "away": {
+        "name": "Senegal",
+        "slug": "senegal"
+      },
+      "venue": "New York/New Jersey Stadium",
+      "label": "Norway vs Senegal",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-43",
+      "match": 43,
+      "date": "2026-06-23T03:00:00.000Z",
+      "round": "Group J",
+      "home": {
+        "name": "Jordan",
+        "slug": "jordan"
+      },
+      "away": {
+        "name": "Algeria",
+        "slug": "algeria"
+      },
+      "venue": "San Francisco Bay Area Stadium",
+      "label": "Jordan vs Algeria",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-44",
+      "match": 44,
+      "date": "2026-06-23T17:00:00.000Z",
+      "round": "Group K",
+      "home": {
+        "name": "Portugal",
+        "slug": "portugal"
+      },
+      "away": {
+        "name": "Uzbekistan",
+        "slug": "uzbekistan"
+      },
+      "venue": "Houston Stadium",
+      "label": "Portugal vs Uzbekistan",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-45",
+      "match": 45,
+      "date": "2026-06-23T20:00:00.000Z",
+      "round": "Group L",
+      "home": {
+        "name": "England",
+        "slug": "england"
+      },
+      "away": {
+        "name": "Ghana",
+        "slug": "ghana"
+      },
+      "venue": "Boston Stadium",
+      "label": "England vs Ghana",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-46",
+      "match": 46,
+      "date": "2026-06-23T23:00:00.000Z",
+      "round": "Group L",
+      "home": {
+        "name": "Panama",
+        "slug": "panama"
+      },
+      "away": {
+        "name": "Croatia",
+        "slug": "croatia"
+      },
+      "venue": "Toronto Stadium",
+      "label": "Panama vs Croatia",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-47",
+      "match": 47,
+      "date": "2026-06-24T02:00:00.000Z",
+      "round": "Group K",
+      "home": {
+        "name": "Colombia",
+        "slug": "colombia"
+      },
+      "away": {
+        "name": "Congo DR",
+        "slug": "congo-dr"
+      },
+      "venue": "Guadalajara Stadium",
+      "label": "Colombia vs Congo DR",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-48",
+      "match": 48,
+      "date": "2026-06-24T19:00:00.000Z",
+      "round": "Group B",
+      "home": {
+        "name": "Switzerland",
+        "slug": "switzerland"
+      },
+      "away": {
+        "name": "Canada",
+        "slug": "canada"
+      },
+      "venue": "BC Place Vancouver",
+      "label": "Switzerland vs Canada",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-49",
+      "match": 49,
+      "date": "2026-06-24T19:00:00.000Z",
+      "round": "Group B",
+      "home": {
+        "name": "Bosnia and Herzegovina",
+        "slug": "bosnia-and-herzegovina"
+      },
+      "away": {
+        "name": "Qatar",
+        "slug": "qatar"
+      },
+      "venue": "Seattle Stadium",
+      "label": "Bosnia and Herzegovina vs Qatar",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-50",
+      "match": 50,
+      "date": "2026-06-24T22:00:00.000Z",
+      "round": "Group C",
+      "home": {
+        "name": "Scotland",
+        "slug": "scotland"
+      },
+      "away": {
+        "name": "Brazil",
+        "slug": "brazil"
+      },
+      "venue": "Miami Stadium",
+      "label": "Scotland vs Brazil",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-51",
+      "match": 51,
+      "date": "2026-06-24T22:00:00.000Z",
+      "round": "Group C",
+      "home": {
+        "name": "Morocco",
+        "slug": "morocco"
+      },
+      "away": {
+        "name": "Haiti",
+        "slug": "haiti"
+      },
+      "venue": "Atlanta Stadium",
+      "label": "Morocco vs Haiti",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-52",
+      "match": 52,
+      "date": "2026-06-25T01:00:00.000Z",
+      "round": "Group A",
+      "home": {
+        "name": "Czechia",
+        "slug": "czechia"
+      },
+      "away": {
+        "name": "Mexico",
+        "slug": "mexico"
+      },
+      "venue": "Mexico City Stadium",
+      "label": "Czechia vs Mexico",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-53",
+      "match": 53,
+      "date": "2026-06-25T01:00:00.000Z",
+      "round": "Group A",
+      "home": {
+        "name": "South Africa",
+        "slug": "south-africa"
+      },
+      "away": {
+        "name": "Korea Republic",
+        "slug": "korea-republic"
+      },
+      "venue": "Monterrey Stadium",
+      "label": "South Africa vs Korea Republic",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-54",
+      "match": 54,
+      "date": "2026-06-25T20:00:00.000Z",
+      "round": "Group E",
+      "home": {
+        "name": "Curaçao",
+        "slug": "curacao"
+      },
+      "away": {
+        "name": "Côte d'Ivoire",
+        "slug": "cote-d-ivoire"
+      },
+      "venue": "Philadelphia Stadium",
+      "label": "Curaçao vs Côte d'Ivoire",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-55",
+      "match": 55,
+      "date": "2026-06-25T20:00:00.000Z",
+      "round": "Group E",
+      "home": {
+        "name": "Ecuador",
+        "slug": "ecuador"
+      },
+      "away": {
+        "name": "Germany",
+        "slug": "germany"
+      },
+      "venue": "New York/New Jersey Stadium",
+      "label": "Ecuador vs Germany",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-56",
+      "match": 56,
+      "date": "2026-06-25T23:00:00.000Z",
+      "round": "Group F",
+      "home": {
+        "name": "Japan",
+        "slug": "japan"
+      },
+      "away": {
+        "name": "Sweden",
+        "slug": "sweden"
+      },
+      "venue": "Dallas Stadium",
+      "label": "Japan vs Sweden",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-57",
+      "match": 57,
+      "date": "2026-06-25T23:00:00.000Z",
+      "round": "Group F",
+      "home": {
+        "name": "Tunisia",
+        "slug": "tunisia"
+      },
+      "away": {
+        "name": "Netherlands",
+        "slug": "netherlands"
+      },
+      "venue": "Kansas City Stadium",
+      "label": "Tunisia vs Netherlands",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-58",
+      "match": 58,
+      "date": "2026-06-26T02:00:00.000Z",
+      "round": "Group D",
+      "home": {
+        "name": "Türkiye",
+        "slug": "turkiye"
+      },
+      "away": {
+        "name": "USA",
+        "slug": "usa"
+      },
+      "venue": "Los Angeles Stadium",
+      "label": "Türkiye vs USA",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-59",
+      "match": 59,
+      "date": "2026-06-26T02:00:00.000Z",
+      "round": "Group D",
+      "home": {
+        "name": "Paraguay",
+        "slug": "paraguay"
+      },
+      "away": {
+        "name": "Australia",
+        "slug": "australia"
+      },
+      "venue": "San Francisco Bay Area Stadium",
+      "label": "Paraguay vs Australia",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-60",
+      "match": 60,
+      "date": "2026-06-26T19:00:00.000Z",
+      "round": "Group I",
+      "home": {
+        "name": "Norway",
+        "slug": "norway"
+      },
+      "away": {
+        "name": "France",
+        "slug": "france"
+      },
+      "venue": "Boston Stadium",
+      "label": "Norway vs France",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-61",
+      "match": 61,
+      "date": "2026-06-26T19:00:00.000Z",
+      "round": "Group I",
+      "home": {
+        "name": "Senegal",
+        "slug": "senegal"
+      },
+      "away": {
+        "name": "Iraq",
+        "slug": "iraq"
+      },
+      "venue": "Toronto Stadium",
+      "label": "Senegal vs Iraq",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-62",
+      "match": 62,
+      "date": "2026-06-27T00:00:00.000Z",
+      "round": "Group H",
+      "home": {
+        "name": "Cabo Verde",
+        "slug": "cabo-verde"
+      },
+      "away": {
+        "name": "Saudi Arabia",
+        "slug": "saudi-arabia"
+      },
+      "venue": "Houston Stadium",
+      "label": "Cabo Verde vs Saudi Arabia",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-63",
+      "match": 63,
+      "date": "2026-06-27T00:00:00.000Z",
+      "round": "Group H",
+      "home": {
+        "name": "Uruguay",
+        "slug": "uruguay"
+      },
+      "away": {
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "venue": "Guadalajara Stadium",
+      "label": "Uruguay vs Spain",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-64",
+      "match": 64,
+      "date": "2026-06-27T03:00:00.000Z",
+      "round": "Group G",
+      "home": {
+        "name": "Egypt",
+        "slug": "egypt"
+      },
+      "away": {
+        "name": "IR Iran",
+        "slug": "ir-iran"
+      },
+      "venue": "Seattle Stadium",
+      "label": "Egypt vs IR Iran",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-65",
+      "match": 65,
+      "date": "2026-06-27T03:00:00.000Z",
+      "round": "Group G",
+      "home": {
+        "name": "New Zealand",
+        "slug": "new-zealand"
+      },
+      "away": {
+        "name": "Belgium",
+        "slug": "belgium"
+      },
+      "venue": "BC Place Vancouver",
+      "label": "New Zealand vs Belgium",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-66",
+      "match": 66,
+      "date": "2026-06-27T21:00:00.000Z",
+      "round": "Group L",
+      "home": {
+        "name": "Panama",
+        "slug": "panama"
+      },
+      "away": {
+        "name": "England",
+        "slug": "england"
+      },
+      "venue": "New York/New Jersey Stadium",
+      "label": "Panama vs England",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-67",
+      "match": 67,
+      "date": "2026-06-27T21:00:00.000Z",
+      "round": "Group L",
+      "home": {
+        "name": "Croatia",
+        "slug": "croatia"
+      },
+      "away": {
+        "name": "Ghana",
+        "slug": "ghana"
+      },
+      "venue": "Philadelphia Stadium",
+      "label": "Croatia vs Ghana",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-68",
+      "match": 68,
+      "date": "2026-06-27T23:30:00.000Z",
+      "round": "Group K",
+      "home": {
+        "name": "Colombia",
+        "slug": "colombia"
+      },
+      "away": {
+        "name": "Portugal",
+        "slug": "portugal"
+      },
+      "venue": "Miami Stadium",
+      "label": "Colombia vs Portugal",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-69",
+      "match": 69,
+      "date": "2026-06-27T23:30:00.000Z",
+      "round": "Group K",
+      "home": {
+        "name": "Congo DR",
+        "slug": "congo-dr"
+      },
+      "away": {
+        "name": "Uzbekistan",
+        "slug": "uzbekistan"
+      },
+      "venue": "Atlanta Stadium",
+      "label": "Congo DR vs Uzbekistan",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-70",
+      "match": 70,
+      "date": "2026-06-28T02:00:00.000Z",
+      "round": "Group J",
+      "home": {
+        "name": "Algeria",
+        "slug": "algeria"
+      },
+      "away": {
+        "name": "Austria",
+        "slug": "austria"
+      },
+      "venue": "Kansas City Stadium",
+      "label": "Algeria vs Austria",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-71",
+      "match": 71,
+      "date": "2026-06-28T02:00:00.000Z",
+      "round": "Group J",
+      "home": {
+        "name": "Jordan",
+        "slug": "jordan"
+      },
+      "away": {
+        "name": "Argentina",
+        "slug": "argentina"
+      },
+      "venue": "Dallas Stadium",
+      "label": "Jordan vs Argentina",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-72",
+      "match": 72,
+      "date": "2026-06-28T19:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "2A",
+        "slug": "2a"
+      },
+      "away": {
+        "name": "2B",
+        "slug": "2b"
+      },
+      "venue": "Los Angeles Stadium",
+      "label": "2A vs 2B",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-73",
+      "match": 73,
+      "date": "2026-06-29T17:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "1C",
+        "slug": "1c"
+      },
+      "away": {
+        "name": "2F",
+        "slug": "2f"
+      },
+      "venue": "Houston Stadium",
+      "label": "1C vs 2F",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-74",
+      "match": 74,
+      "date": "2026-06-29T20:30:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "Germany",
+        "slug": "germany"
+      },
+      "away": {
+        "name": "3ABCDF",
+        "slug": "3abcdf"
+      },
+      "venue": "Boston Stadium",
+      "label": "Germany vs 3ABCDF",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-75",
+      "match": 75,
+      "date": "2026-06-30T01:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "1F",
+        "slug": "1f"
+      },
+      "away": {
+        "name": "2C",
+        "slug": "2c"
+      },
+      "venue": "Monterrey Stadium",
+      "label": "1F vs 2C",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-76",
+      "match": 76,
+      "date": "2026-06-30T17:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "2E",
+        "slug": "2e"
+      },
+      "away": {
+        "name": "2I",
+        "slug": "2i"
+      },
+      "venue": "Dallas Stadium",
+      "label": "2E vs 2I",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-77",
+      "match": 77,
+      "date": "2026-06-30T21:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "1I",
+        "slug": "1i"
+      },
+      "away": {
+        "name": "3CDFGH",
+        "slug": "3cdfgh"
+      },
+      "venue": "New York/New Jersey Stadium",
+      "label": "1I vs 3CDFGH",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-78",
+      "match": 78,
+      "date": "2026-07-01T01:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "Mexico",
+        "slug": "mexico"
+      },
+      "away": {
+        "name": "3CEFHI",
+        "slug": "3cefhi"
+      },
+      "venue": "Mexico City Stadium",
+      "label": "Mexico vs 3CEFHI",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-79",
+      "match": 79,
+      "date": "2026-07-01T16:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "1L",
+        "slug": "1l"
+      },
+      "away": {
+        "name": "3EHIJK",
+        "slug": "3ehijk"
+      },
+      "venue": "Atlanta Stadium",
+      "label": "1L vs 3EHIJK",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-80",
+      "match": 80,
+      "date": "2026-07-01T20:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "1G",
+        "slug": "1g"
+      },
+      "away": {
+        "name": "3AEHIJ",
+        "slug": "3aehij"
+      },
+      "venue": "Seattle Stadium",
+      "label": "1G vs 3AEHIJ",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-81",
+      "match": 81,
+      "date": "2026-07-02T00:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "USA",
+        "slug": "usa"
+      },
+      "away": {
+        "name": "3BEFIJ",
+        "slug": "3befij"
+      },
+      "venue": "San Francisco Bay Area Stadium",
+      "label": "USA vs 3BEFIJ",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-82",
+      "match": 82,
+      "date": "2026-07-02T19:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "1H",
+        "slug": "1h"
+      },
+      "away": {
+        "name": "2J",
+        "slug": "2j"
+      },
+      "venue": "Los Angeles Stadium",
+      "label": "1H vs 2J",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-83",
+      "match": 83,
+      "date": "2026-07-02T23:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "2K",
+        "slug": "2k"
+      },
+      "away": {
+        "name": "2L",
+        "slug": "2l"
+      },
+      "venue": "Toronto Stadium",
+      "label": "2K vs 2L",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-84",
+      "match": 84,
+      "date": "2026-07-03T03:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "1B",
+        "slug": "1b"
+      },
+      "away": {
+        "name": "3EFGIJ",
+        "slug": "3efgij"
+      },
+      "venue": "BC Place Vancouver",
+      "label": "1B vs 3EFGIJ",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-85",
+      "match": 85,
+      "date": "2026-07-03T18:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "2D",
+        "slug": "2d"
+      },
+      "away": {
+        "name": "2G",
+        "slug": "2g"
+      },
+      "venue": "Dallas Stadium",
+      "label": "2D vs 2G",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-86",
+      "match": 86,
+      "date": "2026-07-03T22:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "1J",
+        "slug": "1j"
+      },
+      "away": {
+        "name": "2H",
+        "slug": "2h"
+      },
+      "venue": "Miami Stadium",
+      "label": "1J vs 2H",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-87",
+      "match": 87,
+      "date": "2026-07-04T01:30:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "1K",
+        "slug": "1k"
+      },
+      "away": {
+        "name": "3DEIJL",
+        "slug": "3deijl"
+      },
+      "venue": "Kansas City Stadium",
+      "label": "1K vs 3DEIJL",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-88",
+      "match": 88,
+      "date": "2026-07-04T17:00:00.000Z",
+      "round": "Round of 16",
+      "home": {
+        "name": "W73",
+        "slug": "w73"
+      },
+      "away": {
+        "name": "W75",
+        "slug": "w75"
+      },
+      "venue": "Houston Stadium",
+      "label": "W73 vs W75",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-89",
+      "match": 89,
+      "date": "2026-07-04T21:00:00.000Z",
+      "round": "Round of 16",
+      "home": {
+        "name": "W74",
+        "slug": "w74"
+      },
+      "away": {
+        "name": "W77",
+        "slug": "w77"
+      },
+      "venue": "Philadelphia Stadium",
+      "label": "W74 vs W77",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-90",
+      "match": 90,
+      "date": "2026-07-05T20:00:00.000Z",
+      "round": "Round of 16",
+      "home": {
+        "name": "W76",
+        "slug": "w76"
+      },
+      "away": {
+        "name": "W78",
+        "slug": "w78"
+      },
+      "venue": "New York/New Jersey Stadium",
+      "label": "W76 vs W78",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-91",
+      "match": 91,
+      "date": "2026-07-06T00:00:00.000Z",
+      "round": "Round of 16",
+      "home": {
+        "name": "W79",
+        "slug": "w79"
+      },
+      "away": {
+        "name": "W80",
+        "slug": "w80"
+      },
+      "venue": "Mexico City Stadium",
+      "label": "W79 vs W80",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-92",
+      "match": 92,
+      "date": "2026-07-06T19:00:00.000Z",
+      "round": "Round of 16",
+      "home": {
+        "name": "W83",
+        "slug": "w83"
+      },
+      "away": {
+        "name": "W84",
+        "slug": "w84"
+      },
+      "venue": "Dallas Stadium",
+      "label": "W83 vs W84",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-93",
+      "match": 93,
+      "date": "2026-07-07T00:00:00.000Z",
+      "round": "Round of 16",
+      "home": {
+        "name": "W81",
+        "slug": "w81"
+      },
+      "away": {
+        "name": "W82",
+        "slug": "w82"
+      },
+      "venue": "Seattle Stadium",
+      "label": "W81 vs W82",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-94",
+      "match": 94,
+      "date": "2026-07-07T16:00:00.000Z",
+      "round": "Round of 16",
+      "home": {
+        "name": "W86",
+        "slug": "w86"
+      },
+      "away": {
+        "name": "W88",
+        "slug": "w88"
+      },
+      "venue": "Atlanta Stadium",
+      "label": "W86 vs W88",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-95",
+      "match": 95,
+      "date": "2026-07-07T20:00:00.000Z",
+      "round": "Round of 16",
+      "home": {
+        "name": "W85",
+        "slug": "w85"
+      },
+      "away": {
+        "name": "W87",
+        "slug": "w87"
+      },
+      "venue": "BC Place Vancouver",
+      "label": "W85 vs W87",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-96",
+      "match": 96,
+      "date": "2026-07-09T20:00:00.000Z",
+      "round": "Quarter-final",
+      "home": {
+        "name": "W89",
+        "slug": "w89"
+      },
+      "away": {
+        "name": "W90",
+        "slug": "w90"
+      },
+      "venue": "Boston Stadium",
+      "label": "W89 vs W90",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-97",
+      "match": 97,
+      "date": "2026-07-10T19:00:00.000Z",
+      "round": "Quarter-final",
+      "home": {
+        "name": "W93",
+        "slug": "w93"
+      },
+      "away": {
+        "name": "W94",
+        "slug": "w94"
+      },
+      "venue": "Los Angeles Stadium",
+      "label": "W93 vs W94",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-98",
+      "match": 98,
+      "date": "2026-07-11T21:00:00.000Z",
+      "round": "Quarter-final",
+      "home": {
+        "name": "W91",
+        "slug": "w91"
+      },
+      "away": {
+        "name": "W92",
+        "slug": "w92"
+      },
+      "venue": "Miami Stadium",
+      "label": "W91 vs W92",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-99",
+      "match": 99,
+      "date": "2026-07-12T01:00:00.000Z",
+      "round": "Quarter-final",
+      "home": {
+        "name": "W95",
+        "slug": "w95"
+      },
+      "away": {
+        "name": "W96",
+        "slug": "w96"
+      },
+      "venue": "Kansas City Stadium",
+      "label": "W95 vs W96",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-100",
+      "match": 100,
+      "date": "2026-07-14T19:00:00.000Z",
+      "round": "Semi-final",
+      "home": {
+        "name": "W97",
+        "slug": "w97"
+      },
+      "away": {
+        "name": "W98",
+        "slug": "w98"
+      },
+      "venue": "Dallas Stadium",
+      "label": "W97 vs W98",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-101",
+      "match": 101,
+      "date": "2026-07-15T19:00:00.000Z",
+      "round": "Semi-final",
+      "home": {
+        "name": "W99",
+        "slug": "w99"
+      },
+      "away": {
+        "name": "W100",
+        "slug": "w100"
+      },
+      "venue": "Atlanta Stadium",
+      "label": "W99 vs W100",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-102",
+      "match": 102,
+      "date": "2026-07-18T21:00:00.000Z",
+      "round": "Play-off for third place",
+      "home": {
+        "name": "RU101",
+        "slug": "ru101"
+      },
+      "away": {
+        "name": "RU102",
+        "slug": "ru102"
+      },
+      "venue": "Miami Stadium",
+      "label": "RU101 vs RU102",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-103",
+      "match": 103,
+      "date": "2026-07-19T19:00:00.000Z",
+      "round": "Final",
+      "home": {
+        "name": "W101",
+        "slug": "w101"
+      },
+      "away": {
+        "name": "W102",
+        "slug": "w102"
+      },
+      "venue": "New York/New Jersey Stadium",
+      "label": "W101 vs W102",
+      "status": "scheduled"
     }
   ],
   "bracket": {

@@ -1,4 +1,5 @@
 import { launchBrowser } from "./browser.mjs";
+import { logger } from "./logger.mjs";
 
 export const standingsUrl =
   "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings";
@@ -70,15 +71,18 @@ function validateGroups(groups) {
 }
 
 export async function scrapeGroups() {
+  logger.start("Scraping group standings");
   const browser = await launchBrowser();
 
   try {
     const page = await browser.newPage();
 
+    logger.visit(standingsUrl);
     await page.goto(standingsUrl, {
       waitUntil: "domcontentloaded",
       timeout: 45_000,
     });
+    logger.info("Waiting for 12 standings tables");
     await page.waitForFunction(
       () =>
         [...document.querySelectorAll("table caption")].filter((caption) =>
@@ -91,9 +95,20 @@ export async function scrapeGroups() {
     );
 
     const groups = await page.evaluate(extractGroupsFromDocument);
+    logger.data(`Extracted ${groups.length} groups`);
+    for (const group of groups) {
+      logger.data(
+        `Group ${group.group}: ${group.teams
+          .map((team) => `${team.position}. ${team.team} (${team.points} pts)`)
+          .join(", ")}`,
+      );
+    }
+
     validateGroups(groups);
+    logger.success("Validated standings layout");
     return groups;
   } finally {
     await browser.close();
+    logger.info("Closed standings browser");
   }
 }

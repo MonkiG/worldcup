@@ -49,6 +49,7 @@ export type FixtureMatch = {
   away?: FixtureTeam;
   venue?: string;
   label?: string;
+  status?: string;
 };
 
 export type WorldCupData = {
