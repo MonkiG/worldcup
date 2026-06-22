@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { buildBracket, qualifiers } from "../../scraper/bracket.mjs";
+import { buildBracket, qualifiers } from "../bracket.mjs";
 
 function team(group, position, points, goalDifference, goalsFor, conduct) {
   return {

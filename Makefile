@@ -1,5 +1,6 @@
 SHELL := /bin/sh
 
+SCRAPER_DIR := scraper
 WEB_DIR := web
 .DEFAULT_GOAL := help
 
@@ -9,14 +10,15 @@ help: ## Show the available commands
 	@awk 'BEGIN {FS = ":.*## "; printf "\nWorld Cup commands:\n\n"} /^[a-zA-Z0-9_-]+:.*## / {printf "  %-16s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
-install: ## Install the Next.js dependencies
+install: ## Install the project dependencies
 	npm --prefix $(WEB_DIR) install
+	npm --prefix $(SCRAPER_DIR) install
 
 scrape: ## Scrape FIFA and write data/latest.json
-	npm --prefix $(WEB_DIR) run scrape
+	npm --prefix $(SCRAPER_DIR) run scrape
 
 test: ## Run the Node scraper tests
-	npm --prefix $(WEB_DIR) run test:scraper
+	npm --prefix $(SCRAPER_DIR) run test
 
 front: ## Start the Next.js development server
 	npm --prefix $(WEB_DIR) run dev

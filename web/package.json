@@ -7,12 +7,11 @@
     "build": "next build",
     "start": "next start",
     "check": "tsc --noEmit",
-    "scrape": "node ../scraper/scrape.mjs",
-    "test:scraper": "node --test test/*.test.mjs"
+    "scrape": "npm --prefix ../scraper run scrape",
+    "test:scraper": "npm --prefix ../scraper run test"
   },
   "dependencies": {
     "next": "^16.2.9",
-    "playwright-core": "^1.53.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },

@@ -13,7 +13,7 @@ slots.
 Run `make help` to see all commands. The main workflow is:
 
 ```bash
-make install       # install Next.js dependencies
+make install       # install app and scraper dependencies
 make scrape        # refresh data/latest.json
 make front         # start http://localhost:3000
 ```
@@ -90,9 +90,9 @@ directory contains the scripts used by the scheduled action to refresh
 `data/latest.json`.
 
 ```bash
-cd web
-npm install
-npm run dev
+npm --prefix web install
+npm --prefix scraper install
+npm --prefix web run dev
 ```
 
 Open `http://localhost:3000`. The UI reads `../data/latest.json` on every
@@ -105,4 +105,4 @@ The main Node files are intentionally separated:
 - `scraper/snapshot.mjs` writes `data/latest.json`.
 - `scraper/bracket.mjs` calculates bracket slots.
 - `scraper/qualification.mjs` calculates qualifiers.
-- `web/test/bracket.test.mjs` tests the pure bracket logic.
+- `scraper/test/bracket.test.mjs` tests the pure bracket logic.
