@@ -40,4 +40,4 @@ front-start: ## Start the production Next.js server
 front-check: ## Run the frontend TypeScript check
 	npm --prefix $(WEB_DIR) run check
 
-check: test front-check front-build ## Run all tests and build the frontend
+check: test front-build front-check ## Run all tests and build the frontend
