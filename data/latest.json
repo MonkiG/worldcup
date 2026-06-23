@@ -4,7 +4,7 @@
     "standings": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
     "fixtures": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=&wtw-filter=ALL"
   },
-  "generated-at": "2026-06-22T17:13:04.300Z",
+  "generated-at": "2026-06-23T01:41:45.144Z",
   "groups": [
     {
       "group": "A",
@@ -801,6 +801,8 @@
         "name": "South Africa",
         "slug": "south-africa"
       },
+      "homeScore": 2,
+      "awayScore": 0,
       "venue": "Mexico City Stadium",
       "label": "Mexico vs South Africa",
       "status": "FT"
@@ -818,6 +820,8 @@
         "name": "Czechia",
         "slug": "czechia"
       },
+      "homeScore": 2,
+      "awayScore": 1,
       "venue": "Guadalajara Stadium",
       "label": "Korea Republic vs Czechia",
       "status": "FT"
@@ -835,6 +839,8 @@
         "name": "Bosnia and Herzegovina",
         "slug": "bosnia-and-herzegovina"
       },
+      "homeScore": 1,
+      "awayScore": 1,
       "venue": "Toronto Stadium",
       "label": "Canada vs Bosnia and Herzegovina",
       "status": "FT"
@@ -852,6 +858,8 @@
         "name": "Paraguay",
         "slug": "paraguay"
       },
+      "homeScore": 4,
+      "awayScore": 1,
       "venue": "Los Angeles Stadium",
       "label": "USA vs Paraguay",
       "status": "FT"
@@ -869,6 +877,8 @@
         "name": "Switzerland",
         "slug": "switzerland"
       },
+      "homeScore": 1,
+      "awayScore": 1,
       "venue": "San Francisco Bay Area Stadium",
       "label": "Qatar vs Switzerland",
       "status": "FT"
@@ -886,6 +896,8 @@
         "name": "Morocco",
         "slug": "morocco"
       },
+      "homeScore": 1,
+      "awayScore": 1,
       "venue": "New York/New Jersey Stadium",
       "label": "Brazil vs Morocco",
       "status": "FT"
@@ -903,6 +915,8 @@
         "name": "Scotland",
         "slug": "scotland"
       },
+      "homeScore": 0,
+      "awayScore": 1,
       "venue": "Boston Stadium",
       "label": "Haiti vs Scotland",
       "status": "FT"
@@ -920,6 +934,8 @@
         "name": "Türkiye",
         "slug": "turkiye"
       },
+      "homeScore": 2,
+      "awayScore": 0,
       "venue": "BC Place Vancouver",
       "label": "Australia vs Türkiye",
       "status": "FT"
@@ -937,6 +953,8 @@
         "name": "Curaçao",
         "slug": "curacao"
       },
+      "homeScore": 7,
+      "awayScore": 1,
       "venue": "Houston Stadium",
       "label": "Germany vs Curaçao",
       "status": "FT"
@@ -954,6 +972,8 @@
         "name": "Japan",
         "slug": "japan"
       },
+      "homeScore": 2,
+      "awayScore": 2,
       "venue": "Dallas Stadium",
       "label": "Netherlands vs Japan",
       "status": "FT"
@@ -971,6 +991,8 @@
         "name": "Ecuador",
         "slug": "ecuador"
       },
+      "homeScore": 1,
+      "awayScore": 0,
       "venue": "Philadelphia Stadium",
       "label": "Côte d'Ivoire vs Ecuador",
       "status": "FT"
@@ -988,6 +1010,8 @@
         "name": "Tunisia",
         "slug": "tunisia"
       },
+      "homeScore": 5,
+      "awayScore": 1,
       "venue": "Monterrey Stadium",
       "label": "Sweden vs Tunisia",
       "status": "FT"
@@ -1005,6 +1029,8 @@
         "name": "Cabo Verde",
         "slug": "cabo-verde"
       },
+      "homeScore": 0,
+      "awayScore": 0,
       "venue": "Atlanta Stadium",
       "label": "Spain vs Cabo Verde",
       "status": "FT"
@@ -1022,6 +1048,8 @@
         "name": "Egypt",
         "slug": "egypt"
       },
+      "homeScore": 1,
+      "awayScore": 1,
       "venue": "Seattle Stadium",
       "label": "Belgium vs Egypt",
       "status": "FT"
@@ -1039,6 +1067,8 @@
         "name": "Uruguay",
         "slug": "uruguay"
       },
+      "homeScore": 1,
+      "awayScore": 1,
       "venue": "Miami Stadium",
       "label": "Saudi Arabia vs Uruguay",
       "status": "FT"
@@ -1056,6 +1086,8 @@
         "name": "New Zealand",
         "slug": "new-zealand"
       },
+      "homeScore": 2,
+      "awayScore": 2,
       "venue": "Los Angeles Stadium",
       "label": "IR Iran vs New Zealand",
       "status": "FT"
@@ -1073,6 +1105,8 @@
         "name": "Senegal",
         "slug": "senegal"
       },
+      "homeScore": 3,
+      "awayScore": 1,
       "venue": "New York/New Jersey Stadium",
       "label": "France vs Senegal",
       "status": "FT"
@@ -1090,6 +1124,8 @@
         "name": "Norway",
         "slug": "norway"
       },
+      "homeScore": 1,
+      "awayScore": 4,
       "venue": "Boston Stadium",
       "label": "Iraq vs Norway",
       "status": "FT"
@@ -1107,6 +1143,8 @@
         "name": "Algeria",
         "slug": "algeria"
       },
+      "homeScore": 3,
+      "awayScore": 0,
       "venue": "Kansas City Stadium",
       "label": "Argentina vs Algeria",
       "status": "FT"
@@ -1124,6 +1162,8 @@
         "name": "Jordan",
         "slug": "jordan"
       },
+      "homeScore": 3,
+      "awayScore": 1,
       "venue": "San Francisco Bay Area Stadium",
       "label": "Austria vs Jordan",
       "status": "FT"
@@ -1141,6 +1181,8 @@
         "name": "Congo DR",
         "slug": "congo-dr"
       },
+      "homeScore": 1,
+      "awayScore": 1,
       "venue": "Houston Stadium",
       "label": "Portugal vs Congo DR",
       "status": "FT"
@@ -1158,6 +1200,8 @@
         "name": "Croatia",
         "slug": "croatia"
       },
+      "homeScore": 4,
+      "awayScore": 2,
       "venue": "Dallas Stadium",
       "label": "England vs Croatia",
       "status": "FT"
@@ -1175,6 +1219,8 @@
         "name": "Panama",
         "slug": "panama"
       },
+      "homeScore": 1,
+      "awayScore": 0,
       "venue": "Toronto Stadium",
       "label": "Ghana vs Panama",
       "status": "FT"
@@ -1192,6 +1238,8 @@
         "name": "Colombia",
         "slug": "colombia"
       },
+      "homeScore": 1,
+      "awayScore": 3,
       "venue": "Mexico City Stadium",
       "label": "Uzbekistan vs Colombia",
       "status": "FT"
@@ -1209,6 +1257,8 @@
         "name": "South Africa",
         "slug": "south-africa"
       },
+      "homeScore": 1,
+      "awayScore": 1,
       "venue": "Atlanta Stadium",
       "label": "Czechia vs South Africa",
       "status": "FT"
@@ -1226,6 +1276,8 @@
         "name": "Bosnia and Herzegovina",
         "slug": "bosnia-and-herzegovina"
       },
+      "homeScore": 4,
+      "awayScore": 1,
       "venue": "Los Angeles Stadium",
       "label": "Switzerland vs Bosnia and Herzegovina",
       "status": "FT"
@@ -1243,6 +1295,8 @@
         "name": "Qatar",
         "slug": "qatar"
       },
+      "homeScore": 6,
+      "awayScore": 0,
       "venue": "BC Place Vancouver",
       "label": "Canada vs Qatar",
       "status": "FT"
@@ -1260,6 +1314,8 @@
         "name": "Korea Republic",
         "slug": "korea-republic"
       },
+      "homeScore": 1,
+      "awayScore": 0,
       "venue": "Guadalajara Stadium",
       "label": "Mexico vs Korea Republic",
       "status": "FT"
@@ -1277,6 +1333,8 @@
         "name": "Australia",
         "slug": "australia"
       },
+      "homeScore": 2,
+      "awayScore": 0,
       "venue": "Seattle Stadium",
       "label": "USA vs Australia",
       "status": "FT"
@@ -1294,6 +1352,8 @@
         "name": "Morocco",
         "slug": "morocco"
       },
+      "homeScore": 0,
+      "awayScore": 1,
       "venue": "Boston Stadium",
       "label": "Scotland vs Morocco",
       "status": "FT"
@@ -1311,6 +1371,8 @@
         "name": "Haiti",
         "slug": "haiti"
       },
+      "homeScore": 3,
+      "awayScore": 0,
       "venue": "Philadelphia Stadium",
       "label": "Brazil vs Haiti",
       "status": "FT"
@@ -1328,6 +1390,8 @@
         "name": "Paraguay",
         "slug": "paraguay"
       },
+      "homeScore": 0,
+      "awayScore": 1,
       "venue": "San Francisco Bay Area Stadium",
       "label": "Türkiye vs Paraguay",
       "status": "FT"
@@ -1345,6 +1409,8 @@
         "name": "Sweden",
         "slug": "sweden"
       },
+      "homeScore": 5,
+      "awayScore": 1,
       "venue": "Houston Stadium",
       "label": "Netherlands vs Sweden",
       "status": "FT"
@@ -1362,6 +1428,8 @@
         "name": "Côte d'Ivoire",
         "slug": "cote-d-ivoire"
       },
+      "homeScore": 2,
+      "awayScore": 1,
       "venue": "Toronto Stadium",
       "label": "Germany vs Côte d'Ivoire",
       "status": "FT"
@@ -1379,6 +1447,8 @@
         "name": "Curaçao",
         "slug": "curacao"
       },
+      "homeScore": 0,
+      "awayScore": 0,
       "venue": "Kansas City Stadium",
       "label": "Ecuador vs Curaçao",
       "status": "FT"
@@ -1396,6 +1466,8 @@
         "name": "Japan",
         "slug": "japan"
       },
+      "homeScore": 0,
+      "awayScore": 4,
       "venue": "Monterrey Stadium",
       "label": "Tunisia vs Japan",
       "status": "FT"
@@ -1413,6 +1485,8 @@
         "name": "Saudi Arabia",
         "slug": "saudi-arabia"
       },
+      "homeScore": 4,
+      "awayScore": 0,
       "venue": "Atlanta Stadium",
       "label": "Spain vs Saudi Arabia",
       "status": "FT"
@@ -1430,6 +1504,8 @@
         "name": "IR Iran",
         "slug": "ir-iran"
       },
+      "homeScore": 0,
+      "awayScore": 0,
       "venue": "Los Angeles Stadium",
       "label": "Belgium vs IR Iran",
       "status": "FT"
@@ -1447,6 +1523,8 @@
         "name": "Cabo Verde",
         "slug": "cabo-verde"
       },
+      "homeScore": 2,
+      "awayScore": 2,
       "venue": "Miami Stadium",
       "label": "Uruguay vs Cabo Verde",
       "status": "FT"
@@ -1454,7 +1532,26 @@
     {
       "id": "fixture-40",
       "match": 40,
-      "date": "2026-06-22T17:00:00.000Z",
+      "date": "2026-06-21T18:00:00.000Z",
+      "round": "Group G",
+      "home": {
+        "name": "New Zealand",
+        "slug": "new-zealand"
+      },
+      "away": {
+        "name": "Egypt",
+        "slug": "egypt"
+      },
+      "homeScore": 1,
+      "awayScore": 3,
+      "venue": "BC Place Vancouver",
+      "label": "New Zealand vs Egypt",
+      "status": "FT"
+    },
+    {
+      "id": "fixture-41",
+      "match": 41,
+      "date": "2026-06-22T18:00:00.000Z",
       "round": "Group J",
       "home": {
         "name": "Argentina",
@@ -1464,14 +1561,16 @@
         "name": "Austria",
         "slug": "austria"
       },
+      "homeScore": 2,
+      "awayScore": 0,
       "venue": "Dallas Stadium",
       "label": "Argentina vs Austria",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
-      "id": "fixture-41",
-      "match": 41,
-      "date": "2026-06-22T21:00:00.000Z",
+      "id": "fixture-42",
+      "match": 42,
+      "date": "2026-06-22T18:00:00.000Z",
       "round": "Group I",
       "home": {
         "name": "France",
@@ -1481,26 +1580,11 @@
         "name": "Iraq",
         "slug": "iraq"
       },
+      "homeScore": 3,
+      "awayScore": 0,
       "venue": "Philadelphia Stadium",
       "label": "France vs Iraq",
-      "status": "scheduled"
-    },
-    {
-      "id": "fixture-42",
-      "match": 42,
-      "date": "2026-06-23T00:00:00.000Z",
-      "round": "Group I",
-      "home": {
-        "name": "Norway",
-        "slug": "norway"
-      },
-      "away": {
-        "name": "Senegal",
-        "slug": "senegal"
-      },
-      "venue": "New York/New Jersey Stadium",
-      "label": "Norway vs Senegal",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-43",

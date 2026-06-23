@@ -47,6 +47,8 @@ export type FixtureMatch = {
   round?: string;
   home?: FixtureTeam;
   away?: FixtureTeam;
+  homeScore?: number;
+  awayScore?: number;
   venue?: string;
   label?: string;
   status?: string;

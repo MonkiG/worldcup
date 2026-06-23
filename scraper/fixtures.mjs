@@ -57,6 +57,8 @@ function extractFixturesFromDocument() {
     const kickoff = isScheduled ? lines[index + 1] : "12:00";
     const awayName = isScheduled ? lines[index + 2] : lines[index + 4];
     const status = isScheduled ? "scheduled" : lines[index + 2];
+    const homeScore = isScheduled ? undefined : Number(lines[index + 1]);
+    const awayScore = isScheduled ? undefined : Number(lines[index + 3]);
     const roundIndex = isScheduled ? index + 3 : index + 5;
     const roundName = lines[roundIndex] ?? "";
     const metaStart = roundIndex + 1;
@@ -81,6 +83,8 @@ function extractFixturesFromDocument() {
       round,
       home: teamFromName(homeName),
       away: teamFromName(awayName),
+      homeScore,
+      awayScore,
       venue,
       label: `${homeName} vs ${awayName}`,
       status,

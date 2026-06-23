@@ -1,18 +1,39 @@
 import {
-  formatMatchDate,
-  formatMatchTime,
   calendarPageSize,
   getCalendarFocus,
   matchTitle,
 } from "@/lib/calendar";
 import type { FixtureMatch } from "@/lib/types";
+import { LocalMatchDate, LocalMatchTime } from "./local-match-time";
 import { SectionHeading } from "./section-heading";
 
-function MatchTeams({ match }: { match: FixtureMatch }) {
+function hasResult(match: FixtureMatch) {
+  return (
+    match.status === "FT" &&
+    typeof match.homeScore === "number" &&
+    typeof match.awayScore === "number"
+  );
+}
+
+function MatchTeams({
+  match,
+  showResult = false,
+}: {
+  match: FixtureMatch;
+  showResult?: boolean;
+}) {
   return (
     <div className="fixture-teams">
       <strong>{match.home?.name ?? "TBD"}</strong>
-      <span>vs</span>
+      {showResult && hasResult(match) ? (
+        <span className="fixture-score">
+          <b>{match.homeScore}</b>
+          <i>-</i>
+          <b>{match.awayScore}</b>
+        </span>
+      ) : (
+        <span className="fixture-versus">vs</span>
+      )}
       <strong>{match.away?.name ?? "TBD"}</strong>
     </div>
   );
@@ -31,10 +52,14 @@ function FixtureRow({
       id={match.id}
     >
       <div>
-        <span className="fixture-row__date">{formatMatchDate(match.date)}</span>
-        <strong>{formatMatchTime(match.date)}</strong>
+        <span className="fixture-row__date">
+          <LocalMatchDate value={match.date} />
+        </span>
+        <strong>
+          <LocalMatchTime value={match.date} />
+        </strong>
       </div>
-      <MatchTeams match={match} />
+      <MatchTeams match={match} showResult />
       <span>{match.round || "Fixture"}</span>
       <span>{match.venue || "Venue TBD"}</span>
     </article>
@@ -84,8 +109,12 @@ export function CalendarSection({
           {focus ? (
             <>
               <div className="fixture-focus__time">
-                <strong>{formatMatchDate(focus.date)}</strong>
-                <span>{formatMatchTime(focus.date)}</span>
+                <strong>
+                  <LocalMatchDate value={focus.date} />
+                </strong>
+                <span>
+                  <LocalMatchTime value={focus.date} />
+                </span>
               </div>
               <MatchTeams match={focus} />
               <small>{focus.venue || focus.round || "Fixture details pending"}</small>

@@ -767,22 +767,49 @@ tr.is-best-third td {
   line-height: 1.5;
 }
 .fixture-teams {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 64px minmax(0,1fr);
   align-items: center;
-  gap: 10px;
+  justify-items: center;
+  gap: 12px;
   min-width: 0;
 }
 .fixture-teams strong {
   min-width: 0;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 13px;
 }
-.fixture-teams span {
+.fixture-teams strong:first-child {
+  justify-self: end;
+  text-align: right;
+}
+.fixture-teams strong:last-child {
+  justify-self: start;
+  text-align: left;
+}
+.fixture-versus {
   color: var(--orange);
   font: 800 8px/1 var(--font-mono);
   text-transform: uppercase;
+}
+.fixture-score {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 64px;
+  padding: 6px 8px;
+  background: #171a1f;
+  border-radius: 4px;
+  color: white;
+  font: 850 11px/1 var(--font-mono);
+}
+.fixture-score i {
+  color: #8f949e;
+  font-style: normal;
 }
 .fixtures-pagination {
   display: flex;
