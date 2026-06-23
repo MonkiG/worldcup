@@ -37,17 +37,47 @@ function slotTeam(slot: BracketSlot | string) {
 }
 
 function qualificationLabel(team: Team, automatic: Team[], bestThirds: Team[]) {
+  return qualificationStatus(team, automatic, bestThirds).detail;
+}
+
+function qualificationStatus(team: Team, automatic: Team[], bestThirds: Team[]) {
   if (automatic.some((candidate) => candidate.slug === team.slug)) {
-    return "Direct qualification slot";
+    return {
+      detail: "Direct qualification slot",
+      label: "Qualified",
+      tone: "qualified",
+    };
   }
 
   if (bestThirds.some((candidate) => candidate.slug === team.slug)) {
-    return "Best third-place slot";
+    return {
+      detail: "Best third-place slot",
+      label: "Best third",
+      tone: "best-third",
+    };
   }
 
-  if (team.position === 3) return "Third-place watch";
-  if (team.position > 3) return "Outside qualification places";
-  return "Group stage position pending";
+  if (team.position === 3) {
+    return {
+      detail: "Third-place watch",
+      label: "On the bubble",
+      tone: "watch",
+    };
+  }
+
+  if (team.position > 3) {
+    return {
+      detail: "Outside qualification places",
+      label: "Outside",
+      tone: "out",
+    };
+  }
+
+  return {
+    detail: "Group stage position pending",
+    label: "Pending",
+    tone: "pending",
+  };
 }
 
 function ResultCell({ match }: { match: FixtureMatch }) {
@@ -119,6 +149,11 @@ export default async function TeamPage({ params }: TeamPageProps) {
     data.bracket.qualification.automatic,
     data.bracket.qualification["best-thirds"],
   );
+  const status = qualificationStatus(
+    team,
+    data.bracket.qualification.automatic,
+    data.bracket.qualification["best-thirds"],
+  );
 
   return (
     <PageShell active="groups" data={data} source={data.source}>
@@ -138,6 +173,9 @@ export default async function TeamPage({ params }: TeamPageProps) {
           <aside className="team-page-profile">
             <span className="eyebrow">Tournament profile</span>
             <h3>{team.team}</h3>
+            <strong className={`team-page-status team-page-status--${status.tone}`}>
+              {status.label}
+            </strong>
             <p>{qualification}</p>
             <dl>
               <div>

@@ -939,6 +939,34 @@ tr.is-best-third td {
   line-height: .95;
   letter-spacing: -.06em;
 }
+.team-page-status {
+  display: inline-grid;
+  place-items: center;
+  min-height: 30px;
+  margin-bottom: 16px;
+  padding: 0 11px;
+  border-radius: 4px;
+  font: 850 9px/1 var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.team-page-status--qualified {
+  background: var(--acid);
+  color: #111;
+}
+.team-page-status--best-third {
+  background: #fff0eb;
+  color: #d95327;
+}
+.team-page-status--watch {
+  background: #eaf0ff;
+  color: var(--blue);
+}
+.team-page-status--out,
+.team-page-status--pending {
+  background: #30343b;
+  color: #c3c8d0;
+}
 .team-page-profile p {
   margin: 0 0 22px;
   color: #a2a8b2;
