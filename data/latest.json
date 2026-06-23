@@ -4,7 +4,7 @@
     "standings": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
     "fixtures": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=&wtw-filter=ALL"
   },
-  "generated-at": "2026-06-23T02:06:15.307Z",
+  "generated-at": "2026-06-23T15:23:51.143Z",
   "groups": [
     {
       "group": "A",
@@ -530,64 +530,64 @@
       "group": "I",
       "teams": [
         {
-          "slug": "norway",
-          "group": "I",
-          "won": 1,
-          "team-conduct-score": 0,
-          "lost": 0,
-          "points": 3,
-          "drawn": 0,
-          "team": "Norway",
-          "goals-against": 1,
-          "position": 1,
-          "played": 1,
-          "goals-for": 4,
-          "goal-difference": 3
-        },
-        {
           "slug": "france",
           "group": "I",
-          "won": 1,
+          "won": 2,
           "team-conduct-score": 0,
           "lost": 0,
-          "points": 3,
+          "points": 6,
           "drawn": 0,
           "team": "France",
           "goals-against": 1,
+          "position": 1,
+          "played": 2,
+          "goals-for": 6,
+          "goal-difference": 5
+        },
+        {
+          "slug": "norway",
+          "group": "I",
+          "won": 2,
+          "team-conduct-score": 0,
+          "lost": 0,
+          "points": 6,
+          "drawn": 0,
+          "team": "Norway",
+          "goals-against": 3,
           "position": 2,
-          "played": 1,
-          "goals-for": 3,
-          "goal-difference": 2
+          "played": 2,
+          "goals-for": 7,
+          "goal-difference": 4
         },
         {
           "slug": "senegal",
           "group": "I",
           "won": 0,
           "team-conduct-score": 0,
-          "lost": 1,
+          "lost": 2,
           "points": 0,
           "drawn": 0,
           "team": "Senegal",
-          "goals-against": 3,
+          "goals-against": 6,
           "position": 3,
-          "played": 1,
-          "goals-for": 1,
-          "goal-difference": -2
+          "played": 2,
+          "goals-for": 3,
+          "goal-difference": -3
         },
         {
           "slug": "iraq",
           "group": "I",
           "won": 0,
-          "team-conduct-score": -1,
-          "lost": 1,
+          "team-conduct-score": -2,
+          "lost": 2,
           "points": 0,
           "drawn": 0,
           "team": "Iraq",
-          "goals-against": 4,
+          "goals-against": 7,
           "position": 4,
-          "played": 1,
+          "played": 2,
           "goals-for": 1,
-          "goal-difference": -3
+          "goal-difference": -6
         }
       ]
     },
@@ -597,61 +597,61 @@
         {
           "slug": "argentina",
           "group": "J",
-          "won": 1,
-          "team-conduct-score": 0,
+          "won": 2,
+          "team-conduct-score": -2,
           "lost": 0,
-          "points": 4,
-          "drawn": 1,
+          "points": 6,
+          "drawn": 0,
           "team": "Argentina",
           "goals-against": 0,
           "position": 1,
           "played": 2,
-          "goals-for": 3,
-          "goal-difference": 3
+          "goals-for": 5,
+          "goal-difference": 5
         },
         {
           "slug": "austria",
           "group": "J",
           "won": 1,
-          "team-conduct-score": -1,
-          "lost": 0,
-          "points": 4,
-          "drawn": 1,
+          "team-conduct-score": -3,
+          "lost": 1,
+          "points": 3,
+          "drawn": 0,
           "team": "Austria",
-          "goals-against": 1,
+          "goals-against": 3,
           "position": 2,
           "played": 2,
           "goals-for": 3,
-          "goal-difference": 2
+          "goal-difference": 0
+        },
+        {
+          "slug": "algeria",
+          "group": "J",
+          "won": 1,
+          "team-conduct-score": -1,
+          "lost": 1,
+          "points": 3,
+          "drawn": 0,
+          "team": "Algeria",
+          "goals-against": 4,
+          "position": 3,
+          "played": 2,
+          "goals-for": 2,
+          "goal-difference": -2
         },
         {
           "slug": "jordan",
           "group": "J",
           "won": 0,
-          "team-conduct-score": 0,
-          "lost": 1,
+          "team-conduct-score": -1,
+          "lost": 2,
           "points": 0,
           "drawn": 0,
           "team": "Jordan",
-          "goals-against": 3,
-          "position": 3,
-          "played": 1,
-          "goals-for": 1,
-          "goal-difference": -2
-        },
-        {
-          "slug": "algeria",
-          "group": "J",
-          "won": 0,
-          "team-conduct-score": 0,
-          "lost": 1,
-          "points": 0,
-          "drawn": 0,
-          "team": "Algeria",
-          "goals-against": 3,
+          "goals-against": 5,
           "position": 4,
-          "played": 1,
-          "goals-for": 0,
+          "played": 2,
+          "goals-for": 2,
           "goal-difference": -3
         }
       ]
@@ -2887,64 +2887,64 @@
           "goal-difference": 0
         },
         {
-          "slug": "norway",
-          "group": "I",
-          "won": 1,
-          "team-conduct-score": 0,
-          "lost": 0,
-          "points": 3,
-          "drawn": 0,
-          "team": "Norway",
-          "goals-against": 1,
-          "position": 1,
-          "played": 1,
-          "goals-for": 4,
-          "goal-difference": 3
-        },
-        {
           "slug": "france",
           "group": "I",
-          "won": 1,
+          "won": 2,
           "team-conduct-score": 0,
           "lost": 0,
-          "points": 3,
+          "points": 6,
           "drawn": 0,
           "team": "France",
           "goals-against": 1,
+          "position": 1,
+          "played": 2,
+          "goals-for": 6,
+          "goal-difference": 5
+        },
+        {
+          "slug": "norway",
+          "group": "I",
+          "won": 2,
+          "team-conduct-score": 0,
+          "lost": 0,
+          "points": 6,
+          "drawn": 0,
+          "team": "Norway",
+          "goals-against": 3,
           "position": 2,
-          "played": 1,
-          "goals-for": 3,
-          "goal-difference": 2
+          "played": 2,
+          "goals-for": 7,
+          "goal-difference": 4
         },
         {
           "slug": "argentina",
           "group": "J",
-          "won": 1,
-          "team-conduct-score": 0,
+          "won": 2,
+          "team-conduct-score": -2,
           "lost": 0,
-          "points": 4,
-          "drawn": 1,
+          "points": 6,
+          "drawn": 0,
           "team": "Argentina",
           "goals-against": 0,
           "position": 1,
           "played": 2,
-          "goals-for": 3,
-          "goal-difference": 3
+          "goals-for": 5,
+          "goal-difference": 5
         },
         {
           "slug": "austria",
           "group": "J",
           "won": 1,
-          "team-conduct-score": -1,
-          "lost": 0,
-          "points": 4,
-          "drawn": 1,
+          "team-conduct-score": -3,
+          "lost": 1,
+          "points": 3,
+          "drawn": 0,
           "team": "Austria",
-          "goals-against": 1,
+          "goals-against": 3,
           "position": 2,
           "played": 2,
           "goals-for": 3,
-          "goal-difference": 2
+          "goal-difference": 0
         },
         {
           "slug": "colombia",
@@ -3039,6 +3039,21 @@
           "goal-difference": 0
         },
         {
+          "slug": "algeria",
+          "group": "J",
+          "won": 1,
+          "team-conduct-score": -1,
+          "lost": 1,
+          "points": 3,
+          "drawn": 0,
+          "team": "Algeria",
+          "goals-against": 4,
+          "position": 3,
+          "played": 2,
+          "goals-for": 2,
+          "goal-difference": -2
+        },
+        {
           "slug": "paraguay",
           "group": "D",
           "won": 1,
@@ -3112,21 +3127,6 @@
           "played": 2,
           "goals-for": 2,
           "goal-difference": -1
-        },
-        {
-          "slug": "ecuador",
-          "group": "E",
-          "won": 0,
-          "team-conduct-score": -2,
-          "lost": 1,
-          "points": 1,
-          "drawn": 1,
-          "team": "Ecuador",
-          "goals-against": 1,
-          "position": 3,
-          "played": 2,
-          "goals-for": 0,
-          "goal-difference": -1
         }
       ],
       "third-place-table": [
@@ -3159,6 +3159,21 @@
           "played": 2,
           "goals-for": 1,
           "goal-difference": 0
+        },
+        {
+          "slug": "algeria",
+          "group": "J",
+          "won": 1,
+          "team-conduct-score": -1,
+          "lost": 1,
+          "points": 3,
+          "drawn": 0,
+          "team": "Algeria",
+          "goals-against": 4,
+          "position": 3,
+          "played": 2,
+          "goals-for": 2,
+          "goal-difference": -2
         },
         {
           "slug": "paraguay",
@@ -3285,30 +3300,15 @@
           "group": "I",
           "won": 0,
           "team-conduct-score": 0,
-          "lost": 1,
+          "lost": 2,
           "points": 0,
           "drawn": 0,
           "team": "Senegal",
-          "goals-against": 3,
+          "goals-against": 6,
           "position": 3,
-          "played": 1,
-          "goals-for": 1,
-          "goal-difference": -2
-        },
-        {
-          "slug": "jordan",
-          "group": "J",
-          "won": 0,
-          "team-conduct-score": 0,
-          "lost": 1,
-          "points": 0,
-          "drawn": 0,
-          "team": "Jordan",
-          "goals-against": 3,
-          "position": 3,
-          "played": 1,
-          "goals-for": 1,
-          "goal-difference": -2
+          "played": 2,
+          "goals-for": 3,
+          "goal-difference": -3
         }
       ],
       "provisional?": true
@@ -3545,19 +3545,19 @@
           "home": {
             "slot": "1I",
             "team": {
-              "slug": "norway",
+              "slug": "france",
               "group": "I",
-              "won": 1,
+              "won": 2,
               "team-conduct-score": 0,
               "lost": 0,
-              "points": 3,
+              "points": 6,
               "drawn": 0,
-              "team": "Norway",
+              "team": "France",
               "goals-against": 1,
               "position": 1,
-              "played": 1,
-              "goals-for": 4,
-              "goal-difference": 3
+              "played": 2,
+              "goals-for": 6,
+              "goal-difference": 5
             },
             "resolved?": true
           },
@@ -3676,19 +3676,19 @@
           "away": {
             "slot": "2I",
             "team": {
-              "slug": "france",
+              "slug": "norway",
               "group": "I",
-              "won": 1,
+              "won": 2,
               "team-conduct-score": 0,
               "lost": 0,
-              "points": 3,
+              "points": 6,
               "drawn": 0,
-              "team": "France",
-              "goals-against": 1,
+              "team": "Norway",
+              "goals-against": 3,
               "position": 2,
-              "played": 1,
-              "goals-for": 3,
-              "goal-difference": 2
+              "played": 2,
+              "goals-for": 7,
+              "goal-difference": 4
             },
             "resolved?": true
           },
@@ -3719,7 +3719,6 @@
           "away": {
             "candidate-groups": [
               "C",
-              "E",
               "F",
               "H"
             ],
@@ -3738,21 +3737,6 @@
                 "played": 2,
                 "goals-for": 1,
                 "goal-difference": 0
-              },
-              {
-                "slug": "ecuador",
-                "group": "E",
-                "won": 0,
-                "team-conduct-score": -2,
-                "lost": 1,
-                "points": 1,
-                "drawn": 1,
-                "team": "Ecuador",
-                "goals-against": 1,
-                "position": 3,
-                "played": 2,
-                "goals-for": 0,
-                "goal-difference": -1
               },
               {
                 "slug": "sweden",
@@ -3857,25 +3841,10 @@
           },
           "away": {
             "candidate-groups": [
-              "E",
-              "F"
+              "F",
+              "J"
             ],
             "candidate-teams": [
-              {
-                "slug": "ecuador",
-                "group": "E",
-                "won": 0,
-                "team-conduct-score": -2,
-                "lost": 1,
-                "points": 1,
-                "drawn": 1,
-                "team": "Ecuador",
-                "goals-against": 1,
-                "position": 3,
-                "played": 2,
-                "goals-for": 0,
-                "goal-difference": -1
-              },
               {
                 "slug": "sweden",
                 "group": "F",
@@ -3890,6 +3859,21 @@
                 "played": 2,
                 "goals-for": 6,
                 "goal-difference": 0
+              },
+              {
+                "slug": "algeria",
+                "group": "J",
+                "won": 1,
+                "team-conduct-score": -1,
+                "lost": 1,
+                "points": 3,
+                "drawn": 0,
+                "team": "Algeria",
+                "goals-against": 4,
+                "position": 3,
+                "played": 2,
+                "goals-for": 2,
+                "goal-difference": -2
               }
             ],
             "resolved?": false,
@@ -3922,8 +3906,8 @@
           "away": {
             "candidate-groups": [
               "A",
-              "E",
-              "H"
+              "H",
+              "J"
             ],
             "candidate-teams": [
               {
@@ -3942,21 +3926,6 @@
                 "goal-difference": -1
               },
               {
-                "slug": "ecuador",
-                "group": "E",
-                "won": 0,
-                "team-conduct-score": -2,
-                "lost": 1,
-                "points": 1,
-                "drawn": 1,
-                "team": "Ecuador",
-                "goals-against": 1,
-                "position": 3,
-                "played": 2,
-                "goals-for": 0,
-                "goal-difference": -1
-              },
-              {
                 "slug": "cabo-verde",
                 "group": "H",
                 "won": 0,
@@ -3970,6 +3939,21 @@
                 "played": 2,
                 "goals-for": 2,
                 "goal-difference": 0
+              },
+              {
+                "slug": "algeria",
+                "group": "J",
+                "won": 1,
+                "team-conduct-score": -1,
+                "lost": 1,
+                "points": 3,
+                "drawn": 0,
+                "team": "Algeria",
+                "goals-against": 4,
+                "position": 3,
+                "played": 2,
+                "goals-for": 2,
+                "goal-difference": -2
               }
             ],
             "resolved?": false,
@@ -4048,16 +4032,16 @@
               "slug": "austria",
               "group": "J",
               "won": 1,
-              "team-conduct-score": -1,
-              "lost": 0,
-              "points": 4,
-              "drawn": 1,
+              "team-conduct-score": -3,
+              "lost": 1,
+              "points": 3,
+              "drawn": 0,
               "team": "Austria",
-              "goals-against": 1,
+              "goals-against": 3,
               "position": 2,
               "played": 2,
               "goals-for": 3,
-              "goal-difference": 2
+              "goal-difference": 0
             },
             "resolved?": true
           },
@@ -4087,26 +4071,11 @@
           },
           "away": {
             "candidate-groups": [
-              "E",
               "F",
-              "G"
+              "G",
+              "J"
             ],
             "candidate-teams": [
-              {
-                "slug": "ecuador",
-                "group": "E",
-                "won": 0,
-                "team-conduct-score": -2,
-                "lost": 1,
-                "points": 1,
-                "drawn": 1,
-                "team": "Ecuador",
-                "goals-against": 1,
-                "position": 3,
-                "played": 2,
-                "goals-for": 0,
-                "goal-difference": -1
-              },
               {
                 "slug": "sweden",
                 "group": "F",
@@ -4136,6 +4105,21 @@
                 "played": 2,
                 "goals-for": 1,
                 "goal-difference": 0
+              },
+              {
+                "slug": "algeria",
+                "group": "J",
+                "won": 1,
+                "team-conduct-score": -1,
+                "lost": 1,
+                "points": 3,
+                "drawn": 0,
+                "team": "Algeria",
+                "goals-against": 4,
+                "position": 3,
+                "played": 2,
+                "goals-for": 2,
+                "goal-difference": -2
               }
             ],
             "resolved?": false,
@@ -4151,17 +4135,17 @@
             "team": {
               "slug": "argentina",
               "group": "J",
-              "won": 1,
-              "team-conduct-score": 0,
+              "won": 2,
+              "team-conduct-score": -2,
               "lost": 0,
-              "points": 4,
-              "drawn": 1,
+              "points": 6,
+              "drawn": 0,
               "team": "Argentina",
               "goals-against": 0,
               "position": 1,
               "played": 2,
-              "goals-for": 3,
-              "goal-difference": 3
+              "goals-for": 5,
+              "goal-difference": 5
             },
             "resolved?": true
           },
@@ -4211,7 +4195,7 @@
           "away": {
             "candidate-groups": [
               "D",
-              "E"
+              "J"
             ],
             "candidate-teams": [
               {
@@ -4230,19 +4214,19 @@
                 "goal-difference": -2
               },
               {
-                "slug": "ecuador",
-                "group": "E",
-                "won": 0,
-                "team-conduct-score": -2,
+                "slug": "algeria",
+                "group": "J",
+                "won": 1,
+                "team-conduct-score": -1,
                 "lost": 1,
-                "points": 1,
-                "drawn": 1,
-                "team": "Ecuador",
-                "goals-against": 1,
+                "points": 3,
+                "drawn": 0,
+                "team": "Algeria",
+                "goals-against": 4,
                 "position": 3,
                 "played": 2,
-                "goals-for": 0,
-                "goal-difference": -1
+                "goals-for": 2,
+                "goal-difference": -2
               }
             ],
             "resolved?": false,
