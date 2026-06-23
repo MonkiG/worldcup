@@ -1,6 +1,11 @@
 import Link from "next/link";
-import { formatMatchDate, formatMatchTime, matchTitle } from "@/lib/calendar";
+import { matchTitle } from "@/lib/calendar";
 import type { FixtureMatch } from "@/lib/types";
+import {
+  LocalMatchDate,
+  LocalMatchDay,
+  LocalMatchTime,
+} from "./local-match-time";
 
 const stats = [
   { label: "Groups", value: "12", detail: "A to L" },
@@ -62,23 +67,19 @@ export function DashboardHero({
           </p>
         </div>
 
-          <aside className="next-stage">
+        <aside className="next-stage">
           <span className="next-stage__label">Next match</span>
           <div className="next-stage__round">{matchTitle(nextMatch)}</div>
           <div className="next-stage__date">
             <strong>
-              {nextMatch
-                ? new Intl.DateTimeFormat("en", { day: "2-digit" }).format(
-                    new Date(nextMatch.date),
-                  )
-                : "28"}
+              {nextMatch ? <LocalMatchDay value={nextMatch.date} /> : "28"}
             </strong>
             <span>
               {nextMatch ? (
                 <>
-                  {formatMatchDate(nextMatch.date)}
+                  <LocalMatchDate value={nextMatch.date} />
                   <br />
-                  {formatMatchTime(nextMatch.date)}
+                  <LocalMatchTime value={nextMatch.date} />
                 </>
               ) : (
                 <>
@@ -101,7 +102,7 @@ export function DashboardHero({
             <small>{stat.detail}</small>
           </article>
         ))}
-          <Link href="/calendar">
+        <Link href="/calendar">
           Open calendar
           <span>-&gt;</span>
         </Link>

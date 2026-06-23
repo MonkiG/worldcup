@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 type LocalTime = {
   date: string;
+  day: string;
   time: string;
 };
 
@@ -15,6 +16,9 @@ function formatLocalTime(value: string): LocalTime {
       weekday: "short",
       month: "short",
       day: "numeric",
+    }).format(date),
+    day: new Intl.DateTimeFormat(undefined, {
+      day: "2-digit",
     }).format(date),
     time: new Intl.DateTimeFormat(undefined, {
       hour: "numeric",
@@ -32,6 +36,10 @@ function formatUtcFallback(value: string): LocalTime {
       weekday: "short",
       month: "short",
       day: "numeric",
+      timeZone: "UTC",
+    }).format(date),
+    day: new Intl.DateTimeFormat("en", {
+      day: "2-digit",
       timeZone: "UTC",
     }).format(date),
     time: new Intl.DateTimeFormat("en", {
@@ -52,6 +60,17 @@ export function LocalMatchDate({ value }: { value: string }) {
   }, [value]);
 
   return <>{local?.date ?? fallback.date}</>;
+}
+
+export function LocalMatchDay({ value }: { value: string }) {
+  const [local, setLocal] = useState<LocalTime | null>(null);
+  const fallback = formatUtcFallback(value);
+
+  useEffect(() => {
+    setLocal(formatLocalTime(value));
+  }, [value]);
+
+  return <>{local?.day ?? fallback.day}</>;
 }
 
 export function LocalMatchTime({ value }: { value: string }) {
