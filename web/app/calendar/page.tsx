@@ -28,7 +28,11 @@ export default async function CalendarPage({ searchParams }: CalendarPageProps) 
   }
 
   return (
-    <PageShell active="calendar" source={data.sources?.fixtures ?? data.source}>
+    <PageShell
+      active="calendar"
+      data={data}
+      source={data.sources?.fixtures ?? data.source}
+    >
       <CalendarSection matches={data.matches ?? []} page={page} />
     </PageShell>
   );

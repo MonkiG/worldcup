@@ -9,7 +9,7 @@ export default function QualificationPage() {
   const qualification = data.bracket.qualification;
 
   return (
-    <PageShell active="qualification" source={data.source}>
+    <PageShell active="qualification" data={data} source={data.source}>
       <QualificationWatchSection teams={qualification["third-place-table"]} />
     </PageShell>
   );

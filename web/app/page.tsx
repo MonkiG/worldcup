@@ -13,7 +13,7 @@ export default function Home() {
   const { next } = getCalendarFocus(data.matches ?? []);
 
   return (
-    <PageShell active="home" source={data.source}>
+    <PageShell active="home" data={data} source={data.source}>
       <DashboardHero generated={generated} nextMatch={next} />
 
       <section className="content-section">

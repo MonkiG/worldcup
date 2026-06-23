@@ -8,7 +8,7 @@ export default function BracketPage() {
   const data = getWorldCupData();
 
   return (
-    <PageShell active="bracket" source={data.source}>
+    <PageShell active="bracket" data={data} source={data.source}>
       <KnockoutBracketSection
         firstRound={data.bracket.rounds["round-of-32"]}
         later={data.bracket.rounds.later}

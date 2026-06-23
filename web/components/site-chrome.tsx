@@ -1,6 +1,13 @@
 import Link from "next/link";
+import { HeaderTeamSearch } from "./header-team-search";
+import type { WorldCupData } from "@/lib/types";
 
-export type NavKey = "home" | "groups" | "bracket" | "qualification" | "calendar";
+export type NavKey =
+  | "home"
+  | "groups"
+  | "bracket"
+  | "qualification"
+  | "calendar";
 
 const navItems: Array<{ key: NavKey; href: string; label: string }> = [
   { key: "groups", href: "/groups", label: "Groups" },
@@ -9,7 +16,13 @@ const navItems: Array<{ key: NavKey; href: string; label: string }> = [
   { key: "qualification", href: "/qualification", label: "Best thirds" },
 ];
 
-export function SiteHeader({ active = "home" }: { active?: NavKey }) {
+export function SiteHeader({
+  active = "home",
+  data,
+}: {
+  active?: NavKey;
+  data: WorldCupData;
+}) {
   return (
     <header className="site-header">
       <Link className="brand" href="/" aria-label="World Cup 2026 home">
@@ -33,9 +46,12 @@ export function SiteHeader({ active = "home" }: { active?: NavKey }) {
         ))}
       </nav>
 
-      <div className="live-pill">
-        <span />
-        Provisional data
+      <div className="header-actions">
+        <HeaderTeamSearch data={data} />
+        <div className="live-pill">
+          <span />
+          Provisional data
+        </div>
       </div>
     </header>
   );
