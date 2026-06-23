@@ -4,8 +4,20 @@ import { SectionHeading } from "@/components/section-heading";
 import { formatGeneratedAt } from "@/lib/format";
 import { getWorldCupData } from "@/lib/data";
 import { getCalendarFocus } from "@/lib/calendar";
+import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Live Standings, Fixtures and Bracket",
+  description:
+    "Track the FIFA World Cup 2026 with group standings, fixtures, results, best third-place qualification and projected knockout bracket.",
+  openGraph: {
+    title: "World Cup 2026 live tracker",
+    description:
+      "Group standings, match calendar, results and projected knockout bracket for the FIFA World Cup 2026.",
+  },
+};
 
 export default function Home() {
   const data = getWorldCupData();

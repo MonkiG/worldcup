@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { LocalMatchDate, LocalMatchTime } from "@/components/local-match-time";
 import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
@@ -59,6 +60,43 @@ function ResultCell({ match }: { match: FixtureMatch }) {
   }
 
   return <LocalMatchTime value={match.date} />;
+}
+
+export async function generateMetadata({
+  params,
+}: TeamPageProps): Promise<Metadata> {
+  const data = getWorldCupData();
+  const { slug } = await params;
+  const team = findTeam(data, slug);
+
+  if (!team) {
+    return {
+      title: "Country not found",
+      description: "The requested World Cup 2026 country page was not found.",
+    };
+  }
+
+  const qualification = qualificationLabel(
+    team,
+    data.bracket.qualification.automatic,
+    data.bracket.qualification["best-thirds"],
+  );
+  const description = `${team.team} World Cup 2026 profile: Group ${team.group}, ${team.points} points, position ${team.position}, fixtures, results, venues and projected bracket status.`;
+
+  return {
+    title: `${team.team} World Cup 2026 Profile`,
+    description,
+    openGraph: {
+      title: `${team.team} at the World Cup 2026`,
+      description: `${qualification}. View ${team.team} standings, fixtures, results and knockout projection.`,
+      type: "article",
+    },
+    twitter: {
+      card: "summary",
+      title: `${team.team} World Cup 2026 Profile`,
+      description,
+    },
+  };
 }
 
 export default async function TeamPage({ params }: TeamPageProps) {
