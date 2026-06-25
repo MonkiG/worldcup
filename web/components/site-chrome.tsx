@@ -48,10 +48,6 @@ export function SiteHeader({
 
       <div className="header-actions">
         <HeaderTeamSearch data={data} />
-        <div className="live-pill">
-          <span />
-          Provisional data
-        </div>
       </div>
     </header>
   );
@@ -68,8 +64,7 @@ export function SiteFooter({ source }: { source: string }) {
         </span>
       </div>
       <p>
-        Data sourced from FIFA and marked provisional until all relevant results
-        are final.
+        Data sourced from FIFA and refreshed by the project scraper.
       </p>
       <div className="footer-links">
         <a href={source} target="_blank" rel="noreferrer">

@@ -81,27 +81,6 @@ a { color: inherit; text-decoration: none; }
 .site-header nav a.is-active {
   color: var(--acid);
 }
-.live-pill {
-  justify-self: end;
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  padding: 9px 13px;
-  border: 1px solid #33373f;
-  border-radius: 7px;
-  color: #d5d7dc;
-  font-size: 9px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: .09em;
-}
-.live-pill span {
-  width: 7px;
-  height: 7px;
-  background: var(--orange);
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255,105,55,.14);
-}
 .header-actions {
   justify-self: end;
   display: flex;
@@ -114,6 +93,15 @@ a { color: inherit; text-decoration: none; }
   width: min(260px, 26vw);
   min-width: 180px;
 }
+.header-search__icon {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  z-index: 1;
+  color: #7f858f;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
 .header-search__label {
   position: absolute;
   width: 1px;
@@ -124,7 +112,7 @@ a { color: inherit; text-decoration: none; }
 .header-search input {
   width: 100%;
   height: 36px;
-  padding: 0 12px;
+  padding: 0 12px 0 34px;
   background: #171a1f;
   border: 1px solid #33373f;
   border-radius: 4px;
@@ -1307,24 +1295,49 @@ a.team-name__label:hover { color: var(--blue); }
 
 @media (max-width: 760px) {
   .site-header {
-    grid-template-columns: 1fr auto;
-    min-height: 64px;
-    padding: 0 18px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    min-height: 0;
+    padding: 12px 18px;
   }
   .site-header nav { display: none; }
-  .header-actions { gap: 8px; }
+  .brand {
+    width: 100%;
+    min-width: 0;
+  }
+  .brand__ball {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+  }
+  .brand strong {
+    font-size: 12px;
+    letter-spacing: .06em;
+  }
+  .brand small {
+    font-size: 8px;
+    letter-spacing: .1em;
+  }
+  .header-actions {
+    justify-self: stretch;
+    width: 100%;
+    gap: 8px;
+  }
   .header-search {
-    width: min(190px, 44vw);
-    min-width: 130px;
+    width: 100%;
+    min-width: 0;
+  }
+  .header-search input {
+    height: 38px;
+    font-size: 12px;
   }
   .header-search__suggestions {
     position: fixed;
-    top: 58px;
+    top: 92px;
     right: 12px;
     left: 12px;
     width: auto;
   }
-  .live-pill { padding: 8px 9px; font-size: 8px; }
   .dashboard-hero__main {
     grid-template-columns: 1fr;
     gap: 35px;
@@ -1339,7 +1352,7 @@ a.team-name__label:hover { color: var(--blue); }
   .scoreboard-strip article { min-height: 100px; }
   .scoreboard-strip > a { grid-column: 1 / -1; }
   .section-tabs {
-    top: 64px;
+    top: 92px;
     justify-content: flex-start;
     overflow-x: auto;
   }

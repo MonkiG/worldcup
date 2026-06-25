@@ -36,6 +36,21 @@ export function HeaderTeamSearch({ data }: { data: WorldCupData }) {
       <label className="header-search__label" htmlFor="team-search">
         Search team
       </label>
+      <svg
+        aria-hidden="true"
+        className="header-search__icon"
+        fill="none"
+        height="15"
+        viewBox="0 0 24 24"
+        width="15"
+      >
+        <path
+          d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeWidth="2"
+        />
+      </svg>
       <input
         autoComplete="off"
         id="team-search"
