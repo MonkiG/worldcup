@@ -1,16 +1,22 @@
 import type { Group, Team } from "@/lib/types";
+import { getFifaCode } from "@/lib/team-codes";
+import { TeamFlag } from "./team-flag";
 import { TeamLink } from "./team-link";
 
 function teamParts(team: Team) {
   const match = team.team.match(/^(.*)\s([A-Z]{3})$/);
   return match
     ? { name: match[1], code: match[2] }
-    : { name: team.team, code: team.slug.slice(0, 3).toUpperCase() };
+    : { name: team.team, code: getFifaCode(team.slug) };
 }
 
 export function TeamMark({ team }: { team: Team }) {
-  const { code } = teamParts(team);
-  return <span className="team-mark">{code}</span>;
+  const { code, name } = teamParts(team);
+  return (
+    <span className="team-mark">
+      <TeamFlag code={code} name={name} />
+    </span>
+  );
 }
 
 export function TeamName({ team }: { team: Team }) {
@@ -77,10 +83,12 @@ export function GroupTable({
                     </span>
                   </td>
                   <td>
-                    <TeamName team={team} />
-                    {isBestThird && (
-                      <span className="qualifier-badge">Best 3rd</span>
-                    )}
+                    <span className="team-cell">
+                      <TeamName team={team} />
+                      {isBestThird && (
+                        <span className="qualifier-badge">Best 3rd</span>
+                      )}
+                    </span>
                   </td>
                   <td>{team.played}</td>
                   <td>{team.won}</td>

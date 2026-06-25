@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { TeamReference } from "@/components/team-reference";
 import type { WorldCupData } from "@/lib/types";
 
 function normalize(value = "") {
@@ -54,7 +55,7 @@ export function HeaderTeamSearch({ data }: { data: WorldCupData }) {
               key={team.slug}
               onClick={() => setQuery("")}
             >
-              <span>{team.team}</span>
+              <TeamReference linked={false} team={team} />
               <small>Group {team.group}</small>
             </Link>
           ))}

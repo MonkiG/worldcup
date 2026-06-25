@@ -489,6 +489,14 @@ td {
   text-align: center;
 }
 td:nth-child(2) { min-width: 145px; text-align: left; }
+.team-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  max-width: 100%;
+  vertical-align: middle;
+}
 .rank {
   display: inline-grid;
   place-items: center;
@@ -523,6 +531,62 @@ tr.is-best-third td {
   color: #5c626d;
   font: 800 7px/1 var(--font-mono);
 }
+.team-mark__flag {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+.team-mark__code {
+  display: inline-grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+.team-reference {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.team-reference--home {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.team-reference--home > a,
+.team-reference--home > span:last-child {
+  text-align: right;
+}
+.team-reference--away {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.team-reference--away > a,
+.team-reference--away > span:last-child {
+  text-align: left;
+}
+.team-reference__flag {
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 24px;
+  height: 18px;
+  overflow: hidden;
+  background: #ebedf0;
+  border-radius: 3px;
+  color: #5c626d;
+  font: 800 7px/1 var(--font-mono);
+}
+.team-reference > a,
+.team-reference > span:last-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .team-name__label {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -532,8 +596,9 @@ a.team-name__label:hover { color: var(--blue); }
 .team-name__code { display: none; }
 .points { font-weight: 900; }
 .qualifier-badge {
-  display: inline-block;
-  margin-left: 9px;
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
   padding: 5px 7px;
   background: #fff0eb;
   border: 1px solid #ffd0bf;
@@ -877,6 +942,10 @@ a.team-name__label:hover { color: var(--blue); }
   white-space: nowrap;
   font-size: 13px;
 }
+.fixture-teams strong .team-reference,
+.team-page-match > div:nth-child(2) strong .team-reference {
+  width: 100%;
+}
 .fixture-teams a:hover,
 .next-stage__round a:hover,
 .team-page-match a:hover {
@@ -967,6 +1036,30 @@ a.team-name__label:hover { color: var(--blue); }
   background: var(--black);
   border-radius: 4px;
   color: white;
+}
+.team-page-flag {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 24px;
+  overflow: hidden;
+  background: #171a1f;
+  border: 1px solid #30343b;
+  border-radius: 4px;
+}
+.team-page-flag__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-page-flag__fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--acid);
+  font: 900 clamp(44px, 8vw, 88px)/1 var(--font-mono);
 }
 .team-page-profile h3 {
   margin: 12px 0 14px;

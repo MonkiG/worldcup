@@ -3,13 +3,15 @@ import type { Metadata } from "next";
 import { LocalMatchDate, LocalMatchTime } from "@/components/local-match-time";
 import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
-import { TeamLink } from "@/components/team-link";
+import { TeamFlag } from "@/components/team-flag";
+import { TeamReference } from "@/components/team-reference";
 import { enrichCalendarMatches } from "@/lib/calendar";
 import {
   getBracketPredictions,
   isQualifiedTeam,
 } from "@/lib/bracket-predictions";
 import { getWorldCupData } from "@/lib/data";
+import { getFifaCode } from "@/lib/team-codes";
 import type { BracketPrediction } from "@/lib/bracket-predictions";
 import type { FixtureMatch, Team } from "@/lib/types";
 
@@ -112,7 +114,7 @@ function OpponentList({ prediction }: { prediction: BracketPrediction }) {
     <ul>
       {prediction.opponents.map((opponent) => (
         <li key={opponent.slug}>
-          <TeamLink team={opponent} />
+          <TeamReference team={opponent} />
         </li>
       ))}
     </ul>
@@ -195,8 +197,18 @@ export default async function TeamPage({ params }: TeamPageProps) {
 
         <div className="team-page-grid">
           <aside className="team-page-profile">
+            <div className="team-page-flag" aria-hidden="true">
+              <TeamFlag
+                className="team-page-flag__image"
+                code={getFifaCode(team.slug)}
+                fallbackClassName="team-page-flag__fallback"
+                name={team.team}
+              />
+            </div>
             <span className="eyebrow">Tournament profile</span>
-            <h3>{team.team}</h3>
+            <h3>
+              <TeamReference showFlag={false} team={team} />
+            </h3>
             <strong className={`team-page-status team-page-status--${status.tone}`}>
               {status.label}
             </strong>
@@ -248,11 +260,17 @@ export default async function TeamPage({ params }: TeamPageProps) {
                   </div>
                   <div>
                     <strong>
-                      <TeamLink team={match.home} />
+                      <TeamReference
+                        className="team-reference--home"
+                        team={match.home}
+                      />
                     </strong>
                     <span>vs</span>
                     <strong>
-                      <TeamLink team={match.away} />
+                      <TeamReference
+                        className="team-reference--away"
+                        team={match.away}
+                      />
                     </strong>
                   </div>
                   <span>{match.round || "Fixture"}</span>

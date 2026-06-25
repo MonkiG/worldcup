@@ -14,6 +14,7 @@ import {
 } from "@/lib/qualification-rules";
 import { TeamMark } from "./group-table";
 import { TeamLink } from "./team-link";
+import { TeamReference } from "./team-reference";
 
 const roundLabels: Record<string, string> = {
   "round-of-32": "Round of 32",
@@ -40,7 +41,7 @@ function CandidateTeam({
 
   return (
     <span className="candidate-team">
-      <TeamLink team={team}>{shortName(team)}</TeamLink>
+      <TeamReference team={team}>{shortName(team)}</TeamReference>
     </span>
   );
 }

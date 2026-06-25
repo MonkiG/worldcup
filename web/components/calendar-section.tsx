@@ -6,7 +6,7 @@ import {
 import type { FixtureMatch } from "@/lib/types";
 import { LocalMatchDate, LocalMatchTime } from "./local-match-time";
 import { SectionHeading } from "./section-heading";
-import { TeamLink } from "./team-link";
+import { TeamReference } from "./team-reference";
 
 function hasResult(match: FixtureMatch) {
   return (
@@ -26,7 +26,7 @@ function MatchTeams({
   return (
     <div className="fixture-teams">
       <strong>
-        <TeamLink team={match.home} />
+        <TeamReference className="team-reference--home" team={match.home} />
       </strong>
       {showResult && hasResult(match) ? (
         <span className="fixture-score">
@@ -38,7 +38,7 @@ function MatchTeams({
         <span className="fixture-versus">vs</span>
       )}
       <strong>
-        <TeamLink team={match.away} />
+        <TeamReference className="team-reference--away" team={match.away} />
       </strong>
     </div>
   );
@@ -49,9 +49,17 @@ function MatchTitleLinks({ match }: { match?: FixtureMatch | null }) {
 
   return (
     <>
-      <TeamLink team={match.home} />
+      <TeamReference
+        className="team-reference--home"
+        showFlag={false}
+        team={match.home}
+      />
       <span> vs </span>
-      <TeamLink team={match.away} />
+      <TeamReference
+        className="team-reference--away"
+        showFlag={false}
+        team={match.away}
+      />
     </>
   );
 }

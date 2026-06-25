@@ -5,7 +5,7 @@ import {
   LocalMatchDay,
   LocalMatchTime,
 } from "./local-match-time";
-import { TeamLink } from "./team-link";
+import { TeamReference } from "./team-reference";
 
 const stats = [
   { label: "Groups", value: "12", detail: "A to L" },
@@ -47,9 +47,17 @@ function LinkedMatchTitle({ match }: { match?: FixtureMatch | null }) {
 
   return (
     <>
-      <TeamLink team={match.home} />
+      <TeamReference
+        className="team-reference--home"
+        showFlag={false}
+        team={match.home}
+      />
       <span> vs </span>
-      <TeamLink team={match.away} />
+      <TeamReference
+        className="team-reference--away"
+        showFlag={false}
+        team={match.away}
+      />
     </>
   );
 }
