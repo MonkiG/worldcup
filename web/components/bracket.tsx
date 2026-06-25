@@ -8,6 +8,10 @@ import {
   useState,
 } from "react";
 import type { BracketSlot, Match, Team } from "@/lib/types";
+import {
+  bestThirdPlaceCandidate,
+  projectThirdPlaceSlots,
+} from "@/lib/qualification-rules";
 import { TeamMark } from "./group-table";
 import { TeamLink } from "./team-link";
 
@@ -24,7 +28,30 @@ function shortName(team: Team) {
   return team.team.replace(/\s[A-Z]{3}$/, "");
 }
 
-function Slot({ slot }: { slot: BracketSlot | string }) {
+function CandidateTeam({
+  projectedTeam,
+  teams = [],
+}: {
+  projectedTeam?: Team;
+  teams?: Team[];
+}) {
+  const team = projectedTeam ?? bestThirdPlaceCandidate(teams);
+  if (!team) return null;
+
+  return (
+    <span className="candidate-team">
+      <TeamLink team={team}>{shortName(team)}</TeamLink>
+    </span>
+  );
+}
+
+function Slot({
+  slot,
+  thirdPlaceProjection,
+}: {
+  slot: BracketSlot | string;
+  thirdPlaceProjection: Map<string, Team>;
+}) {
   if (typeof slot === "string") {
     return (
       <div className="match-team match-team--placeholder">
@@ -47,15 +74,27 @@ function Slot({ slot }: { slot: BracketSlot | string }) {
   return (
     <div className="match-team match-team--pending">
       <span className="team-mark">?</span>
-      <span>
-        Best 3rd / {slot["candidate-groups"]?.join(", ") ?? slot.slot}
-      </span>
+      <div className="match-team__pending-copy">
+        <span>
+          Projected best 3rd / {slot["candidate-groups"]?.join(", ") ?? slot.slot}
+        </span>
+        <CandidateTeam
+          projectedTeam={thirdPlaceProjection.get(slot.slot)}
+          teams={slot["candidate-teams"]}
+        />
+      </div>
       <span className="slot-token">{slot.slot}</span>
     </div>
   );
 }
 
-function MatchCard({ match }: { match: Match }) {
+function MatchCard({
+  match,
+  thirdPlaceProjection,
+}: {
+  match: Match;
+  thirdPlaceProjection: Map<string, Team>;
+}) {
   return (
     <article className="match-card">
       <header className="match-card__header">
@@ -69,11 +108,11 @@ function MatchCard({ match }: { match: Match }) {
           </time>
         )}
       </header>
-      <Slot slot={match.home} />
+      <Slot slot={match.home} thirdPlaceProjection={thirdPlaceProjection} />
       <div className="match-divider">
         <span>vs</span>
       </div>
-      <Slot slot={match.away} />
+      <Slot slot={match.away} thirdPlaceProjection={thirdPlaceProjection} />
     </article>
   );
 }
@@ -94,6 +133,10 @@ export function Bracket({
       })),
     ],
     [firstRound, later],
+  );
+  const thirdPlaceProjection = useMemo(
+    () => projectThirdPlaceSlots(firstRound),
+    [firstRound],
   );
   const bracketRef = useRef<HTMLDivElement>(null);
   const matchRefs = useRef(new Map<string, HTMLElement>());
@@ -207,7 +250,10 @@ export function Bracket({
                     registerMatch(roundIndex, matchIndex, node)
                   }
                 >
-                  <MatchCard match={match} />
+                  <MatchCard
+                    match={match}
+                    thirdPlaceProjection={thirdPlaceProjection}
+                  />
                 </div>
               ))}
             </div>

@@ -601,16 +601,25 @@ a.team-name__label:hover { color: var(--blue); }
   font-family: var(--font-mono);
 }
 .bracket-round__matches {
+  --match-step: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: calc(16 * 129px);
+  height: calc(16 * var(--match-step));
   gap: 12px;
 }
-.bracket-round--round-of-16 .bracket-round__matches { padding-block: 64px; }
-.bracket-round--quarter-final .bracket-round__matches { padding-block: 193px; }
-.bracket-round--semi-final .bracket-round__matches { padding-block: 451px; }
-.bracket-round--final .bracket-round__matches { padding-block: 967px; }
+.bracket-round--round-of-16 .bracket-round__matches {
+  padding-block: calc(var(--match-step) * .5);
+}
+.bracket-round--quarter-final .bracket-round__matches {
+  padding-block: calc(var(--match-step) * 1.5);
+}
+.bracket-round--semi-final .bracket-round__matches {
+  padding-block: calc(var(--match-step) * 3.5);
+}
+.bracket-round--final .bracket-round__matches {
+  padding-block: calc(var(--match-step) * 7.5);
+}
 .match-node {
   position: relative;
   flex: 0 0 auto;
@@ -652,6 +661,21 @@ a.team-name__label:hover { color: var(--blue); }
 .match-team--pending .team-mark {
   background: rgba(216,255,62,.12);
   color: var(--acid);
+}
+.match-team__pending-copy {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+.candidate-team {
+  display: inline-block;
+  max-width: 100%;
+  padding: 4px 5px;
+  background: rgba(216,255,62,.1);
+  border: 1px solid rgba(216,255,62,.2);
+  border-radius: 3px;
+  color: white;
+  font-size: 8px;
 }
 .match-team--placeholder {
   grid-template-columns: auto 1fr;

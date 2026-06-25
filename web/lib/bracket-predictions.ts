@@ -1,4 +1,8 @@
 import type { BracketSlot, Match, Team, WorldCupData } from "./types";
+import {
+  bestThirdPlaceCandidate,
+  projectThirdPlaceSlots,
+} from "./qualification-rules";
 
 export type BracketPrediction = {
   date?: string;
@@ -21,25 +25,47 @@ function slotHasTeam(slot: BracketSlot | string, team: Team) {
   );
 }
 
-function teamSlotStatus(slot: BracketSlot | string, team: Team) {
+function projectedSlotTeam(
+  slot: BracketSlot | string,
+  thirdPlaceProjection: Map<string, Team>,
+) {
+  if (!isSlot(slot)) return undefined;
+  return slot.team ?? thirdPlaceProjection.get(slot.slot);
+}
+
+function teamSlotStatus(
+  slot: BracketSlot | string,
+  team: Team,
+  thirdPlaceProjection: Map<string, Team>,
+) {
   if (!isSlot(slot)) return null;
   if (slot.team?.slug === team.slug) return "locked";
-  if (slot["candidate-teams"]?.some((candidate) => candidate.slug === team.slug)) {
+  if (thirdPlaceProjection.get(slot.slot)?.slug === team.slug) {
     return "possible";
   }
 
   return null;
 }
 
-function possibleTeams(slot: BracketSlot | string) {
+function possibleTeams(
+  slot: BracketSlot | string,
+  thirdPlaceProjection: Map<string, Team>,
+) {
   if (!isSlot(slot)) return [];
   if (slot.team) return [slot.team];
-  return slot["candidate-teams"] ?? [];
+  const candidate =
+    projectedSlotTeam(slot, thirdPlaceProjection) ??
+    bestThirdPlaceCandidate(slot["candidate-teams"]);
+  return candidate ? [candidate] : [];
 }
 
-function predictionForMatch(match: Match, team: Team): BracketPrediction | null {
-  const homeStatus = teamSlotStatus(match.home, team);
-  const awayStatus = teamSlotStatus(match.away, team);
+function predictionForMatch(
+  match: Match,
+  team: Team,
+  thirdPlaceProjection: Map<string, Team>,
+): BracketPrediction | null {
+  const homeStatus = teamSlotStatus(match.home, team, thirdPlaceProjection);
+  const awayStatus = teamSlotStatus(match.away, team, thirdPlaceProjection);
 
   if (!homeStatus && !awayStatus) return null;
 
@@ -49,7 +75,7 @@ function predictionForMatch(match: Match, team: Team): BracketPrediction | null 
   return {
     date: match.date,
     match: match.match,
-    opponents: possibleTeams(opponentSide),
+    opponents: possibleTeams(opponentSide, thirdPlaceProjection),
     round: match.round,
     slot: isSlot(teamSide) ? teamSide.slot : String(teamSide),
     status: homeStatus ?? awayStatus ?? "possible",
@@ -66,8 +92,20 @@ export function isQualifiedTeam(data: WorldCupData, team: Team) {
 export function getBracketPredictions(data: WorldCupData, team: Team) {
   if (!isQualifiedTeam(data, team)) return [];
 
-  return data.bracket.rounds["round-of-32"]
-    .filter((match) => slotHasTeam(match.home, team) || slotHasTeam(match.away, team))
-    .map((match) => predictionForMatch(match, team))
+  const firstRound = data.bracket.rounds["round-of-32"];
+  const thirdPlaceProjection = projectThirdPlaceSlots(firstRound);
+
+  return firstRound
+    .filter((match) => {
+      const projectedHome = projectedSlotTeam(match.home, thirdPlaceProjection);
+      const projectedAway = projectedSlotTeam(match.away, thirdPlaceProjection);
+      return (
+        projectedHome?.slug === team.slug ||
+        projectedAway?.slug === team.slug ||
+        slotHasTeam(match.home, team) ||
+        slotHasTeam(match.away, team)
+      );
+    })
+    .map((match) => predictionForMatch(match, team, thirdPlaceProjection))
     .filter((prediction): prediction is BracketPrediction => Boolean(prediction));
 }

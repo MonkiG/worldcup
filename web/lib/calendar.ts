@@ -2,8 +2,13 @@ import type {
   BracketSlot,
   FixtureMatch,
   Match,
+  Team,
   WorldCupData,
 } from "./types";
+import {
+  bestThirdPlaceCandidate,
+  projectThirdPlaceSlots,
+} from "./qualification-rules";
 
 export const calendarPageSize = 24;
 
@@ -29,7 +34,10 @@ function formatRound(value = "") {
   return labels[value] ?? value;
 }
 
-function teamFromBracketSide(side: BracketSlot | string) {
+function teamFromBracketSide(
+  side: BracketSlot | string,
+  thirdPlaceProjection: Map<string, Team>,
+) {
   if (typeof side === "string") {
     return { name: side, slug: slugify(side) };
   }
@@ -39,6 +47,11 @@ function teamFromBracketSide(side: BracketSlot | string) {
   }
 
   if (side["candidate-teams"]?.length) {
+    const team =
+      thirdPlaceProjection.get(side.slot) ??
+      bestThirdPlaceCandidate(side["candidate-teams"]);
+    if (team) return { name: team.team, slug: team.slug };
+
     return {
       name: side["candidate-teams"].map((team) => team.team).join(" / "),
       slug: slugify(side.slot),
@@ -56,6 +69,9 @@ function bracketMatches(data: WorldCupData): Match[] {
 }
 
 export function enrichCalendarMatches(data: WorldCupData): FixtureMatch[] {
+  const thirdPlaceProjection = projectThirdPlaceSlots(
+    data.bracket.rounds["round-of-32"],
+  );
   const bracketByMatch = new Map(
     bracketMatches(data).map((match) => [match.match, match]),
   );
@@ -66,8 +82,8 @@ export function enrichCalendarMatches(data: WorldCupData): FixtureMatch[] {
 
     return {
       ...fixture,
-      home: teamFromBracketSide(bracket.home),
-      away: teamFromBracketSide(bracket.away),
+      home: teamFromBracketSide(bracket.home, thirdPlaceProjection),
+      away: teamFromBracketSide(bracket.away, thirdPlaceProjection),
       round: formatRound(bracket.round) || fixture.round,
     };
   });
