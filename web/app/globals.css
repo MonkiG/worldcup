@@ -1116,6 +1116,39 @@ a.team-name__label:hover { color: var(--blue); }
   color: var(--muted);
   font-size: 10px;
 }
+.team-page-opponents {
+  display: grid;
+  gap: 9px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.team-page-opponents em {
+  color: #858a93;
+  font: 850 8px/1 var(--font-mono);
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+}
+.team-page-opponents ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.team-page-opponents li,
+.team-page-opponents p {
+  margin: 0;
+  padding: 6px 8px;
+  background: #f3f4f6;
+  border-radius: 3px;
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 800;
+}
+.team-page-opponents a:hover { color: var(--blue); }
 
 .site-footer {
   display: grid;

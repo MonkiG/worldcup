@@ -4,9 +4,14 @@ import { LocalMatchDate, LocalMatchTime } from "@/components/local-match-time";
 import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
 import { TeamLink } from "@/components/team-link";
-import { getWorldCupData } from "@/lib/data";
 import { enrichCalendarMatches } from "@/lib/calendar";
-import type { BracketSlot, FixtureMatch, Team } from "@/lib/types";
+import {
+  getBracketPredictions,
+  isQualifiedTeam,
+} from "@/lib/bracket-predictions";
+import { getWorldCupData } from "@/lib/data";
+import type { BracketPrediction } from "@/lib/bracket-predictions";
+import type { FixtureMatch, Team } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
@@ -32,10 +37,6 @@ function hasResult(match: FixtureMatch) {
 
 function fixtureIncludesTeam(match: FixtureMatch, team: Team) {
   return match.home?.slug === team.slug || match.away?.slug === team.slug;
-}
-
-function slotTeam(slot: BracketSlot | string) {
-  return typeof slot === "string" ? undefined : slot.team;
 }
 
 function qualificationLabel(team: Team, automatic: Team[], bestThirds: Team[]) {
@@ -94,6 +95,30 @@ function ResultCell({ match }: { match: FixtureMatch }) {
   return <LocalMatchTime value={match.date} />;
 }
 
+function bracketRoundLabel(round: string) {
+  const labels: Record<string, string> = {
+    "round-of-32": "Round of 32",
+  };
+
+  return labels[round] ?? round;
+}
+
+function OpponentList({ prediction }: { prediction: BracketPrediction }) {
+  if (prediction.opponents.length === 0) {
+    return <p>Opponent pending</p>;
+  }
+
+  return (
+    <ul>
+      {prediction.opponents.map((opponent) => (
+        <li key={opponent.slug}>
+          <TeamLink team={opponent} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export async function generateMetadata({
   params,
 }: TeamPageProps): Promise<Metadata> {
@@ -141,11 +166,8 @@ export default async function TeamPage({ params }: TeamPageProps) {
   const fixtures = enrichCalendarMatches(data).filter((match) =>
     fixtureIncludesTeam(match, team),
   );
-  const bracketMatches = data.bracket.rounds["round-of-32"].filter((match) => {
-    const home = slotTeam(match.home);
-    const away = slotTeam(match.away);
-    return home?.slug === team.slug || away?.slug === team.slug;
-  });
+  const bracketPredictions = getBracketPredictions(data, team);
+  const qualified = isQualifiedTeam(data, team);
   const qualification = qualificationLabel(
     team,
     data.bracket.qualification.automatic,
@@ -241,19 +263,38 @@ export default async function TeamPage({ params }: TeamPageProps) {
 
             <section>
               <h3>Projected bracket</h3>
-              {bracketMatches.length > 0 ? (
+              {bracketPredictions.length > 0 ? (
                 <div className="team-page-bracket">
-                  {bracketMatches.map((match) => (
-                    <article key={match.match}>
-                      <span>Match {match.match}</span>
-                      <strong>{match.round}</strong>
-                      <small>{match.date ?? "Date pending"}</small>
+                  {bracketPredictions.map((prediction) => (
+                    <article key={`${prediction.match}-${prediction.slot}`}>
+                      <span>
+                        Match {prediction.match} / {prediction.slot}
+                      </span>
+                      <strong>
+                        {prediction.status === "locked"
+                          ? "Confirmed path"
+                          : "Possible path"}
+                      </strong>
+                      <small>
+                        {bracketRoundLabel(prediction.round)} /{" "}
+                        {prediction.date ?? "Date pending"}
+                      </small>
+                      <div className="team-page-opponents">
+                        <em>
+                          {prediction.status === "locked"
+                            ? "Opponent"
+                            : "Possible opponents"}
+                        </em>
+                        <OpponentList prediction={prediction} />
+                      </div>
                     </article>
                   ))}
                 </div>
               ) : (
                 <p className="team-page-empty">
-                  No projected bracket slot is resolved for this country yet.
+                  {qualified
+                    ? "No possible bracket opponent is resolved for this country yet."
+                    : "This country is not in a current qualification slot yet."}
                 </p>
               )}
             </section>
