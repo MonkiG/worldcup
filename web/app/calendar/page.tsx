@@ -1,6 +1,10 @@
 import { CalendarSection } from "@/components/calendar-section";
 import { PageShell } from "@/components/page-shell";
-import { calendarPageSize, getCalendarFocus } from "@/lib/calendar";
+import {
+  calendarPageSize,
+  enrichCalendarMatches,
+  getCalendarFocus,
+} from "@/lib/calendar";
 import { getWorldCupData } from "@/lib/data";
 import { redirect } from "next/navigation";
 import type { Metadata } from "next";
@@ -21,9 +25,10 @@ type CalendarPageProps = {
 
 export default async function CalendarPage({ searchParams }: CalendarPageProps) {
   const data = getWorldCupData();
+  const matches = enrichCalendarMatches(data);
   const params = await searchParams;
   const page = Number.parseInt(params?.page ?? "", 10);
-  const { current, next, sorted } = getCalendarFocus(data.matches ?? []);
+  const { current, next, sorted } = getCalendarFocus(matches);
   const focus = current ?? next;
 
   if (!params?.page && focus) {
@@ -40,7 +45,7 @@ export default async function CalendarPage({ searchParams }: CalendarPageProps) 
       data={data}
       source={data.sources?.fixtures ?? data.source}
     >
-      <CalendarSection matches={data.matches ?? []} page={page} />
+      <CalendarSection matches={matches} page={page} />
     </PageShell>
   );
 }

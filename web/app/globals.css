@@ -528,6 +528,7 @@ tr.is-best-third td {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+a.team-name__label:hover { color: var(--blue); }
 .team-name__code { display: none; }
 .points { font-weight: 900; }
 .qualifier-badge {
@@ -646,6 +647,7 @@ tr.is-best-third td {
   background: #292f39;
   color: #c9cdd4;
 }
+.match-team a:hover { color: var(--acid); }
 .match-team--pending { color: #dbe7b4; }
 .match-team--pending .team-mark {
   background: rgba(216,255,62,.12);
@@ -850,6 +852,15 @@ tr.is-best-third td {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 13px;
+}
+.fixture-teams a:hover,
+.next-stage__round a:hover,
+.team-page-match a:hover {
+  color: var(--blue);
+}
+.fixture-focus .fixture-teams a:hover,
+.next-stage__round a:hover {
+  color: var(--acid);
 }
 .fixture-teams strong:first-child {
   justify-self: end;

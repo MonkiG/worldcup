@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { matchTitle } from "@/lib/calendar";
 import type { FixtureMatch } from "@/lib/types";
 import {
   LocalMatchDate,
   LocalMatchDay,
   LocalMatchTime,
 } from "./local-match-time";
+import { TeamLink } from "./team-link";
 
 const stats = [
   { label: "Groups", value: "12", detail: "A to L" },
@@ -42,6 +42,18 @@ const featureCards = [
   },
 ];
 
+function LinkedMatchTitle({ match }: { match?: FixtureMatch | null }) {
+  if (!match?.home || !match.away) return <>{match?.label ?? "Draw path"}</>;
+
+  return (
+    <>
+      <TeamLink team={match.home} />
+      <span> vs </span>
+      <TeamLink team={match.away} />
+    </>
+  );
+}
+
 export function DashboardHero({
   generated,
   nextMatch,
@@ -69,7 +81,9 @@ export function DashboardHero({
 
         <aside className="next-stage">
           <span className="next-stage__label">Next match</span>
-          <div className="next-stage__round">{matchTitle(nextMatch)}</div>
+          <div className="next-stage__round">
+            <LinkedMatchTitle match={nextMatch} />
+          </div>
           <div className="next-stage__date">
             <strong>
               {nextMatch ? <LocalMatchDay value={nextMatch.date} /> : "28"}

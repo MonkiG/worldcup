@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import { LocalMatchDate, LocalMatchTime } from "@/components/local-match-time";
 import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
+import { TeamLink } from "@/components/team-link";
 import { getWorldCupData } from "@/lib/data";
+import { enrichCalendarMatches } from "@/lib/calendar";
 import type { BracketSlot, FixtureMatch, Team } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
@@ -136,7 +138,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
 
   if (!team) notFound();
 
-  const fixtures = (data.matches ?? []).filter((match) =>
+  const fixtures = enrichCalendarMatches(data).filter((match) =>
     fixtureIncludesTeam(match, team),
   );
   const bracketMatches = data.bracket.rounds["round-of-32"].filter((match) => {
@@ -223,9 +225,13 @@ export default async function TeamPage({ params }: TeamPageProps) {
                     </strong>
                   </div>
                   <div>
-                    <strong>{match.home?.name ?? "TBD"}</strong>
+                    <strong>
+                      <TeamLink team={match.home} />
+                    </strong>
                     <span>vs</span>
-                    <strong>{match.away?.name ?? "TBD"}</strong>
+                    <strong>
+                      <TeamLink team={match.away} />
+                    </strong>
                   </div>
                   <span>{match.round || "Fixture"}</span>
                   <small>{match.venue || "Venue TBD"}</small>

@@ -3,7 +3,7 @@ import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
 import { formatGeneratedAt } from "@/lib/format";
 import { getWorldCupData } from "@/lib/data";
-import { getCalendarFocus } from "@/lib/calendar";
+import { enrichCalendarMatches, getCalendarFocus } from "@/lib/calendar";
 import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function Home() {
   const data = getWorldCupData();
   const generated = formatGeneratedAt(data["generated-at"]);
-  const { next } = getCalendarFocus(data.matches ?? []);
+  const { next } = getCalendarFocus(enrichCalendarMatches(data));
 
   return (
     <PageShell active="home" data={data} source={data.source}>

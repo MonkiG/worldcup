@@ -9,6 +9,7 @@ import {
 } from "react";
 import type { BracketSlot, Match, Team } from "@/lib/types";
 import { TeamMark } from "./group-table";
+import { TeamLink } from "./team-link";
 
 const roundLabels: Record<string, string> = {
   "round-of-32": "Round of 32",
@@ -37,7 +38,7 @@ function Slot({ slot }: { slot: BracketSlot | string }) {
     return (
       <div className="match-team">
         <TeamMark team={slot.team} />
-        <span>{shortName(slot.team)}</span>
+        <TeamLink team={slot.team}>{shortName(slot.team)}</TeamLink>
         <span className="slot-token">{slot.slot}</span>
       </div>
     );

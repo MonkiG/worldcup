@@ -6,6 +6,7 @@ import {
 import type { FixtureMatch } from "@/lib/types";
 import { LocalMatchDate, LocalMatchTime } from "./local-match-time";
 import { SectionHeading } from "./section-heading";
+import { TeamLink } from "./team-link";
 
 function hasResult(match: FixtureMatch) {
   return (
@@ -24,7 +25,9 @@ function MatchTeams({
 }) {
   return (
     <div className="fixture-teams">
-      <strong>{match.home?.name ?? "TBD"}</strong>
+      <strong>
+        <TeamLink team={match.home} />
+      </strong>
       {showResult && hasResult(match) ? (
         <span className="fixture-score">
           <b>{match.homeScore}</b>
@@ -34,8 +37,22 @@ function MatchTeams({
       ) : (
         <span className="fixture-versus">vs</span>
       )}
-      <strong>{match.away?.name ?? "TBD"}</strong>
+      <strong>
+        <TeamLink team={match.away} />
+      </strong>
     </div>
+  );
+}
+
+function MatchTitleLinks({ match }: { match?: FixtureMatch | null }) {
+  if (!match?.home || !match.away) return <>{matchTitle(match)}</>;
+
+  return (
+    <>
+      <TeamLink team={match.home} />
+      <span> vs </span>
+      <TeamLink team={match.away} />
+    </>
   );
 }
 
@@ -105,7 +122,9 @@ export function CalendarSection({
           <span className="fixture-focus__label">
             {current ? "Live window" : "Next match"}
           </span>
-          <h3>{matchTitle(focus)}</h3>
+          <h3>
+            <MatchTitleLinks match={focus} />
+          </h3>
           {focus ? (
             <>
               <div className="fixture-focus__time">

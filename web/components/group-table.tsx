@@ -1,4 +1,5 @@
 import type { Group, Team } from "@/lib/types";
+import { TeamLink } from "./team-link";
 
 function teamParts(team: Team) {
   const match = team.team.match(/^(.*)\s([A-Z]{3})$/);
@@ -17,7 +18,9 @@ export function TeamName({ team }: { team: Team }) {
   return (
     <span className="team-name">
       <TeamMark team={team} />
-      <span className="team-name__label">{name}</span>
+      <TeamLink className="team-name__label" team={team}>
+        {name}
+      </TeamLink>
       <span className="team-name__code">{code}</span>
     </span>
   );
