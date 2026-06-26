@@ -4,7 +4,7 @@
     "standings": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
     "fixtures": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=&wtw-filter=ALL"
   },
-  "generated-at": "2026-06-26T23:28:07.589Z",
+  "generated-at": "2026-06-26T23:31:37.562Z",
   "groups": [
     {
       "group": "A",
@@ -1817,7 +1817,7 @@
     {
       "id": "fixture-55",
       "match": 55,
-      "date": "2026-06-25T20:00:00.000Z",
+      "date": "2026-06-25T18:00:00.000Z",
       "round": "Group E",
       "home": {
         "name": "Curaçao",
@@ -1827,14 +1827,16 @@
         "name": "Côte d'Ivoire",
         "slug": "cote-d-ivoire"
       },
+      "homeScore": 0,
+      "awayScore": 2,
       "venue": "Philadelphia Stadium",
       "label": "Curaçao vs Côte d'Ivoire",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-56",
       "match": 56,
-      "date": "2026-06-25T20:00:00.000Z",
+      "date": "2026-06-25T18:00:00.000Z",
       "round": "Group E",
       "home": {
         "name": "Ecuador",
@@ -1844,14 +1846,16 @@
         "name": "Germany",
         "slug": "germany"
       },
+      "homeScore": 2,
+      "awayScore": 1,
       "venue": "New York/New Jersey Stadium",
       "label": "Ecuador vs Germany",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-57",
       "match": 57,
-      "date": "2026-06-25T23:00:00.000Z",
+      "date": "2026-06-25T18:00:00.000Z",
       "round": "Group F",
       "home": {
         "name": "Japan",
@@ -1861,14 +1865,16 @@
         "name": "Sweden",
         "slug": "sweden"
       },
+      "homeScore": 1,
+      "awayScore": 1,
       "venue": "Dallas Stadium",
       "label": "Japan vs Sweden",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-58",
       "match": 58,
-      "date": "2026-06-25T23:00:00.000Z",
+      "date": "2026-06-25T18:00:00.000Z",
       "round": "Group F",
       "home": {
         "name": "Tunisia",
@@ -1878,14 +1884,16 @@
         "name": "Netherlands",
         "slug": "netherlands"
       },
+      "homeScore": 1,
+      "awayScore": 3,
       "venue": "Kansas City Stadium",
       "label": "Tunisia vs Netherlands",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-59",
       "match": 59,
-      "date": "2026-06-26T02:00:00.000Z",
+      "date": "2026-06-25T18:00:00.000Z",
       "round": "Group D",
       "home": {
         "name": "Türkiye",
@@ -1895,14 +1903,16 @@
         "name": "USA",
         "slug": "usa"
       },
+      "homeScore": 3,
+      "awayScore": 2,
       "venue": "Los Angeles Stadium",
       "label": "Türkiye vs USA",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-60",
       "match": 60,
-      "date": "2026-06-26T02:00:00.000Z",
+      "date": "2026-06-25T18:00:00.000Z",
       "round": "Group D",
       "home": {
         "name": "Paraguay",
@@ -1912,14 +1922,16 @@
         "name": "Australia",
         "slug": "australia"
       },
+      "homeScore": 0,
+      "awayScore": 0,
       "venue": "San Francisco Bay Area Stadium",
       "label": "Paraguay vs Australia",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-61",
       "match": 61,
-      "date": "2026-06-26T19:00:00.000Z",
+      "date": "2026-06-26T18:00:00.000Z",
       "round": "Group I",
       "home": {
         "name": "Norway",
@@ -1929,14 +1941,16 @@
         "name": "France",
         "slug": "france"
       },
+      "homeScore": 1,
+      "awayScore": 4,
       "venue": "Boston Stadium",
       "label": "Norway vs France",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-62",
       "match": 62,
-      "date": "2026-06-26T19:00:00.000Z",
+      "date": "2026-06-26T18:00:00.000Z",
       "round": "Group I",
       "home": {
         "name": "Senegal",
@@ -1946,9 +1960,11 @@
         "name": "Iraq",
         "slug": "iraq"
       },
+      "homeScore": 5,
+      "awayScore": 0,
       "venue": "Toronto Stadium",
       "label": "Senegal vs Iraq",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-63",
