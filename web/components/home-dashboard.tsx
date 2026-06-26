@@ -64,11 +64,14 @@ function LinkedMatchTitle({ match }: { match?: FixtureMatch | null }) {
 
 export function DashboardHero({
   generated,
-  nextMatch,
+  nextMatches = [],
 }: {
   generated: string;
-  nextMatch?: FixtureMatch | null;
+  nextMatches?: FixtureMatch[];
 }) {
+  const primaryMatch = nextMatches[0] ?? null;
+  const hasMultipleMatches = nextMatches.length > 1;
+
   return (
     <section className="dashboard-hero">
       <div className="dashboard-hero__grid" />
@@ -88,20 +91,32 @@ export function DashboardHero({
         </div>
 
         <aside className="next-stage">
-          <span className="next-stage__label">Next match</span>
+          <span className="next-stage__label">
+            {hasMultipleMatches ? "Next matches" : "Next match"}
+          </span>
           <div className="next-stage__round">
-            <LinkedMatchTitle match={nextMatch} />
+            {nextMatches.length > 0 ? (
+              <div className="next-stage__matches">
+                {nextMatches.map((match) => (
+                  <div className="next-stage__match" key={match.id}>
+                    <LinkedMatchTitle match={match} />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <LinkedMatchTitle match={null} />
+            )}
           </div>
           <div className="next-stage__date">
             <strong>
-              {nextMatch ? <LocalMatchDay value={nextMatch.date} /> : "28"}
+              {primaryMatch ? <LocalMatchDay value={primaryMatch.date} /> : "28"}
             </strong>
             <span>
-              {nextMatch ? (
+              {primaryMatch ? (
                 <>
-                  <LocalMatchDate value={nextMatch.date} />
+                  <LocalMatchDate value={primaryMatch.date} />
                   <br />
-                  <LocalMatchTime value={nextMatch.date} />
+                  <LocalMatchTime value={primaryMatch.date} />
                 </>
               ) : (
                 <>
@@ -112,7 +127,11 @@ export function DashboardHero({
               )}
             </span>
           </div>
-          <small>{nextMatch?.venue || "Calendar refresh pending"}</small>
+          <small>
+            {hasMultipleMatches
+              ? `${nextMatches.length} matches at this kickoff`
+              : primaryMatch?.venue || "Calendar refresh pending"}
+          </small>
         </aside>
       </div>
 

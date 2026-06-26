@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { buildBracket } from "./bracket.mjs";
+import { syncMatchesWithBracket } from "./calendar.mjs";
 import { fixturesUrl } from "./fixtures.mjs";
 import { standingsUrl } from "./standings.mjs";
 
@@ -9,6 +10,8 @@ const projectRoot = path.resolve(import.meta.dirname, "..");
 const outputPath = path.join(projectRoot, "data", "latest.json");
 
 export function buildSnapshot({ groups, matches }) {
+  const bracket = buildBracket(groups);
+
   return {
     source: standingsUrl,
     sources: {
@@ -17,8 +20,8 @@ export function buildSnapshot({ groups, matches }) {
     },
     "generated-at": new Date().toISOString(),
     groups,
-    matches,
-    bracket: buildBracket(groups),
+    matches: syncMatchesWithBracket(matches, bracket),
+    bracket,
   };
 }
 

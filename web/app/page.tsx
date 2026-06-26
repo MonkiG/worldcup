@@ -22,11 +22,11 @@ export const metadata: Metadata = {
 export default function Home() {
   const data = getWorldCupData();
   const generated = formatGeneratedAt(data["generated-at"]);
-  const { next } = getCalendarFocus(enrichCalendarMatches(data));
+  const { focusMatches } = getCalendarFocus(enrichCalendarMatches(data));
 
   return (
     <PageShell active="home" data={data} source={data.source}>
-      <DashboardHero generated={generated} nextMatch={next} />
+      <DashboardHero generated={generated} nextMatches={focusMatches} />
 
       <section className="content-section">
         <SectionHeading

@@ -28,8 +28,8 @@ export default async function CalendarPage({ searchParams }: CalendarPageProps) 
   const matches = enrichCalendarMatches(data);
   const params = await searchParams;
   const page = Number.parseInt(params?.page ?? "", 10);
-  const { current, next, sorted } = getCalendarFocus(matches);
-  const focus = current ?? next;
+  const { focusMatches, sorted } = getCalendarFocus(matches);
+  const focus = focusMatches[0] ?? null;
 
   if (!params?.page && focus) {
     const focusIndex = sorted.findIndex((match) => match.id === focus.id);

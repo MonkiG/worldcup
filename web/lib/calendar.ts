@@ -95,20 +95,24 @@ export function sortMatches(matches: FixtureMatch[] = []) {
 
 export function getCalendarFocus(matches: FixtureMatch[] = [], now = new Date()) {
   const sorted = sortMatches(matches);
-  const current =
-    sorted.find((match) => {
-      const start = new Date(match.date).getTime();
-      const end = start + 2 * 60 * 60 * 1000;
-      return now.getTime() >= start && now.getTime() <= end;
-    }) ?? null;
+  const currentMatches = sorted.filter((match) => {
+    const start = new Date(match.date).getTime();
+    const end = start + 2 * 60 * 60 * 1000;
+    return now.getTime() >= start && now.getTime() <= end;
+  });
+  const nextDate =
+    currentMatches[0]?.date ??
+    sorted.find((match) => new Date(match.date).getTime() >= now.getTime())
+      ?.date ??
+    sorted.at(-1)?.date;
+  const nextMatches = nextDate
+    ? sorted.filter((match) => match.date === nextDate)
+    : [];
+  const focusMatches = currentMatches.length > 0 ? currentMatches : nextMatches;
+  const current = currentMatches[0] ?? null;
+  const next = focusMatches[0] ?? null;
 
-  const next =
-    current ??
-    sorted.find((match) => new Date(match.date).getTime() >= now.getTime()) ??
-    sorted.at(-1) ??
-    null;
-
-  return { current, next, sorted };
+  return { current, currentMatches, focusMatches, next, nextMatches, sorted };
 }
 
 export function formatMatchDate(value: string) {

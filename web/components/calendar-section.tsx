@@ -98,8 +98,10 @@ export function CalendarSection({
   matches: FixtureMatch[];
   page?: number;
 }) {
-  const { current, next, sorted } = getCalendarFocus(matches);
-  const focus = current ?? next;
+  const { currentMatches, focusMatches, sorted } = getCalendarFocus(matches);
+  const focus = focusMatches[0] ?? null;
+  const focusedIds = new Set(focusMatches.map((match) => match.id));
+  const hasMultipleFocusMatches = focusMatches.length > 1;
   const pageCount = Math.max(1, Math.ceil(sorted.length / calendarPageSize));
   const focusIndex = focus
     ? sorted.findIndex((match) => match.id === focus.id)
@@ -128,10 +130,20 @@ export function CalendarSection({
       <div className="calendar-layout">
         <aside className="fixture-focus">
           <span className="fixture-focus__label">
-            {current ? "Live window" : "Next match"}
+            {currentMatches.length > 0
+              ? hasMultipleFocusMatches
+                ? "Live windows"
+                : "Live window"
+              : hasMultipleFocusMatches
+                ? "Next matches"
+                : "Next match"}
           </span>
           <h3>
-            <MatchTitleLinks match={focus} />
+            {hasMultipleFocusMatches ? (
+              `${focusMatches.length} matches`
+            ) : (
+              <MatchTitleLinks match={focus} />
+            )}
           </h3>
           {focus ? (
             <>
@@ -143,8 +155,16 @@ export function CalendarSection({
                   <LocalMatchTime value={focus.date} />
                 </span>
               </div>
-              <MatchTeams match={focus} />
-              <small>{focus.venue || focus.round || "Fixture details pending"}</small>
+              <div className="fixture-focus__matches">
+                {focusMatches.map((match) => (
+                  <div className="fixture-focus__match" key={match.id}>
+                    <MatchTeams match={match} />
+                    <small>
+                      {match.venue || match.round || "Fixture details pending"}
+                    </small>
+                  </div>
+                ))}
+              </div>
             </>
           ) : (
             <p>No fixtures found in the latest data yet.</p>
@@ -162,7 +182,7 @@ export function CalendarSection({
             <FixtureRow
               key={match.id}
               match={match}
-              focused={match.id === focus?.id}
+              focused={focusedIds.has(match.id)}
             />
           ))}
           {pageCount > 1 ? (
