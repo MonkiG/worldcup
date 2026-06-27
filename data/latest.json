@@ -4,7 +4,7 @@
     "standings": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
     "fixtures": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=&wtw-filter=ALL"
   },
-  "generated-at": "2026-06-26T23:31:37.562Z",
+  "generated-at": "2026-06-27T14:05:35.008Z",
   "groups": [
     {
       "group": "A",
@@ -400,64 +400,64 @@
       "group": "G",
       "teams": [
         {
+          "slug": "belgium",
+          "group": "G",
+          "won": 1,
+          "team-conduct-score": -7,
+          "lost": 0,
+          "points": 5,
+          "drawn": 2,
+          "team": "Belgium",
+          "goals-against": 2,
+          "position": 1,
+          "played": 3,
+          "goals-for": 6,
+          "goal-difference": 4
+        },
+        {
           "slug": "egypt",
           "group": "G",
           "won": 1,
-          "team-conduct-score": -3,
+          "team-conduct-score": -6,
           "lost": 0,
-          "points": 4,
-          "drawn": 1,
+          "points": 5,
+          "drawn": 2,
           "team": "Egypt",
-          "goals-against": 2,
-          "position": 1,
-          "played": 2,
-          "goals-for": 4,
+          "goals-against": 3,
+          "position": 2,
+          "played": 3,
+          "goals-for": 5,
           "goal-difference": 2
         },
         {
           "slug": "ir-iran",
           "group": "G",
           "won": 0,
-          "team-conduct-score": -2,
+          "team-conduct-score": -6,
           "lost": 0,
-          "points": 2,
-          "drawn": 2,
+          "points": 3,
+          "drawn": 3,
           "team": "IR Iran",
-          "goals-against": 2,
-          "position": 2,
-          "played": 2,
-          "goals-for": 2,
-          "goal-difference": 0
-        },
-        {
-          "slug": "belgium",
-          "group": "G",
-          "won": 0,
-          "team-conduct-score": -7,
-          "lost": 0,
-          "points": 2,
-          "drawn": 2,
-          "team": "Belgium",
-          "goals-against": 1,
+          "goals-against": 3,
           "position": 3,
-          "played": 2,
-          "goals-for": 1,
+          "played": 3,
+          "goals-for": 3,
           "goal-difference": 0
         },
         {
           "slug": "new-zealand",
           "group": "G",
           "won": 0,
-          "team-conduct-score": -2,
-          "lost": 1,
+          "team-conduct-score": -4,
+          "lost": 2,
           "points": 1,
           "drawn": 1,
           "team": "New Zealand",
-          "goals-against": 5,
+          "goals-against": 10,
           "position": 4,
-          "played": 2,
-          "goals-for": 3,
-          "goal-difference": -2
+          "played": 3,
+          "goals-for": 4,
+          "goal-difference": -6
         }
       ]
     },
@@ -467,60 +467,60 @@
         {
           "slug": "spain",
           "group": "H",
-          "won": 1,
-          "team-conduct-score": -1,
+          "won": 2,
+          "team-conduct-score": -2,
           "lost": 0,
-          "points": 4,
+          "points": 7,
           "drawn": 1,
           "team": "Spain",
           "goals-against": 0,
           "position": 1,
-          "played": 2,
-          "goals-for": 4,
-          "goal-difference": 4
-        },
-        {
-          "slug": "uruguay",
-          "group": "H",
-          "won": 0,
-          "team-conduct-score": -2,
-          "lost": 0,
-          "points": 2,
-          "drawn": 2,
-          "team": "Uruguay",
-          "goals-against": 3,
-          "position": 2,
-          "played": 2,
-          "goals-for": 3,
-          "goal-difference": 0
+          "played": 3,
+          "goals-for": 5,
+          "goal-difference": 5
         },
         {
           "slug": "cabo-verde",
           "group": "H",
           "won": 0,
-          "team-conduct-score": -3,
+          "team-conduct-score": -4,
           "lost": 0,
-          "points": 2,
-          "drawn": 2,
+          "points": 3,
+          "drawn": 3,
           "team": "Cabo Verde",
           "goals-against": 2,
-          "position": 3,
-          "played": 2,
+          "position": 2,
+          "played": 3,
           "goals-for": 2,
           "goal-difference": 0
+        },
+        {
+          "slug": "uruguay",
+          "group": "H",
+          "won": 0,
+          "team-conduct-score": -9,
+          "lost": 1,
+          "points": 2,
+          "drawn": 2,
+          "team": "Uruguay",
+          "goals-against": 4,
+          "position": 3,
+          "played": 3,
+          "goals-for": 3,
+          "goal-difference": -1
         },
         {
           "slug": "saudi-arabia",
           "group": "H",
           "won": 0,
-          "team-conduct-score": -3,
+          "team-conduct-score": -6,
           "lost": 1,
-          "points": 1,
-          "drawn": 1,
+          "points": 2,
+          "drawn": 2,
           "team": "Saudi Arabia",
           "goals-against": 5,
           "position": 4,
-          "played": 2,
+          "played": 3,
           "goals-for": 1,
           "goal-difference": -4
         }
@@ -2295,15 +2295,15 @@
       "date": "2026-07-02T00:00:00.000Z",
       "round": "Round of 32",
       "home": {
-        "name": "Egypt",
-        "slug": "egypt"
+        "name": "Belgium",
+        "slug": "belgium"
       },
       "away": {
         "name": "Korea Republic",
         "slug": "korea-republic"
       },
       "venue": "San Francisco Bay Area Stadium",
-      "label": "Egypt vs Korea Republic",
+      "label": "Belgium vs Korea Republic",
       "status": "scheduled"
     },
     {
@@ -2350,11 +2350,11 @@
         "slug": "switzerland"
       },
       "away": {
-        "name": "Algeria",
-        "slug": "algeria"
+        "name": "IR Iran",
+        "slug": "ir-iran"
       },
       "venue": "BC Place Vancouver",
-      "label": "Switzerland vs Algeria",
+      "label": "Switzerland vs IR Iran",
       "status": "scheduled"
     },
     {
@@ -2367,11 +2367,11 @@
         "slug": "argentina"
       },
       "away": {
-        "name": "Uruguay",
-        "slug": "uruguay"
+        "name": "Cabo Verde",
+        "slug": "cabo-verde"
       },
       "venue": "Dallas Stadium",
-      "label": "Argentina vs Uruguay",
+      "label": "Argentina vs Cabo Verde",
       "status": "scheduled"
     },
     {
@@ -2401,11 +2401,11 @@
         "slug": "australia"
       },
       "away": {
-        "name": "IR Iran",
-        "slug": "ir-iran"
+        "name": "Egypt",
+        "slug": "egypt"
       },
       "venue": "Kansas City Stadium",
-      "label": "Australia vs IR Iran",
+      "label": "Australia vs Egypt",
       "status": "scheduled"
     },
     {
@@ -2865,63 +2865,63 @@
           "goal-difference": 4
         },
         {
+          "slug": "belgium",
+          "group": "G",
+          "won": 1,
+          "team-conduct-score": -7,
+          "lost": 0,
+          "points": 5,
+          "drawn": 2,
+          "team": "Belgium",
+          "goals-against": 2,
+          "position": 1,
+          "played": 3,
+          "goals-for": 6,
+          "goal-difference": 4
+        },
+        {
           "slug": "egypt",
           "group": "G",
           "won": 1,
-          "team-conduct-score": -3,
+          "team-conduct-score": -6,
           "lost": 0,
-          "points": 4,
-          "drawn": 1,
-          "team": "Egypt",
-          "goals-against": 2,
-          "position": 1,
-          "played": 2,
-          "goals-for": 4,
-          "goal-difference": 2
-        },
-        {
-          "slug": "ir-iran",
-          "group": "G",
-          "won": 0,
-          "team-conduct-score": -2,
-          "lost": 0,
-          "points": 2,
+          "points": 5,
           "drawn": 2,
-          "team": "IR Iran",
-          "goals-against": 2,
+          "team": "Egypt",
+          "goals-against": 3,
           "position": 2,
-          "played": 2,
-          "goals-for": 2,
-          "goal-difference": 0
+          "played": 3,
+          "goals-for": 5,
+          "goal-difference": 2
         },
         {
           "slug": "spain",
           "group": "H",
-          "won": 1,
-          "team-conduct-score": -1,
+          "won": 2,
+          "team-conduct-score": -2,
           "lost": 0,
-          "points": 4,
+          "points": 7,
           "drawn": 1,
           "team": "Spain",
           "goals-against": 0,
           "position": 1,
-          "played": 2,
-          "goals-for": 4,
-          "goal-difference": 4
+          "played": 3,
+          "goals-for": 5,
+          "goal-difference": 5
         },
         {
-          "slug": "uruguay",
+          "slug": "cabo-verde",
           "group": "H",
           "won": 0,
-          "team-conduct-score": -2,
+          "team-conduct-score": -4,
           "lost": 0,
-          "points": 2,
-          "drawn": 2,
-          "team": "Uruguay",
-          "goals-against": 3,
+          "points": 3,
+          "drawn": 3,
+          "team": "Cabo Verde",
+          "goals-against": 2,
           "position": 2,
-          "played": 2,
-          "goals-for": 3,
+          "played": 3,
+          "goals-for": 2,
           "goal-difference": 0
         },
         {
@@ -3122,6 +3122,21 @@
           "goal-difference": 2
         },
         {
+          "slug": "ir-iran",
+          "group": "G",
+          "won": 0,
+          "team-conduct-score": -6,
+          "lost": 0,
+          "points": 3,
+          "drawn": 3,
+          "team": "IR Iran",
+          "goals-against": 3,
+          "position": 3,
+          "played": 3,
+          "goals-for": 3,
+          "goal-difference": 0
+        },
+        {
           "slug": "croatia",
           "group": "L",
           "won": 1,
@@ -3150,21 +3165,6 @@
           "played": 3,
           "goals-for": 2,
           "goal-difference": -1
-        },
-        {
-          "slug": "algeria",
-          "group": "J",
-          "won": 1,
-          "team-conduct-score": -1,
-          "lost": 1,
-          "points": 3,
-          "drawn": 0,
-          "team": "Algeria",
-          "goals-against": 4,
-          "position": 3,
-          "played": 2,
-          "goals-for": 2,
-          "goal-difference": -2
         }
       ],
       "third-place-table": [
@@ -3244,6 +3244,21 @@
           "goal-difference": 2
         },
         {
+          "slug": "ir-iran",
+          "group": "G",
+          "won": 0,
+          "team-conduct-score": -6,
+          "lost": 0,
+          "points": 3,
+          "drawn": 3,
+          "team": "IR Iran",
+          "goals-against": 3,
+          "position": 3,
+          "played": 3,
+          "goals-for": 3,
+          "goal-difference": 0
+        },
+        {
           "slug": "croatia",
           "group": "L",
           "won": 1,
@@ -3304,34 +3319,19 @@
           "goal-difference": -3
         },
         {
-          "slug": "cabo-verde",
+          "slug": "uruguay",
           "group": "H",
           "won": 0,
-          "team-conduct-score": -3,
-          "lost": 0,
+          "team-conduct-score": -9,
+          "lost": 1,
           "points": 2,
           "drawn": 2,
-          "team": "Cabo Verde",
-          "goals-against": 2,
+          "team": "Uruguay",
+          "goals-against": 4,
           "position": 3,
-          "played": 2,
-          "goals-for": 2,
-          "goal-difference": 0
-        },
-        {
-          "slug": "belgium",
-          "group": "G",
-          "won": 0,
-          "team-conduct-score": -7,
-          "lost": 0,
-          "points": 2,
-          "drawn": 2,
-          "team": "Belgium",
-          "goals-against": 1,
-          "position": 3,
-          "played": 2,
-          "goals-for": 1,
-          "goal-difference": 0
+          "played": 3,
+          "goals-for": 3,
+          "goal-difference": -1
         },
         {
           "slug": "congo-dr",
@@ -3602,7 +3602,8 @@
           "away": {
             "candidate-groups": [
               "D",
-              "F"
+              "F",
+              "G"
             ],
             "candidate-teams": [
               {
@@ -3633,6 +3634,21 @@
                 "position": 3,
                 "played": 3,
                 "goals-for": 7,
+                "goal-difference": 0
+              },
+              {
+                "slug": "ir-iran",
+                "group": "G",
+                "won": 0,
+                "team-conduct-score": -6,
+                "lost": 0,
+                "points": 3,
+                "drawn": 3,
+                "team": "IR Iran",
+                "goals-against": 3,
+                "position": 3,
+                "played": 3,
+                "goals-for": 3,
                 "goal-difference": 0
               }
             ],
@@ -3789,8 +3805,7 @@
           "away": {
             "candidate-groups": [
               "E",
-              "I",
-              "J"
+              "I"
             ],
             "candidate-teams": [
               {
@@ -3822,21 +3837,6 @@
                 "played": 3,
                 "goals-for": 8,
                 "goal-difference": 2
-              },
-              {
-                "slug": "algeria",
-                "group": "J",
-                "won": 1,
-                "team-conduct-score": -1,
-                "lost": 1,
-                "points": 3,
-                "drawn": 0,
-                "team": "Algeria",
-                "goals-against": 4,
-                "position": 3,
-                "played": 2,
-                "goals-for": 2,
-                "goal-difference": -2
               }
             ],
             "resolved?": false,
@@ -3871,8 +3871,7 @@
               "B",
               "E",
               "F",
-              "I",
-              "J"
+              "I"
             ],
             "candidate-teams": [
               {
@@ -3934,21 +3933,6 @@
                 "played": 3,
                 "goals-for": 8,
                 "goal-difference": 2
-              },
-              {
-                "slug": "algeria",
-                "group": "J",
-                "won": 1,
-                "team-conduct-score": -1,
-                "lost": 1,
-                "points": 3,
-                "drawn": 0,
-                "team": "Algeria",
-                "goals-against": 4,
-                "position": 3,
-                "played": 2,
-                "goals-for": 2,
-                "goal-difference": -2
               }
             ],
             "resolved?": false,
@@ -3962,19 +3946,19 @@
           "home": {
             "slot": "1G",
             "team": {
-              "slug": "egypt",
+              "slug": "belgium",
               "group": "G",
               "won": 1,
-              "team-conduct-score": -3,
+              "team-conduct-score": -7,
               "lost": 0,
-              "points": 4,
-              "drawn": 1,
-              "team": "Egypt",
+              "points": 5,
+              "drawn": 2,
+              "team": "Belgium",
               "goals-against": 2,
               "position": 1,
-              "played": 2,
-              "goals-for": 4,
-              "goal-difference": 2
+              "played": 3,
+              "goals-for": 6,
+              "goal-difference": 4
             },
             "resolved?": true
           },
@@ -3982,8 +3966,7 @@
             "candidate-groups": [
               "A",
               "E",
-              "I",
-              "J"
+              "I"
             ],
             "candidate-teams": [
               {
@@ -4030,21 +4013,6 @@
                 "played": 3,
                 "goals-for": 8,
                 "goal-difference": 2
-              },
-              {
-                "slug": "algeria",
-                "group": "J",
-                "won": 1,
-                "team-conduct-score": -1,
-                "lost": 1,
-                "points": 3,
-                "drawn": 0,
-                "team": "Algeria",
-                "goals-against": 4,
-                "position": 3,
-                "played": 2,
-                "goals-for": 2,
-                "goal-difference": -2
               }
             ],
             "resolved?": false,
@@ -4103,17 +4071,17 @@
             "team": {
               "slug": "spain",
               "group": "H",
-              "won": 1,
-              "team-conduct-score": -1,
+              "won": 2,
+              "team-conduct-score": -2,
               "lost": 0,
-              "points": 4,
+              "points": 7,
               "drawn": 1,
               "team": "Spain",
               "goals-against": 0,
               "position": 1,
-              "played": 2,
-              "goals-for": 4,
-              "goal-difference": 4
+              "played": 3,
+              "goals-for": 5,
+              "goal-difference": 5
             },
             "resolved?": true
           },
@@ -4164,8 +4132,8 @@
             "candidate-groups": [
               "E",
               "F",
-              "I",
-              "J"
+              "G",
+              "I"
             ],
             "candidate-teams": [
               {
@@ -4199,6 +4167,21 @@
                 "goal-difference": 0
               },
               {
+                "slug": "ir-iran",
+                "group": "G",
+                "won": 0,
+                "team-conduct-score": -6,
+                "lost": 0,
+                "points": 3,
+                "drawn": 3,
+                "team": "IR Iran",
+                "goals-against": 3,
+                "position": 3,
+                "played": 3,
+                "goals-for": 3,
+                "goal-difference": 0
+              },
+              {
                 "slug": "senegal",
                 "group": "I",
                 "won": 1,
@@ -4212,21 +4195,6 @@
                 "played": 3,
                 "goals-for": 8,
                 "goal-difference": 2
-              },
-              {
-                "slug": "algeria",
-                "group": "J",
-                "won": 1,
-                "team-conduct-score": -1,
-                "lost": 1,
-                "points": 3,
-                "drawn": 0,
-                "team": "Algeria",
-                "goals-against": 4,
-                "position": 3,
-                "played": 2,
-                "goals-for": 2,
-                "goal-difference": -2
               }
             ],
             "resolved?": false,
@@ -4259,18 +4227,18 @@
           "away": {
             "slot": "2H",
             "team": {
-              "slug": "uruguay",
+              "slug": "cabo-verde",
               "group": "H",
               "won": 0,
-              "team-conduct-score": -2,
+              "team-conduct-score": -4,
               "lost": 0,
-              "points": 2,
-              "drawn": 2,
-              "team": "Uruguay",
-              "goals-against": 3,
+              "points": 3,
+              "drawn": 3,
+              "team": "Cabo Verde",
+              "goals-against": 2,
               "position": 2,
-              "played": 2,
-              "goals-for": 3,
+              "played": 3,
+              "goals-for": 2,
               "goal-difference": 0
             },
             "resolved?": true
@@ -4345,19 +4313,19 @@
           "away": {
             "slot": "2G",
             "team": {
-              "slug": "ir-iran",
+              "slug": "egypt",
               "group": "G",
-              "won": 0,
-              "team-conduct-score": -2,
+              "won": 1,
+              "team-conduct-score": -6,
               "lost": 0,
-              "points": 2,
+              "points": 5,
               "drawn": 2,
-              "team": "IR Iran",
-              "goals-against": 2,
+              "team": "Egypt",
+              "goals-against": 3,
               "position": 2,
-              "played": 2,
-              "goals-for": 2,
-              "goal-difference": 0
+              "played": 3,
+              "goals-for": 5,
+              "goal-difference": 2
             },
             "resolved?": true
           },
