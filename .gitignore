@@ -2,5 +2,7 @@
 .m2/
 web/.next/
 web/node_modules/
-scraper/node_modules/
+web/.env*.local
+/api/
 web/*.tsbuildinfo
+web/tsconfig.tsbuildinfo

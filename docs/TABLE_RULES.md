@@ -153,7 +153,7 @@ This is intentional because FIFA's table already applies:
 - disciplinary deductions;
 - any official corrections or decisions.
 
-The `position` field in `data/latest.json` is therefore FIFA's current
+The `position` field in `web/data/latest.json` is therefore FIFA's current
 position.
 
 ### Best-third-place table
