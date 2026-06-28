@@ -4,9 +4,9 @@
     "standings": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
     "fixtures": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=&wtw-filter=ALL"
   },
-  "generated-at": "2026-06-27T02:30:18.715Z",
+  "generated-at": "2026-06-28T16:47:21.459Z",
   "fixtures": {
-    "generated-at": "2026-06-27T02:30:18.715Z",
+    "generated-at": "2026-06-28T16:47:21.459Z",
     "matches": [
       {
         "id": "fixture-1",
@@ -21,7 +21,7 @@
           "name": "South Africa",
           "slug": "south-africa"
         },
-        "venue": "·",
+        "venue": "Mexico City Stadium",
         "label": "Mexico vs South Africa"
       },
       {
@@ -37,7 +37,7 @@
           "name": "Czechia",
           "slug": "czechia"
         },
-        "venue": "·",
+        "venue": "Guadalajara Stadium",
         "label": "Korea Republic vs Czechia"
       },
       {
@@ -53,7 +53,7 @@
           "name": "Bosnia and Herzegovina",
           "slug": "bosnia-and-herzegovina"
         },
-        "venue": "·",
+        "venue": "Toronto Stadium",
         "label": "Canada vs Bosnia and Herzegovina"
       },
       {
@@ -69,7 +69,7 @@
           "name": "Paraguay",
           "slug": "paraguay"
         },
-        "venue": "·",
+        "venue": "Los Angeles Stadium",
         "label": "USA vs Paraguay"
       },
       {
@@ -85,7 +85,7 @@
           "name": "Switzerland",
           "slug": "switzerland"
         },
-        "venue": "·",
+        "venue": "San Francisco Bay Area Stadium",
         "label": "Qatar vs Switzerland"
       },
       {
@@ -101,7 +101,7 @@
           "name": "Morocco",
           "slug": "morocco"
         },
-        "venue": "·",
+        "venue": "New York/New Jersey Stadium",
         "label": "Brazil vs Morocco"
       },
       {
@@ -117,7 +117,7 @@
           "name": "Scotland",
           "slug": "scotland"
         },
-        "venue": "·",
+        "venue": "Boston Stadium",
         "label": "Haiti vs Scotland"
       },
       {
@@ -133,7 +133,7 @@
           "name": "Türkiye",
           "slug": "turkiye"
         },
-        "venue": "·",
+        "venue": "BC Place Vancouver",
         "label": "Australia vs Türkiye"
       },
       {
@@ -149,7 +149,7 @@
           "name": "Curaçao",
           "slug": "curacao"
         },
-        "venue": "·",
+        "venue": "Houston Stadium",
         "label": "Germany vs Curaçao"
       },
       {
@@ -165,7 +165,7 @@
           "name": "Japan",
           "slug": "japan"
         },
-        "venue": "·",
+        "venue": "Dallas Stadium",
         "label": "Netherlands vs Japan"
       },
       {
@@ -181,7 +181,7 @@
           "name": "Ecuador",
           "slug": "ecuador"
         },
-        "venue": "·",
+        "venue": "Philadelphia Stadium",
         "label": "Côte d'Ivoire vs Ecuador"
       },
       {
@@ -197,7 +197,7 @@
           "name": "Tunisia",
           "slug": "tunisia"
         },
-        "venue": "·",
+        "venue": "Monterrey Stadium",
         "label": "Sweden vs Tunisia"
       },
       {
@@ -213,7 +213,7 @@
           "name": "Cabo Verde",
           "slug": "cabo-verde"
         },
-        "venue": "·",
+        "venue": "Atlanta Stadium",
         "label": "Spain vs Cabo Verde"
       },
       {
@@ -229,7 +229,7 @@
           "name": "Egypt",
           "slug": "egypt"
         },
-        "venue": "·",
+        "venue": "Seattle Stadium",
         "label": "Belgium vs Egypt"
       },
       {
@@ -245,7 +245,7 @@
           "name": "Uruguay",
           "slug": "uruguay"
         },
-        "venue": "·",
+        "venue": "Miami Stadium",
         "label": "Saudi Arabia vs Uruguay"
       },
       {
@@ -261,7 +261,7 @@
           "name": "New Zealand",
           "slug": "new-zealand"
         },
-        "venue": "·",
+        "venue": "Los Angeles Stadium",
         "label": "IR Iran vs New Zealand"
       },
       {
@@ -277,7 +277,7 @@
           "name": "Senegal",
           "slug": "senegal"
         },
-        "venue": "·",
+        "venue": "New York/New Jersey Stadium",
         "label": "France vs Senegal"
       },
       {
@@ -293,7 +293,7 @@
           "name": "Norway",
           "slug": "norway"
         },
-        "venue": "·",
+        "venue": "Boston Stadium",
         "label": "Iraq vs Norway"
       },
       {
@@ -309,7 +309,7 @@
           "name": "Algeria",
           "slug": "algeria"
         },
-        "venue": "·",
+        "venue": "Kansas City Stadium",
         "label": "Argentina vs Algeria"
       },
       {
@@ -325,7 +325,7 @@
           "name": "Jordan",
           "slug": "jordan"
         },
-        "venue": "·",
+        "venue": "San Francisco Bay Area Stadium",
         "label": "Austria vs Jordan"
       },
       {
@@ -341,7 +341,7 @@
           "name": "Congo DR",
           "slug": "congo-dr"
         },
-        "venue": "·",
+        "venue": "Houston Stadium",
         "label": "Portugal vs Congo DR"
       },
       {
@@ -357,7 +357,7 @@
           "name": "Croatia",
           "slug": "croatia"
         },
-        "venue": "·",
+        "venue": "Dallas Stadium",
         "label": "England vs Croatia"
       },
       {
@@ -373,7 +373,7 @@
           "name": "Panama",
           "slug": "panama"
         },
-        "venue": "·",
+        "venue": "Toronto Stadium",
         "label": "Ghana vs Panama"
       },
       {
@@ -389,7 +389,7 @@
           "name": "Colombia",
           "slug": "colombia"
         },
-        "venue": "·",
+        "venue": "Mexico City Stadium",
         "label": "Uzbekistan vs Colombia"
       },
       {
@@ -405,7 +405,7 @@
           "name": "South Africa",
           "slug": "south-africa"
         },
-        "venue": "·",
+        "venue": "Atlanta Stadium",
         "label": "Czechia vs South Africa"
       },
       {
@@ -421,7 +421,7 @@
           "name": "Bosnia and Herzegovina",
           "slug": "bosnia-and-herzegovina"
         },
-        "venue": "·",
+        "venue": "Los Angeles Stadium",
         "label": "Switzerland vs Bosnia and Herzegovina"
       },
       {
@@ -437,7 +437,7 @@
           "name": "Qatar",
           "slug": "qatar"
         },
-        "venue": "·",
+        "venue": "BC Place Vancouver",
         "label": "Canada vs Qatar"
       },
       {
@@ -453,7 +453,7 @@
           "name": "Korea Republic",
           "slug": "korea-republic"
         },
-        "venue": "·",
+        "venue": "Guadalajara Stadium",
         "label": "Mexico vs Korea Republic"
       },
       {
@@ -469,7 +469,7 @@
           "name": "Australia",
           "slug": "australia"
         },
-        "venue": "·",
+        "venue": "Seattle Stadium",
         "label": "USA vs Australia"
       },
       {
@@ -485,7 +485,7 @@
           "name": "Morocco",
           "slug": "morocco"
         },
-        "venue": "·",
+        "venue": "Boston Stadium",
         "label": "Scotland vs Morocco"
       },
       {
@@ -501,7 +501,7 @@
           "name": "Haiti",
           "slug": "haiti"
         },
-        "venue": "·",
+        "venue": "Philadelphia Stadium",
         "label": "Brazil vs Haiti"
       },
       {
@@ -517,7 +517,7 @@
           "name": "Paraguay",
           "slug": "paraguay"
         },
-        "venue": "·",
+        "venue": "San Francisco Bay Area Stadium",
         "label": "Türkiye vs Paraguay"
       },
       {
@@ -533,7 +533,7 @@
           "name": "Sweden",
           "slug": "sweden"
         },
-        "venue": "·",
+        "venue": "Houston Stadium",
         "label": "Netherlands vs Sweden"
       },
       {
@@ -549,7 +549,7 @@
           "name": "Côte d'Ivoire",
           "slug": "cote-d-ivoire"
         },
-        "venue": "·",
+        "venue": "Toronto Stadium",
         "label": "Germany vs Côte d'Ivoire"
       },
       {
@@ -565,7 +565,7 @@
           "name": "Curaçao",
           "slug": "curacao"
         },
-        "venue": "·",
+        "venue": "Kansas City Stadium",
         "label": "Ecuador vs Curaçao"
       },
       {
@@ -581,7 +581,7 @@
           "name": "Japan",
           "slug": "japan"
         },
-        "venue": "·",
+        "venue": "Monterrey Stadium",
         "label": "Tunisia vs Japan"
       },
       {
@@ -597,7 +597,7 @@
           "name": "Saudi Arabia",
           "slug": "saudi-arabia"
         },
-        "venue": "·",
+        "venue": "Atlanta Stadium",
         "label": "Spain vs Saudi Arabia"
       },
       {
@@ -613,7 +613,7 @@
           "name": "IR Iran",
           "slug": "ir-iran"
         },
-        "venue": "·",
+        "venue": "Los Angeles Stadium",
         "label": "Belgium vs IR Iran"
       },
       {
@@ -629,7 +629,7 @@
           "name": "Cabo Verde",
           "slug": "cabo-verde"
         },
-        "venue": "·",
+        "venue": "Miami Stadium",
         "label": "Uruguay vs Cabo Verde"
       },
       {
@@ -645,7 +645,7 @@
           "name": "Egypt",
           "slug": "egypt"
         },
-        "venue": "·",
+        "venue": "BC Place Vancouver",
         "label": "New Zealand vs Egypt"
       },
       {
@@ -661,7 +661,7 @@
           "name": "Austria",
           "slug": "austria"
         },
-        "venue": "·",
+        "venue": "Dallas Stadium",
         "label": "Argentina vs Austria"
       },
       {
@@ -677,7 +677,7 @@
           "name": "Iraq",
           "slug": "iraq"
         },
-        "venue": "·",
+        "venue": "Philadelphia Stadium",
         "label": "France vs Iraq"
       },
       {
@@ -693,7 +693,7 @@
           "name": "Senegal",
           "slug": "senegal"
         },
-        "venue": "·",
+        "venue": "New York/New Jersey Stadium",
         "label": "Norway vs Senegal"
       },
       {
@@ -709,7 +709,7 @@
           "name": "Algeria",
           "slug": "algeria"
         },
-        "venue": "·",
+        "venue": "San Francisco Bay Area Stadium",
         "label": "Jordan vs Algeria"
       },
       {
@@ -725,7 +725,7 @@
           "name": "Uzbekistan",
           "slug": "uzbekistan"
         },
-        "venue": "·",
+        "venue": "Houston Stadium",
         "label": "Portugal vs Uzbekistan"
       },
       {
@@ -741,7 +741,7 @@
           "name": "Ghana",
           "slug": "ghana"
         },
-        "venue": "·",
+        "venue": "Boston Stadium",
         "label": "England vs Ghana"
       },
       {
@@ -757,7 +757,7 @@
           "name": "Croatia",
           "slug": "croatia"
         },
-        "venue": "·",
+        "venue": "Toronto Stadium",
         "label": "Panama vs Croatia"
       },
       {
@@ -773,7 +773,7 @@
           "name": "Congo DR",
           "slug": "congo-dr"
         },
-        "venue": "·",
+        "venue": "Guadalajara Stadium",
         "label": "Colombia vs Congo DR"
       },
       {
@@ -789,7 +789,7 @@
           "name": "Canada",
           "slug": "canada"
         },
-        "venue": "·",
+        "venue": "BC Place Vancouver",
         "label": "Switzerland vs Canada"
       },
       {
@@ -805,7 +805,7 @@
           "name": "Qatar",
           "slug": "qatar"
         },
-        "venue": "·",
+        "venue": "Seattle Stadium",
         "label": "Bosnia and Herzegovina vs Qatar"
       },
       {
@@ -821,7 +821,7 @@
           "name": "Brazil",
           "slug": "brazil"
         },
-        "venue": "·",
+        "venue": "Miami Stadium",
         "label": "Scotland vs Brazil"
       },
       {
@@ -837,7 +837,7 @@
           "name": "Haiti",
           "slug": "haiti"
         },
-        "venue": "·",
+        "venue": "Atlanta Stadium",
         "label": "Morocco vs Haiti"
       },
       {
@@ -853,7 +853,7 @@
           "name": "Mexico",
           "slug": "mexico"
         },
-        "venue": "·",
+        "venue": "Mexico City Stadium",
         "label": "Czechia vs Mexico"
       },
       {
@@ -869,7 +869,7 @@
           "name": "Korea Republic",
           "slug": "korea-republic"
         },
-        "venue": "·",
+        "venue": "Monterrey Stadium",
         "label": "South Africa vs Korea Republic"
       },
       {
@@ -885,7 +885,7 @@
           "name": "Côte d'Ivoire",
           "slug": "cote-d-ivoire"
         },
-        "venue": "·",
+        "venue": "Philadelphia Stadium",
         "label": "Curaçao vs Côte d'Ivoire"
       },
       {
@@ -901,7 +901,7 @@
           "name": "Germany",
           "slug": "germany"
         },
-        "venue": "·",
+        "venue": "New York/New Jersey Stadium",
         "label": "Ecuador vs Germany"
       },
       {
@@ -917,7 +917,7 @@
           "name": "Sweden",
           "slug": "sweden"
         },
-        "venue": "·",
+        "venue": "Dallas Stadium",
         "label": "Japan vs Sweden"
       },
       {
@@ -933,7 +933,7 @@
           "name": "Netherlands",
           "slug": "netherlands"
         },
-        "venue": "·",
+        "venue": "Kansas City Stadium",
         "label": "Tunisia vs Netherlands"
       },
       {
@@ -949,7 +949,7 @@
           "name": "USA",
           "slug": "usa"
         },
-        "venue": "·",
+        "venue": "Los Angeles Stadium",
         "label": "Türkiye vs USA"
       },
       {
@@ -965,7 +965,7 @@
           "name": "Australia",
           "slug": "australia"
         },
-        "venue": "·",
+        "venue": "San Francisco Bay Area Stadium",
         "label": "Paraguay vs Australia"
       },
       {
@@ -981,7 +981,7 @@
           "name": "France",
           "slug": "france"
         },
-        "venue": "·",
+        "venue": "Boston Stadium",
         "label": "Norway vs France"
       },
       {
@@ -997,7 +997,7 @@
           "name": "Iraq",
           "slug": "iraq"
         },
-        "venue": "·",
+        "venue": "Toronto Stadium",
         "label": "Senegal vs Iraq"
       },
       {
@@ -1013,7 +1013,7 @@
           "name": "Saudi Arabia",
           "slug": "saudi-arabia"
         },
-        "venue": "·",
+        "venue": "Houston Stadium",
         "label": "Cabo Verde vs Saudi Arabia"
       },
       {
@@ -1029,13 +1029,13 @@
           "name": "Spain",
           "slug": "spain"
         },
-        "venue": "·",
+        "venue": "Guadalajara Stadium",
         "label": "Uruguay vs Spain"
       },
       {
         "id": "fixture-65",
         "match": 65,
-        "date": "2026-06-27T03:00:00.000Z",
+        "date": "2026-06-26T18:00:00.000Z",
         "round": "Group G",
         "home": {
           "name": "Egypt",
@@ -1045,14 +1045,13 @@
           "name": "IR Iran",
           "slug": "ir-iran"
         },
-        "venue": "·",
-        "label": "Egypt vs IR Iran",
-        "status": "scheduled"
+        "venue": "Seattle Stadium",
+        "label": "Egypt vs IR Iran"
       },
       {
         "id": "fixture-66",
         "match": 66,
-        "date": "2026-06-27T03:00:00.000Z",
+        "date": "2026-06-26T18:00:00.000Z",
         "round": "Group G",
         "home": {
           "name": "New Zealand",
@@ -1062,14 +1061,13 @@
           "name": "Belgium",
           "slug": "belgium"
         },
-        "venue": "·",
-        "label": "New Zealand vs Belgium",
-        "status": "scheduled"
+        "venue": "BC Place Vancouver",
+        "label": "New Zealand vs Belgium"
       },
       {
         "id": "fixture-67",
         "match": 67,
-        "date": "2026-06-27T21:00:00.000Z",
+        "date": "2026-06-27T18:00:00.000Z",
         "round": "Group L",
         "home": {
           "name": "Panama",
@@ -1079,14 +1077,13 @@
           "name": "England",
           "slug": "england"
         },
-        "venue": "·",
-        "label": "Panama vs England",
-        "status": "scheduled"
+        "venue": "New York/New Jersey Stadium",
+        "label": "Panama vs England"
       },
       {
         "id": "fixture-68",
         "match": 68,
-        "date": "2026-06-27T21:00:00.000Z",
+        "date": "2026-06-27T18:00:00.000Z",
         "round": "Group L",
         "home": {
           "name": "Croatia",
@@ -1096,14 +1093,13 @@
           "name": "Ghana",
           "slug": "ghana"
         },
-        "venue": "·",
-        "label": "Croatia vs Ghana",
-        "status": "scheduled"
+        "venue": "Philadelphia Stadium",
+        "label": "Croatia vs Ghana"
       },
       {
         "id": "fixture-69",
         "match": 69,
-        "date": "2026-06-27T23:30:00.000Z",
+        "date": "2026-06-27T18:00:00.000Z",
         "round": "Group K",
         "home": {
           "name": "Colombia",
@@ -1113,14 +1109,13 @@
           "name": "Portugal",
           "slug": "portugal"
         },
-        "venue": "·",
-        "label": "Colombia vs Portugal",
-        "status": "scheduled"
+        "venue": "Miami Stadium",
+        "label": "Colombia vs Portugal"
       },
       {
         "id": "fixture-70",
         "match": 70,
-        "date": "2026-06-27T23:30:00.000Z",
+        "date": "2026-06-27T18:00:00.000Z",
         "round": "Group K",
         "home": {
           "name": "Congo DR",
@@ -1130,14 +1125,13 @@
           "name": "Uzbekistan",
           "slug": "uzbekistan"
         },
-        "venue": "·",
-        "label": "Congo DR vs Uzbekistan",
-        "status": "scheduled"
+        "venue": "Atlanta Stadium",
+        "label": "Congo DR vs Uzbekistan"
       },
       {
         "id": "fixture-71",
         "match": 71,
-        "date": "2026-06-28T02:00:00.000Z",
+        "date": "2026-06-27T18:00:00.000Z",
         "round": "Group J",
         "home": {
           "name": "Algeria",
@@ -1147,14 +1141,13 @@
           "name": "Austria",
           "slug": "austria"
         },
-        "venue": "·",
-        "label": "Algeria vs Austria",
-        "status": "scheduled"
+        "venue": "Kansas City Stadium",
+        "label": "Algeria vs Austria"
       },
       {
         "id": "fixture-72",
         "match": 72,
-        "date": "2026-06-28T02:00:00.000Z",
+        "date": "2026-06-27T18:00:00.000Z",
         "round": "Group J",
         "home": {
           "name": "Jordan",
@@ -1164,9 +1157,8 @@
           "name": "Argentina",
           "slug": "argentina"
         },
-        "venue": "·",
-        "label": "Jordan vs Argentina",
-        "status": "scheduled"
+        "venue": "Dallas Stadium",
+        "label": "Jordan vs Argentina"
       },
       {
         "id": "fixture-73",
@@ -1181,7 +1173,7 @@
           "name": "Canada",
           "slug": "canada"
         },
-        "venue": "·",
+        "venue": "Los Angeles Stadium",
         "label": "South Africa vs Canada",
         "status": "scheduled"
       },
@@ -1198,7 +1190,7 @@
           "name": "Japan",
           "slug": "japan"
         },
-        "venue": "·",
+        "venue": "Houston Stadium",
         "label": "Brazil vs Japan",
         "status": "scheduled"
       },
@@ -1215,7 +1207,7 @@
           "name": "Paraguay",
           "slug": "paraguay"
         },
-        "venue": "·",
+        "venue": "Boston Stadium",
         "label": "Germany vs Paraguay",
         "status": "scheduled"
       },
@@ -1232,7 +1224,7 @@
           "name": "Morocco",
           "slug": "morocco"
         },
-        "venue": "·",
+        "venue": "Monterrey Stadium",
         "label": "Netherlands vs Morocco",
         "status": "scheduled"
       },
@@ -1249,7 +1241,7 @@
           "name": "Norway",
           "slug": "norway"
         },
-        "venue": "·",
+        "venue": "Dallas Stadium",
         "label": "Côte d'Ivoire vs Norway",
         "status": "scheduled"
       },
@@ -1266,7 +1258,7 @@
           "name": "Sweden",
           "slug": "sweden"
         },
-        "venue": "·",
+        "venue": "New York/New Jersey Stadium",
         "label": "France vs Sweden",
         "status": "scheduled"
       },
@@ -1280,11 +1272,11 @@
           "slug": "mexico"
         },
         "away": {
-          "name": "3CEFHI",
-          "slug": "3cefhi"
+          "name": "Ecuador",
+          "slug": "ecuador"
         },
-        "venue": "·",
-        "label": "Mexico vs 3CEFHI",
+        "venue": "Mexico City Stadium",
+        "label": "Mexico vs Ecuador",
         "status": "scheduled"
       },
       {
@@ -1293,15 +1285,15 @@
         "date": "2026-07-01T16:00:00.000Z",
         "round": "Round of 32",
         "home": {
-          "name": "1L",
-          "slug": "1l"
+          "name": "England",
+          "slug": "england"
         },
         "away": {
-          "name": "3EHIJK",
-          "slug": "3ehijk"
+          "name": "Congo DR",
+          "slug": "congo-dr"
         },
-        "venue": "·",
-        "label": "1L vs 3EHIJK",
+        "venue": "Atlanta Stadium",
+        "label": "England vs Congo DR",
         "status": "scheduled"
       },
       {
@@ -1310,15 +1302,15 @@
         "date": "2026-07-01T20:00:00.000Z",
         "round": "Round of 32",
         "home": {
-          "name": "1G",
-          "slug": "1g"
+          "name": "Belgium",
+          "slug": "belgium"
         },
         "away": {
-          "name": "3AEHIJ",
-          "slug": "3aehij"
+          "name": "Senegal",
+          "slug": "senegal"
         },
-        "venue": "·",
-        "label": "1G vs 3AEHIJ",
+        "venue": "Seattle Stadium",
+        "label": "Belgium vs Senegal",
         "status": "scheduled"
       },
       {
@@ -1334,7 +1326,7 @@
           "name": "Bosnia and Herzegovina",
           "slug": "bosnia-and-herzegovina"
         },
-        "venue": "·",
+        "venue": "San Francisco Bay Area Stadium",
         "label": "USA vs Bosnia and Herzegovina",
         "status": "scheduled"
       },
@@ -1348,11 +1340,11 @@
           "slug": "spain"
         },
         "away": {
-          "name": "2J",
-          "slug": "2j"
+          "name": "Austria",
+          "slug": "austria"
         },
-        "venue": "·",
-        "label": "Spain vs 2J",
+        "venue": "Los Angeles Stadium",
+        "label": "Spain vs Austria",
         "status": "scheduled"
       },
       {
@@ -1361,15 +1353,15 @@
         "date": "2026-07-02T23:00:00.000Z",
         "round": "Round of 32",
         "home": {
-          "name": "2K",
-          "slug": "2k"
+          "name": "Portugal",
+          "slug": "portugal"
         },
         "away": {
-          "name": "2L",
-          "slug": "2l"
+          "name": "Croatia",
+          "slug": "croatia"
         },
-        "venue": "·",
-        "label": "2K vs 2L",
+        "venue": "Toronto Stadium",
+        "label": "Portugal vs Croatia",
         "status": "scheduled"
       },
       {
@@ -1382,11 +1374,11 @@
           "slug": "switzerland"
         },
         "away": {
-          "name": "3EFGIJ",
-          "slug": "3efgij"
+          "name": "Algeria",
+          "slug": "algeria"
         },
-        "venue": "·",
-        "label": "Switzerland vs 3EFGIJ",
+        "venue": "BC Place Vancouver",
+        "label": "Switzerland vs Algeria",
         "status": "scheduled"
       },
       {
@@ -1399,11 +1391,11 @@
           "slug": "australia"
         },
         "away": {
-          "name": "2G",
-          "slug": "2g"
+          "name": "Egypt",
+          "slug": "egypt"
         },
-        "venue": "·",
-        "label": "Australia vs 2G",
+        "venue": "Dallas Stadium",
+        "label": "Australia vs Egypt",
         "status": "scheduled"
       },
       {
@@ -1419,7 +1411,7 @@
           "name": "Cabo Verde",
           "slug": "cabo-verde"
         },
-        "venue": "·",
+        "venue": "Miami Stadium",
         "label": "Argentina vs Cabo Verde",
         "status": "scheduled"
       },
@@ -1429,15 +1421,15 @@
         "date": "2026-07-04T01:30:00.000Z",
         "round": "Round of 32",
         "home": {
-          "name": "1K",
-          "slug": "1k"
+          "name": "Colombia",
+          "slug": "colombia"
         },
         "away": {
-          "name": "3DEIJL",
-          "slug": "3deijl"
+          "name": "Ghana",
+          "slug": "ghana"
         },
-        "venue": "·",
-        "label": "1K vs 3DEIJL",
+        "venue": "Kansas City Stadium",
+        "label": "Colombia vs Ghana",
         "status": "scheduled"
       },
       {
@@ -1453,7 +1445,7 @@
           "name": "W75",
           "slug": "w75"
         },
-        "venue": "·",
+        "venue": "Houston Stadium",
         "label": "W73 vs W75",
         "status": "scheduled"
       },
@@ -1470,7 +1462,7 @@
           "name": "W77",
           "slug": "w77"
         },
-        "venue": "·",
+        "venue": "Philadelphia Stadium",
         "label": "W74 vs W77",
         "status": "scheduled"
       },
@@ -1487,7 +1479,7 @@
           "name": "W78",
           "slug": "w78"
         },
-        "venue": "·",
+        "venue": "New York/New Jersey Stadium",
         "label": "W76 vs W78",
         "status": "scheduled"
       },
@@ -1504,7 +1496,7 @@
           "name": "W80",
           "slug": "w80"
         },
-        "venue": "·",
+        "venue": "Mexico City Stadium",
         "label": "W79 vs W80",
         "status": "scheduled"
       },
@@ -1521,7 +1513,7 @@
           "name": "W84",
           "slug": "w84"
         },
-        "venue": "·",
+        "venue": "Dallas Stadium",
         "label": "W83 vs W84",
         "status": "scheduled"
       },
@@ -1538,7 +1530,7 @@
           "name": "W82",
           "slug": "w82"
         },
-        "venue": "·",
+        "venue": "Seattle Stadium",
         "label": "W81 vs W82",
         "status": "scheduled"
       },
@@ -1555,7 +1547,7 @@
           "name": "W88",
           "slug": "w88"
         },
-        "venue": "·",
+        "venue": "Atlanta Stadium",
         "label": "W86 vs W88",
         "status": "scheduled"
       },
@@ -1572,7 +1564,7 @@
           "name": "W87",
           "slug": "w87"
         },
-        "venue": "·",
+        "venue": "BC Place Vancouver",
         "label": "W85 vs W87",
         "status": "scheduled"
       },
@@ -1589,7 +1581,7 @@
           "name": "W90",
           "slug": "w90"
         },
-        "venue": "·",
+        "venue": "Boston Stadium",
         "label": "W89 vs W90",
         "status": "scheduled"
       },
@@ -1606,7 +1598,7 @@
           "name": "W94",
           "slug": "w94"
         },
-        "venue": "·",
+        "venue": "Los Angeles Stadium",
         "label": "W93 vs W94",
         "status": "scheduled"
       },
@@ -1623,7 +1615,7 @@
           "name": "W92",
           "slug": "w92"
         },
-        "venue": "·",
+        "venue": "Miami Stadium",
         "label": "W91 vs W92",
         "status": "scheduled"
       },
@@ -1640,7 +1632,7 @@
           "name": "W96",
           "slug": "w96"
         },
-        "venue": "·",
+        "venue": "Kansas City Stadium",
         "label": "W95 vs W96",
         "status": "scheduled"
       },
@@ -1657,7 +1649,7 @@
           "name": "W98",
           "slug": "w98"
         },
-        "venue": "·",
+        "venue": "Dallas Stadium",
         "label": "W97 vs W98",
         "status": "scheduled"
       },
@@ -1674,7 +1666,7 @@
           "name": "W100",
           "slug": "w100"
         },
-        "venue": "·",
+        "venue": "Atlanta Stadium",
         "label": "W99 vs W100",
         "status": "scheduled"
       },
@@ -1691,7 +1683,7 @@
           "name": "RU102",
           "slug": "ru102"
         },
-        "venue": "·",
+        "venue": "Miami Stadium",
         "label": "RU101 vs RU102",
         "status": "scheduled"
       },
@@ -1708,14 +1700,14 @@
           "name": "W102",
           "slug": "w102"
         },
-        "venue": "·",
+        "venue": "New York/New Jersey Stadium",
         "label": "W101 vs W102",
         "status": "scheduled"
       }
     ]
   },
   "live": {
-    "generated-at": "2026-06-27T02:30:18.715Z",
+    "generated-at": "2026-06-28T16:47:21.459Z",
     "groups": [
       {
         "group": "A",
@@ -1816,7 +1808,7 @@
             "goal-difference": 5
           },
           {
-            "slug": "bosnia-herzegovina",
+            "slug": "bosnia-and-herzegovina",
             "group": "B",
             "won": 1,
             "team-conduct-score": -10,
@@ -2111,64 +2103,64 @@
         "group": "G",
         "teams": [
           {
+            "slug": "belgium",
+            "group": "G",
+            "won": 1,
+            "team-conduct-score": -7,
+            "lost": 0,
+            "points": 5,
+            "drawn": 2,
+            "team": "Belgium",
+            "goals-against": 2,
+            "position": 1,
+            "played": 3,
+            "goals-for": 6,
+            "goal-difference": 4
+          },
+          {
             "slug": "egypt",
             "group": "G",
             "won": 1,
-            "team-conduct-score": -3,
+            "team-conduct-score": -6,
             "lost": 0,
-            "points": 4,
-            "drawn": 1,
+            "points": 5,
+            "drawn": 2,
             "team": "Egypt",
-            "goals-against": 2,
-            "position": 1,
-            "played": 2,
-            "goals-for": 4,
+            "goals-against": 3,
+            "position": 2,
+            "played": 3,
+            "goals-for": 5,
             "goal-difference": 2
           },
           {
             "slug": "ir-iran",
             "group": "G",
             "won": 0,
-            "team-conduct-score": -2,
+            "team-conduct-score": -6,
             "lost": 0,
-            "points": 2,
-            "drawn": 2,
+            "points": 3,
+            "drawn": 3,
             "team": "IR Iran",
-            "goals-against": 2,
-            "position": 2,
-            "played": 2,
-            "goals-for": 2,
-            "goal-difference": 0
-          },
-          {
-            "slug": "belgium",
-            "group": "G",
-            "won": 0,
-            "team-conduct-score": -7,
-            "lost": 0,
-            "points": 2,
-            "drawn": 2,
-            "team": "Belgium",
-            "goals-against": 1,
+            "goals-against": 3,
             "position": 3,
-            "played": 2,
-            "goals-for": 1,
+            "played": 3,
+            "goals-for": 3,
             "goal-difference": 0
           },
           {
             "slug": "new-zealand",
             "group": "G",
             "won": 0,
-            "team-conduct-score": -2,
-            "lost": 1,
+            "team-conduct-score": -4,
+            "lost": 2,
             "points": 1,
             "drawn": 1,
             "team": "New Zealand",
-            "goals-against": 5,
+            "goals-against": 10,
             "position": 4,
-            "played": 2,
-            "goals-for": 3,
-            "goal-difference": -2
+            "played": 3,
+            "goals-for": 4,
+            "goal-difference": -6
           }
         ]
       },
@@ -2308,31 +2300,31 @@
           {
             "slug": "argentina",
             "group": "J",
-            "won": 2,
+            "won": 3,
             "team-conduct-score": -2,
             "lost": 0,
-            "points": 6,
+            "points": 9,
             "drawn": 0,
             "team": "Argentina",
-            "goals-against": 0,
+            "goals-against": 1,
             "position": 1,
-            "played": 2,
-            "goals-for": 5,
-            "goal-difference": 5
+            "played": 3,
+            "goals-for": 8,
+            "goal-difference": 7
           },
           {
             "slug": "austria",
             "group": "J",
             "won": 1,
-            "team-conduct-score": -3,
+            "team-conduct-score": -4,
             "lost": 1,
-            "points": 3,
-            "drawn": 0,
+            "points": 4,
+            "drawn": 1,
             "team": "Austria",
-            "goals-against": 3,
+            "goals-against": 6,
             "position": 2,
-            "played": 2,
-            "goals-for": 3,
+            "played": 3,
+            "goals-for": 6,
             "goal-difference": 0
           },
           {
@@ -2341,29 +2333,29 @@
             "won": 1,
             "team-conduct-score": -1,
             "lost": 1,
-            "points": 3,
-            "drawn": 0,
+            "points": 4,
+            "drawn": 1,
             "team": "Algeria",
-            "goals-against": 4,
+            "goals-against": 7,
             "position": 3,
-            "played": 2,
-            "goals-for": 2,
+            "played": 3,
+            "goals-for": 5,
             "goal-difference": -2
           },
           {
             "slug": "jordan",
             "group": "J",
             "won": 0,
-            "team-conduct-score": -1,
-            "lost": 2,
+            "team-conduct-score": -4,
+            "lost": 3,
             "points": 0,
             "drawn": 0,
             "team": "Jordan",
-            "goals-against": 5,
+            "goals-against": 8,
             "position": 4,
-            "played": 2,
-            "goals-for": 2,
-            "goal-difference": -3
+            "played": 3,
+            "goals-for": 3,
+            "goal-difference": -5
           }
         ]
       },
@@ -2374,14 +2366,14 @@
             "slug": "colombia",
             "group": "K",
             "won": 2,
-            "team-conduct-score": -3,
+            "team-conduct-score": -4,
             "lost": 0,
-            "points": 6,
-            "drawn": 0,
+            "points": 7,
+            "drawn": 1,
             "team": "Colombia",
             "goals-against": 1,
             "position": 1,
-            "played": 2,
+            "played": 3,
             "goals-for": 4,
             "goal-difference": 3
           },
@@ -2391,44 +2383,44 @@
             "won": 1,
             "team-conduct-score": -4,
             "lost": 0,
-            "points": 4,
-            "drawn": 1,
+            "points": 5,
+            "drawn": 2,
             "team": "Portugal",
             "goals-against": 1,
             "position": 2,
-            "played": 2,
+            "played": 3,
             "goals-for": 6,
             "goal-difference": 5
           },
           {
             "slug": "congo-dr",
             "group": "K",
-            "won": 0,
-            "team-conduct-score": -2,
+            "won": 1,
+            "team-conduct-score": -5,
             "lost": 1,
-            "points": 1,
+            "points": 4,
             "drawn": 1,
             "team": "Congo DR",
-            "goals-against": 2,
+            "goals-against": 3,
             "position": 3,
-            "played": 2,
-            "goals-for": 1,
-            "goal-difference": -1
+            "played": 3,
+            "goals-for": 4,
+            "goal-difference": 1
           },
           {
             "slug": "uzbekistan",
             "group": "K",
             "won": 0,
-            "team-conduct-score": -2,
-            "lost": 2,
+            "team-conduct-score": -4,
+            "lost": 3,
             "points": 0,
             "drawn": 0,
             "team": "Uzbekistan",
-            "goals-against": 8,
+            "goals-against": 11,
             "position": 4,
-            "played": 2,
-            "goals-for": 1,
-            "goal-difference": -7
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": -9
           }
         ]
       },
@@ -2438,62 +2430,62 @@
           {
             "slug": "england",
             "group": "L",
-            "won": 1,
-            "team-conduct-score": -1,
+            "won": 2,
+            "team-conduct-score": -2,
             "lost": 0,
-            "points": 4,
+            "points": 7,
             "drawn": 1,
             "team": "England",
             "goals-against": 2,
             "position": 1,
-            "played": 2,
-            "goals-for": 4,
-            "goal-difference": 2
+            "played": 3,
+            "goals-for": 6,
+            "goal-difference": 4
+          },
+          {
+            "slug": "croatia",
+            "group": "L",
+            "won": 2,
+            "team-conduct-score": -2,
+            "lost": 1,
+            "points": 6,
+            "drawn": 0,
+            "team": "Croatia",
+            "goals-against": 5,
+            "position": 2,
+            "played": 3,
+            "goals-for": 5,
+            "goal-difference": 0
           },
           {
             "slug": "ghana",
             "group": "L",
             "won": 1,
-            "team-conduct-score": -2,
-            "lost": 0,
+            "team-conduct-score": -3,
+            "lost": 1,
             "points": 4,
             "drawn": 1,
             "team": "Ghana",
-            "goals-against": 0,
-            "position": 2,
-            "played": 2,
-            "goals-for": 1,
-            "goal-difference": 1
-          },
-          {
-            "slug": "croatia",
-            "group": "L",
-            "won": 1,
-            "team-conduct-score": -1,
-            "lost": 1,
-            "points": 3,
-            "drawn": 0,
-            "team": "Croatia",
-            "goals-against": 4,
+            "goals-against": 2,
             "position": 3,
-            "played": 2,
-            "goals-for": 3,
-            "goal-difference": -1
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": 0
           },
           {
             "slug": "panama",
             "group": "L",
             "won": 0,
-            "team-conduct-score": -3,
-            "lost": 2,
+            "team-conduct-score": -5,
+            "lost": 3,
             "points": 0,
             "drawn": 0,
             "team": "Panama",
-            "goals-against": 2,
+            "goals-against": 4,
             "position": 4,
-            "played": 2,
+            "played": 3,
             "goals-for": 0,
-            "goal-difference": -2
+            "goal-difference": -4
           }
         ]
       }
@@ -2504,448 +2496,504 @@
         "homeScore": 2,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 2,
         "homeScore": 2,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 3,
         "homeScore": 1,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 4,
         "homeScore": 4,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 5,
         "homeScore": 1,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 6,
         "homeScore": 1,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 7,
         "homeScore": 0,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 8,
         "homeScore": 2,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 9,
         "homeScore": 7,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 10,
         "homeScore": 2,
         "awayScore": 2,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 11,
         "homeScore": 1,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 12,
         "homeScore": 5,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 13,
         "homeScore": 0,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 14,
         "homeScore": 1,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 15,
         "homeScore": 1,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 16,
         "homeScore": 2,
         "awayScore": 2,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 17,
         "homeScore": 3,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 18,
         "homeScore": 1,
         "awayScore": 4,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 19,
         "homeScore": 3,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 20,
         "homeScore": 3,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 21,
         "homeScore": 1,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 22,
         "homeScore": 4,
         "awayScore": 2,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 23,
         "homeScore": 1,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 24,
         "homeScore": 1,
         "awayScore": 3,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 25,
         "homeScore": 1,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 26,
         "homeScore": 4,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 27,
         "homeScore": 6,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 28,
         "homeScore": 1,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 29,
         "homeScore": 2,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 30,
         "homeScore": 0,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 31,
         "homeScore": 3,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 32,
         "homeScore": 0,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 33,
         "homeScore": 5,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 34,
         "homeScore": 2,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 35,
         "homeScore": 0,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 36,
         "homeScore": 0,
         "awayScore": 4,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 37,
         "homeScore": 4,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 38,
         "homeScore": 0,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 39,
         "homeScore": 2,
         "awayScore": 2,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 40,
         "homeScore": 1,
         "awayScore": 3,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 41,
         "homeScore": 2,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 42,
         "homeScore": 3,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 43,
         "homeScore": 3,
         "awayScore": 2,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 44,
         "homeScore": 1,
         "awayScore": 2,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 45,
         "homeScore": 5,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 46,
         "homeScore": 0,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 47,
         "homeScore": 0,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 48,
         "homeScore": 1,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 49,
         "homeScore": 2,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 50,
         "homeScore": 3,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 51,
         "homeScore": 0,
         "awayScore": 3,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 52,
         "homeScore": 4,
         "awayScore": 2,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 53,
         "homeScore": 0,
         "awayScore": 3,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 54,
         "homeScore": 1,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 55,
         "homeScore": 0,
         "awayScore": 2,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 56,
         "homeScore": 2,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 57,
         "homeScore": 1,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 58,
         "homeScore": 1,
         "awayScore": 3,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 59,
         "homeScore": 3,
         "awayScore": 2,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 60,
         "homeScore": 0,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 61,
         "homeScore": 1,
         "awayScore": 4,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 62,
         "homeScore": 5,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 63,
         "homeScore": 0,
         "awayScore": 0,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       },
       {
         "match": 64,
         "homeScore": 0,
         "awayScore": 1,
         "status": "FT",
-        "updatedAt": "2026-06-27T02:30:18.714Z"
+        "updatedAt": "2026-06-28T16:47:21.459Z"
+      },
+      {
+        "match": 65,
+        "homeScore": 1,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-28T16:47:21.459Z"
+      },
+      {
+        "match": 66,
+        "homeScore": 1,
+        "awayScore": 5,
+        "status": "FT",
+        "updatedAt": "2026-06-28T16:47:21.459Z"
+      },
+      {
+        "match": 67,
+        "homeScore": 0,
+        "awayScore": 2,
+        "status": "FT",
+        "updatedAt": "2026-06-28T16:47:21.459Z"
+      },
+      {
+        "match": 68,
+        "homeScore": 2,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-28T16:47:21.459Z"
+      },
+      {
+        "match": 69,
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-28T16:47:21.459Z"
+      },
+      {
+        "match": 70,
+        "homeScore": 3,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-28T16:47:21.459Z"
+      },
+      {
+        "match": 71,
+        "homeScore": 3,
+        "awayScore": 3,
+        "status": "FT",
+        "updatedAt": "2026-06-28T16:47:21.459Z"
+      },
+      {
+        "match": 72,
+        "homeScore": 1,
+        "awayScore": 3,
+        "status": "FT",
+        "updatedAt": "2026-06-28T16:47:21.459Z"
       }
     ]
   }

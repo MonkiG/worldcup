@@ -5,6 +5,7 @@ import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
 import { TeamFlag } from "@/components/team-flag";
 import { TeamReference } from "@/components/team-reference";
+import { venueLabel } from "@/lib/calendar";
 import { getTeamPageData } from "@/lib/server/world-cup-services";
 import { getFifaCode } from "@/lib/team-codes";
 import type { BracketPrediction } from "@/lib/bracket-predictions";
@@ -253,7 +254,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
                     </strong>
                   </div>
                   <span>{match.round || "Fixture"}</span>
-                  <small>{match.venue || "Venue TBD"}</small>
+                  <small>{venueLabel(match.venue)}</small>
                 </article>
               ))}
             </section>

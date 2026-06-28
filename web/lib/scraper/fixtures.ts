@@ -18,7 +18,7 @@ function extractFixturesFromDocument(): FixtureMatch[] {
     /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) \d{1,2} [A-Z][a-z]+ 2026$/;
   const timePattern = /^\d{1,2}:\d{2}$/;
   const scorePattern = /^\d+$/;
-  const stopLabels = new Set(["View groups", "View brackets", "Â·"]);
+  const stopLabels = new Set(["View groups", "View brackets", "·", "Â·"]);
   const teamFromName = (value: string): FixtureTeam | undefined => {
     const team = cleanText(value);
     return team ? { name: team, slug: slugify(team) } : undefined;
@@ -73,7 +73,13 @@ function extractFixturesFromDocument(): FixtureMatch[] {
       .filter((line) => !stopLabels.has(line));
     const group = metaLines.find((line) => /^Group [A-L]$/.test(line));
     const venue =
-      metaLines.find((line) => line !== group && !line.startsWith("(")) ?? "";
+      metaLines.find(
+        (line) =>
+          line !== group &&
+          !line.startsWith("(") &&
+          line !== "·" &&
+          line !== "Â·",
+      ) ?? "";
     const round = group ?? roundName;
     const date = toIsoDate(currentDate, kickoff);
 

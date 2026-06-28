@@ -131,6 +131,12 @@ export function formatMatchTime(value: string) {
   }).format(new Date(value));
 }
 
+export function venueLabel(value?: string) {
+  const venue = value?.trim();
+  if (!venue || venue === "·" || venue === "Â·") return "Venue TBD";
+  return venue;
+}
+
 export function matchTitle(match?: FixtureMatch | null) {
   if (!match) return "Schedule pending";
   if (match.home?.name && match.away?.name) {

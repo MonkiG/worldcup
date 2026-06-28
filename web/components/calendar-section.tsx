@@ -2,8 +2,10 @@ import {
   calendarPageSize,
   getCalendarFocus,
   matchTitle,
+  venueLabel,
 } from "@/lib/calendar";
 import type { FixtureMatch } from "@/lib/types";
+import { FixtureMiniCalendar } from "./fixture-mini-calendar";
 import { LocalMatchDate, LocalMatchTime } from "./local-match-time";
 import { SectionHeading } from "./section-heading";
 import { TeamReference } from "./team-reference";
@@ -13,6 +15,28 @@ function hasResult(match: FixtureMatch) {
     match.status === "FT" &&
     typeof match.homeScore === "number" &&
     typeof match.awayScore === "number"
+  );
+}
+
+function knockoutTone(round = "") {
+  const normalized = round.toLowerCase();
+  if (normalized === "final") return "final";
+  if (normalized.includes("third")) return "third-place";
+  if (normalized.includes("semi")) return "semi-final";
+  if (normalized.includes("quarter")) return "quarter-final";
+  return null;
+}
+
+function RoundLabel({ round }: { round?: string }) {
+  const tone = knockoutTone(round);
+
+  if (!tone) return <>{round || "Fixture"}</>;
+
+  return (
+    <span className={`fixture-round fixture-round--${tone}`}>
+      {tone === "final" ? "★ " : ""}
+      {round}
+    </span>
   );
 }
 
@@ -71,9 +95,13 @@ function FixtureRow({
   match: FixtureMatch;
   focused: boolean;
 }) {
+  const tone = knockoutTone(match.round);
+
   return (
     <article
-      className={`fixture-row${focused ? " fixture-row--focused" : ""}`}
+      className={`fixture-row${focused ? " fixture-row--focused" : ""}${
+        tone ? ` fixture-row--${tone}` : ""
+      }`}
       id={match.id}
     >
       <div>
@@ -85,8 +113,10 @@ function FixtureRow({
         </strong>
       </div>
       <MatchTeams match={match} showResult />
-      <span>{match.round || "Fixture"}</span>
-      <span>{match.venue || "Venue TBD"}</span>
+      <span>
+        <RoundLabel round={match.round} />
+      </span>
+      <span>{venueLabel(match.venue)}</span>
     </article>
   );
 }
@@ -160,7 +190,7 @@ export function CalendarSection({
                   <div className="fixture-focus__match" key={match.id}>
                     <MatchTeams match={match} />
                     <small>
-                      {match.venue || match.round || "Fixture details pending"}
+                      {venueLabel(match.venue) || match.round || "Fixture details pending"}
                     </small>
                   </div>
                 ))}
@@ -169,6 +199,7 @@ export function CalendarSection({
           ) : (
             <p>No fixtures found in the latest data yet.</p>
           )}
+          <FixtureMiniCalendar focusMatchId={focus?.id} matches={sorted} />
         </aside>
 
         <div className="fixtures-list">

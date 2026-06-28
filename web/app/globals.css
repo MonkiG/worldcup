@@ -820,6 +820,160 @@ a.team-name__label:hover { color: var(--blue); }
 .calendar-section {
   background: #fafaf8;
 }
+.fixture-calendar {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+.fixture-calendar__month {
+  overflow: hidden;
+  background: #171a1f;
+  border: 1px solid #30343b;
+  border-radius: 4px;
+}
+.fixture-calendar__month header {
+  display: grid;
+  grid-template-columns: 28px 1fr 28px;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 10px;
+  background: #1d2128;
+  color: white;
+}
+.fixture-calendar__month header div {
+  display: grid;
+  gap: 3px;
+  justify-items: center;
+  min-width: 0;
+}
+.fixture-calendar__month header strong {
+  font-size: 11px;
+  letter-spacing: -.02em;
+}
+.fixture-calendar__month header span {
+  color: var(--acid);
+  font: 800 8px/1 var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.fixture-calendar__month header button {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  background: #111419;
+  border: 1px solid #30343b;
+  border-radius: 3px;
+  color: var(--acid);
+  cursor: pointer;
+  font: 900 11px/1 var(--font-mono);
+}
+.fixture-calendar__month header button:disabled {
+  cursor: not-allowed;
+  color: #555c66;
+}
+.fixture-calendar__month header button:hover:not(:disabled) {
+  background: var(--acid);
+  color: #111;
+}
+.fixture-calendar__weekdays,
+.fixture-calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.fixture-calendar__weekdays {
+  min-height: 26px;
+  align-items: center;
+  padding: 0 6px;
+  border-bottom: 1px solid #30343b;
+  color: #858a93;
+  font: 800 7px/1 var(--font-mono);
+  text-align: center;
+  text-transform: uppercase;
+}
+.fixture-calendar__days {
+  gap: 4px;
+  padding: 8px;
+}
+.fixture-calendar__blank,
+.fixture-calendar__day {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  aspect-ratio: 1;
+  border-radius: 3px;
+  color: #6f7681;
+  font: 800 9px/1 var(--font-mono);
+}
+.fixture-calendar__day--match {
+  position: relative;
+  grid-template-rows: 1fr auto;
+  gap: 3px;
+  padding: 5px 3px 5px;
+  background: rgba(216,255,62,.12);
+  border: 1px solid rgba(216,255,62,.28);
+  color: white;
+}
+.fixture-calendar__day--match strong {
+  align-self: end;
+  color: inherit;
+  font-size: 10px;
+}
+.fixture-calendar__day--match span {
+  display: grid;
+  place-items: center;
+  align-self: start;
+  min-width: 18px;
+  height: 13px;
+  padding: 0 5px;
+  background: var(--acid);
+  border-radius: 999px;
+  color: #111;
+  font: 900 8px/1 var(--font-mono);
+}
+.fixture-calendar__day--match:hover {
+  background: var(--acid);
+  border-color: #b4d829;
+}
+.fixture-calendar__day--match:hover strong,
+.fixture-calendar__day--match:hover span {
+  color: #111;
+}
+.fixture-calendar__day--match:hover span {
+  background: white;
+}
+.fixture-calendar__day--quarter-final {
+  border-color: rgba(144,164,255,.55);
+}
+.fixture-calendar__day--quarter-final span {
+  background: #90a4ff;
+}
+.fixture-calendar__day--semi-final {
+  border-color: rgba(255,105,55,.62);
+}
+.fixture-calendar__day--semi-final span {
+  background: var(--orange);
+  color: white;
+}
+.fixture-calendar__day--third-place {
+  border-color: rgba(154,159,168,.65);
+}
+.fixture-calendar__day--third-place span {
+  background: #d8dadd;
+  color: #111;
+}
+.fixture-calendar__day--final {
+  background: var(--acid);
+  border-color: var(--acid);
+  color: #111;
+}
+.fixture-calendar__day--final strong {
+  color: #111;
+}
+.fixture-calendar__day--final span {
+  background: #111;
+  color: var(--acid);
+}
 .calendar-layout {
   display: grid;
   grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
@@ -828,8 +982,6 @@ a.team-name__label:hover { color: var(--blue); }
   margin: auto;
 }
 .fixture-focus {
-  position: sticky;
-  top: 108px;
   display: grid;
   align-content: start;
   align-self: start;
@@ -919,6 +1071,28 @@ a.team-name__label:hover { color: var(--blue); }
   background: #f8ffe4;
   box-shadow: inset 4px 0 0 var(--acid);
 }
+.fixture-row--quarter-final {
+  box-shadow: inset 4px 0 0 #90a4ff;
+}
+.fixture-row--semi-final {
+  box-shadow: inset 4px 0 0 var(--orange);
+}
+.fixture-row--third-place {
+  box-shadow: inset 4px 0 0 #9a9fa8;
+}
+.fixture-row--final {
+  background: #111419;
+  box-shadow: inset 5px 0 0 var(--acid);
+  color: white;
+}
+.fixture-row--final > span,
+.fixture-row--final .fixture-row__date {
+  color: #b9bec7;
+}
+.fixture-row--final .fixture-score {
+  background: var(--acid);
+  color: #111;
+}
 .fixture-row > div:first-child {
   display: grid;
   gap: 7px;
@@ -935,6 +1109,37 @@ a.team-name__label:hover { color: var(--blue); }
 .fixture-row > span {
   color: var(--muted);
   line-height: 1.5;
+}
+.fixture-round {
+  display: inline-grid;
+  place-items: center;
+  min-height: 24px;
+  width: fit-content;
+  padding: 0 9px;
+  border-radius: 3px;
+  font-size: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.fixture-round--quarter-final {
+  background: transparent;
+  border: 1px solid #9eabdc;
+  color: #475aaf;
+}
+.fixture-round--semi-final {
+  background: transparent;
+  border: 1px solid #ef9b7f;
+  color: #c44d27;
+}
+.fixture-round--third-place {
+  background: transparent;
+  border: 1px solid #b3b7be;
+  color: #686f7a;
+}
+.fixture-round--final {
+  background: var(--acid);
+  color: #111;
 }
 .fixture-teams {
   display: grid;

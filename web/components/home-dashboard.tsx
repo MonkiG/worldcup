@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { venueLabel } from "@/lib/calendar";
 import type { FixtureMatch } from "@/lib/types";
 import {
   LocalMatchDate,
@@ -130,7 +131,7 @@ export function DashboardHero({
           <small>
             {hasMultipleMatches
               ? `${nextMatches.length} matches at this kickoff`
-              : primaryMatch?.venue || "Calendar refresh pending"}
+              : venueLabel(primaryMatch?.venue)}
           </small>
         </aside>
       </div>
