@@ -942,6 +942,15 @@ a.team-name__label:hover { color: var(--blue); }
 .fixture-calendar__day--match:hover span {
   background: white;
 }
+.fixture-calendar__day--today {
+  outline: 2px solid white;
+  outline-offset: -2px;
+  box-shadow: 0 0 0 2px var(--acid);
+}
+.fixture-calendar__day--today:not(.fixture-calendar__day--match) {
+  background: #242a33;
+  color: white;
+}
 .fixture-calendar__day--quarter-final {
   border-color: rgba(144,164,255,.55);
 }

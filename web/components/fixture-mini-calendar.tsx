@@ -94,6 +94,7 @@ export function FixtureMiniCalendar({
   const activeMonthMatches = sorted.filter(
     (match) => monthKey(match.date) === activeMonth,
   );
+  const todayKey = fixtureDayKey(new Date().toISOString());
 
   return (
     <div className="fixture-calendar" aria-label="Fixture calendar by month">
@@ -142,10 +143,12 @@ export function FixtureMiniCalendar({
             const firstIndex = firstMatch ? matchIndex.get(firstMatch.id) ?? 0 : 0;
             const targetPage = Math.floor(firstIndex / calendarPageSize) + 1;
             const tone = dayTone(dayMatches);
+            const todayClass =
+              key === todayKey ? " fixture-calendar__day--today" : "";
 
             if (!firstMatch) {
               return (
-                <span className="fixture-calendar__day" key={key}>
+                <span className={`fixture-calendar__day${todayClass}`} key={key}>
                   {day}
                 </span>
               );
@@ -155,7 +158,7 @@ export function FixtureMiniCalendar({
               <a
                 className={`fixture-calendar__day fixture-calendar__day--match${
                   tone ? ` fixture-calendar__day--${tone}` : ""
-                }`}
+                }${todayClass}`}
                 href={`/calendar?page=${targetPage}#day-${key}`}
                 key={key}
               >
