@@ -1277,6 +1277,122 @@ a.team-name__label:hover { color: var(--blue); }
 }
 .team-page-opponents a:hover { color: var(--blue); }
 
+.admin-page {
+  background: #fafaf8;
+}
+.admin-panel {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+  gap: 18px;
+  max-width: 1120px;
+  margin: auto;
+}
+.admin-panel__controls,
+.admin-panel__result {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.admin-panel__controls {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  padding: 22px;
+}
+.admin-panel__controls label {
+  display: grid;
+  gap: 9px;
+  color: #777c85;
+  font-size: 9px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+.admin-panel__controls input[type="password"] {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  background: #fafaf8;
+  border: 1px solid #cfd2d7;
+  border-radius: 4px;
+  color: var(--ink);
+  font: 700 12px/1 var(--font-sans);
+}
+.admin-panel__remember {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  width: fit-content;
+}
+.admin-panel__remember input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--blue);
+}
+.admin-panel__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.admin-panel__actions button {
+  min-height: 42px;
+  padding: 0 13px;
+  background: var(--black);
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.admin-panel__actions button:first-child {
+  background: var(--blue);
+}
+.admin-panel__actions button:disabled {
+  cursor: not-allowed;
+  background: #d8dadd;
+  color: #8b9098;
+}
+.admin-panel__result {
+  min-height: 236px;
+  padding: 22px;
+}
+.admin-panel__result p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.admin-panel__error {
+  color: #b43c23 !important;
+  font-weight: 800;
+}
+.admin-panel__result dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.admin-panel__result dl div {
+  min-height: 86px;
+  padding: 14px;
+  background: white;
+}
+.admin-panel__result dt {
+  color: #858a93;
+  font: 850 8px/1 var(--font-mono);
+  text-transform: uppercase;
+}
+.admin-panel__result dd {
+  margin: 12px 0 0;
+  color: var(--ink);
+  font: 800 16px/1.15 var(--font-sans);
+  overflow-wrap: anywhere;
+}
+
 .site-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1333,6 +1449,7 @@ a.team-name__label:hover { color: var(--blue); }
   .feature-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .calendar-layout { grid-template-columns: 1fr; }
   .team-page-grid { grid-template-columns: 1fr; }
+  .admin-panel { grid-template-columns: 1fr; }
   .fixture-focus { position: static; min-height: 0; }
   .scoreboard-strip { grid-template-columns: repeat(4,1fr); }
   .scoreboard-strip > a { grid-column: 1 / -1; min-height: 70px; }
@@ -1411,6 +1528,8 @@ a.team-name__label:hover { color: var(--blue); }
   .fixtures-list__head, .fixture-row { min-width: 840px; }
   .team-page-results section { overflow-x: auto; }
   .team-page-match { min-width: 760px; }
+  .admin-panel__actions { grid-template-columns: 1fr; }
+  .admin-panel__result dl { grid-template-columns: 1fr; }
   .third-place-table { overflow-x: auto; }
   .third-place-table__head, .third-place-row { min-width: 760px; }
   .site-footer { grid-template-columns: 1fr; }
