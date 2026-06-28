@@ -76,3 +76,29 @@ export type WorldCupData = {
     };
   };
 };
+
+export type MatchResult = {
+  match: number;
+  homeScore: number;
+  awayScore: number;
+  status?: string;
+  updatedAt?: string;
+};
+
+export type WorldCupSource = {
+  version: number;
+  sources: {
+    standings: string;
+    fixtures: string;
+  };
+  "generated-at": string;
+  fixtures: {
+    "generated-at": string;
+    matches: FixtureMatch[];
+  };
+  live: {
+    "generated-at": string;
+    groups: Group[];
+    results: MatchResult[];
+  };
+};

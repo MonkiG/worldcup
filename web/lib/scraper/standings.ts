@@ -1,11 +1,12 @@
-import { launchBrowser } from "./browser.mjs";
-import { logger } from "./logger.mjs";
+import type { Group } from "../types";
+import { launchBrowser } from "./browser";
+import { logger } from "./logger";
 
 export const standingsUrl =
   "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings";
 
-function extractGroupsFromDocument() {
-  const integer = (value) => Number.parseInt(value.trim(), 10);
+function extractGroupsFromDocument(): Group[] {
+  const integer = (value: string) => Number.parseInt(value.trim(), 10);
   const tables = [...document.querySelectorAll("table")].filter((table) =>
     table
       .querySelector("caption")
@@ -15,7 +16,7 @@ function extractGroupsFromDocument() {
 
   return tables.map((table) => {
     const caption = table.querySelector("caption")?.textContent?.trim();
-    const group = caption?.match(/Group ([A-L])$/)?.[1];
+    const group = caption?.match(/Group ([A-L])$/)?.[1] ?? "";
     const teams = [...table.querySelectorAll("tbody tr")].map((row) => {
       const cells = [...row.querySelectorAll("td")].map((cell) =>
         cell.innerText.trim().replace(/\s+/g, " "),
@@ -53,7 +54,7 @@ function extractGroupsFromDocument() {
   });
 }
 
-function validateGroups(groups) {
+function validateGroups(groups: Group[]) {
   if (groups.length !== 12) {
     throw new Error(
       `FIFA layout changed: expected 12 groups, found ${groups.length}`,
@@ -96,14 +97,6 @@ export async function scrapeGroups() {
 
     const groups = await page.evaluate(extractGroupsFromDocument);
     logger.data(`Extracted ${groups.length} groups`);
-    for (const group of groups) {
-      logger.data(
-        `Group ${group.group}: ${group.teams
-          .map((team) => `${team.position}. ${team.team} (${team.points} pts)`)
-          .join(", ")}`,
-      );
-    }
-
     validateGroups(groups);
     logger.success("Validated standings layout");
     return groups;

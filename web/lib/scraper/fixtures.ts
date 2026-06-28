@@ -1,29 +1,30 @@
-import { launchBrowser } from "./browser.mjs";
-import { logger } from "./logger.mjs";
+import type { FixtureMatch, FixtureTeam } from "../types";
+import { launchBrowser } from "./browser";
+import { logger } from "./logger";
 
 export const fixturesUrl =
   "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=&wtw-filter=ALL";
 
-function extractFixturesFromDocument() {
-  const slugify = (value) =>
+function extractFixturesFromDocument(): FixtureMatch[] {
+  const slugify = (value: string) =>
     value
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "");
-  const cleanText = (value) => value?.replace(/\s+/g, " ").trim() ?? "";
+  const cleanText = (value?: string | null) => value?.replace(/\s+/g, " ").trim() ?? "";
   const datePattern =
     /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) \d{1,2} [A-Z][a-z]+ 2026$/;
   const timePattern = /^\d{1,2}:\d{2}$/;
   const scorePattern = /^\d+$/;
-  const stopLabels = new Set(["View groups", "View brackets", "·"]);
-  const teamFromName = (value) => {
+  const stopLabels = new Set(["View groups", "View brackets", "Â·"]);
+  const teamFromName = (value: string): FixtureTeam | undefined => {
     const team = cleanText(value);
     return team ? { name: team, slug: slugify(team) } : undefined;
   };
 
-  function isMatchStart(lines, index) {
+  function isMatchStart(lines: string[], index: number) {
     return (
       lines[index] &&
       !stopLabels.has(lines[index]) &&
@@ -32,7 +33,7 @@ function extractFixturesFromDocument() {
     );
   }
 
-  function toIsoDate(dateLine, time) {
+  function toIsoDate(dateLine: string, time: string) {
     return new Date(`${dateLine} ${time}`).toISOString();
   }
 
@@ -40,7 +41,7 @@ function extractFixturesFromDocument() {
     .split("\n")
     .map((line) => cleanText(line))
     .filter(Boolean);
-  const fixtures = [];
+  const fixtures: FixtureMatch[] = [];
   let currentDate = "";
   let matchNumber = 1;
 
@@ -123,7 +124,7 @@ export async function scrapeFixtures() {
     if (fixtures.length > 0) {
       logger.value("Fixture date range", {
         first: fixtures[0].date,
-        last: fixtures.at(-1).date,
+        last: fixtures.at(-1)?.date,
       });
     }
 

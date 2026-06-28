@@ -1,6 +1,6 @@
 import { PageShell } from "@/components/page-shell";
 import { QualificationWatchSection } from "@/components/tracker-sections";
-import { getWorldCupData } from "@/lib/data";
+import { getQualificationPageData } from "@/lib/server/world-cup-services";
 import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
@@ -12,12 +12,11 @@ export const metadata: Metadata = {
 };
 
 export default function QualificationPage() {
-  const data = getWorldCupData();
-  const qualification = data.bracket.qualification;
+  const { data, teams } = getQualificationPageData();
 
   return (
     <PageShell active="qualification" data={data} source={data.source}>
-      <QualificationWatchSection teams={qualification["third-place-table"]} />
+      <QualificationWatchSection teams={teams} />
     </PageShell>
   );
 }

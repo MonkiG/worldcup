@@ -1,6 +1,6 @@
 import { PageShell } from "@/components/page-shell";
 import { KnockoutBracketSection } from "@/components/tracker-sections";
-import { getWorldCupData } from "@/lib/data";
+import { getBracketPageData } from "@/lib/server/world-cup-services";
 import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
@@ -12,14 +12,11 @@ export const metadata: Metadata = {
 };
 
 export default function BracketPage() {
-  const data = getWorldCupData();
+  const { data, firstRound, later } = getBracketPageData();
 
   return (
     <PageShell active="bracket" data={data} source={data.source}>
-      <KnockoutBracketSection
-        firstRound={data.bracket.rounds["round-of-32"]}
-        later={data.bracket.rounds.later}
-      />
+      <KnockoutBracketSection firstRound={firstRound} later={later} />
     </PageShell>
   );
 }

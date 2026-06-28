@@ -4,7 +4,7 @@
     "standings": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
     "fixtures": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=&wtw-filter=ALL"
   },
-  "generated-at": "2026-06-28T14:15:02.495Z",
+  "generated-at": "2026-06-27T02:30:18.715Z",
   "groups": [
     {
       "group": "A",
@@ -105,7 +105,7 @@
           "goal-difference": 5
         },
         {
-          "slug": "bosnia-and-herzegovina",
+          "slug": "bosnia-herzegovina",
           "group": "B",
           "won": 1,
           "team-conduct-score": -10,
@@ -400,64 +400,64 @@
       "group": "G",
       "teams": [
         {
-          "slug": "belgium",
-          "group": "G",
-          "won": 1,
-          "team-conduct-score": -7,
-          "lost": 0,
-          "points": 5,
-          "drawn": 2,
-          "team": "Belgium",
-          "goals-against": 2,
-          "position": 1,
-          "played": 3,
-          "goals-for": 6,
-          "goal-difference": 4
-        },
-        {
           "slug": "egypt",
           "group": "G",
           "won": 1,
-          "team-conduct-score": -6,
+          "team-conduct-score": -3,
           "lost": 0,
-          "points": 5,
-          "drawn": 2,
+          "points": 4,
+          "drawn": 1,
           "team": "Egypt",
-          "goals-against": 3,
-          "position": 2,
-          "played": 3,
-          "goals-for": 5,
+          "goals-against": 2,
+          "position": 1,
+          "played": 2,
+          "goals-for": 4,
           "goal-difference": 2
         },
         {
           "slug": "ir-iran",
           "group": "G",
           "won": 0,
-          "team-conduct-score": -6,
+          "team-conduct-score": -2,
           "lost": 0,
-          "points": 3,
-          "drawn": 3,
+          "points": 2,
+          "drawn": 2,
           "team": "IR Iran",
-          "goals-against": 3,
+          "goals-against": 2,
+          "position": 2,
+          "played": 2,
+          "goals-for": 2,
+          "goal-difference": 0
+        },
+        {
+          "slug": "belgium",
+          "group": "G",
+          "won": 0,
+          "team-conduct-score": -7,
+          "lost": 0,
+          "points": 2,
+          "drawn": 2,
+          "team": "Belgium",
+          "goals-against": 1,
           "position": 3,
-          "played": 3,
-          "goals-for": 3,
+          "played": 2,
+          "goals-for": 1,
           "goal-difference": 0
         },
         {
           "slug": "new-zealand",
           "group": "G",
           "won": 0,
-          "team-conduct-score": -4,
-          "lost": 2,
+          "team-conduct-score": -2,
+          "lost": 1,
           "points": 1,
           "drawn": 1,
           "team": "New Zealand",
-          "goals-against": 10,
+          "goals-against": 5,
           "position": 4,
-          "played": 3,
-          "goals-for": 4,
-          "goal-difference": -6
+          "played": 2,
+          "goals-for": 3,
+          "goal-difference": -2
         }
       ]
     },
@@ -597,31 +597,31 @@
         {
           "slug": "argentina",
           "group": "J",
-          "won": 3,
+          "won": 2,
           "team-conduct-score": -2,
           "lost": 0,
-          "points": 9,
+          "points": 6,
           "drawn": 0,
           "team": "Argentina",
-          "goals-against": 1,
+          "goals-against": 0,
           "position": 1,
-          "played": 3,
-          "goals-for": 8,
-          "goal-difference": 7
+          "played": 2,
+          "goals-for": 5,
+          "goal-difference": 5
         },
         {
           "slug": "austria",
           "group": "J",
           "won": 1,
-          "team-conduct-score": -4,
+          "team-conduct-score": -3,
           "lost": 1,
-          "points": 4,
-          "drawn": 1,
+          "points": 3,
+          "drawn": 0,
           "team": "Austria",
-          "goals-against": 6,
+          "goals-against": 3,
           "position": 2,
-          "played": 3,
-          "goals-for": 6,
+          "played": 2,
+          "goals-for": 3,
           "goal-difference": 0
         },
         {
@@ -630,29 +630,29 @@
           "won": 1,
           "team-conduct-score": -1,
           "lost": 1,
-          "points": 4,
-          "drawn": 1,
+          "points": 3,
+          "drawn": 0,
           "team": "Algeria",
-          "goals-against": 7,
+          "goals-against": 4,
           "position": 3,
-          "played": 3,
-          "goals-for": 5,
+          "played": 2,
+          "goals-for": 2,
           "goal-difference": -2
         },
         {
           "slug": "jordan",
           "group": "J",
           "won": 0,
-          "team-conduct-score": -4,
-          "lost": 3,
+          "team-conduct-score": -1,
+          "lost": 2,
           "points": 0,
           "drawn": 0,
           "team": "Jordan",
-          "goals-against": 8,
+          "goals-against": 5,
           "position": 4,
-          "played": 3,
-          "goals-for": 3,
-          "goal-difference": -5
+          "played": 2,
+          "goals-for": 2,
+          "goal-difference": -3
         }
       ]
     },
@@ -663,14 +663,14 @@
           "slug": "colombia",
           "group": "K",
           "won": 2,
-          "team-conduct-score": -4,
+          "team-conduct-score": -3,
           "lost": 0,
-          "points": 7,
-          "drawn": 1,
+          "points": 6,
+          "drawn": 0,
           "team": "Colombia",
           "goals-against": 1,
           "position": 1,
-          "played": 3,
+          "played": 2,
           "goals-for": 4,
           "goal-difference": 3
         },
@@ -680,44 +680,44 @@
           "won": 1,
           "team-conduct-score": -4,
           "lost": 0,
-          "points": 5,
-          "drawn": 2,
+          "points": 4,
+          "drawn": 1,
           "team": "Portugal",
           "goals-against": 1,
           "position": 2,
-          "played": 3,
+          "played": 2,
           "goals-for": 6,
           "goal-difference": 5
         },
         {
           "slug": "congo-dr",
           "group": "K",
-          "won": 1,
-          "team-conduct-score": -5,
+          "won": 0,
+          "team-conduct-score": -2,
           "lost": 1,
-          "points": 4,
+          "points": 1,
           "drawn": 1,
           "team": "Congo DR",
-          "goals-against": 3,
+          "goals-against": 2,
           "position": 3,
-          "played": 3,
-          "goals-for": 4,
-          "goal-difference": 1
+          "played": 2,
+          "goals-for": 1,
+          "goal-difference": -1
         },
         {
           "slug": "uzbekistan",
           "group": "K",
           "won": 0,
-          "team-conduct-score": -4,
-          "lost": 3,
+          "team-conduct-score": -2,
+          "lost": 2,
           "points": 0,
           "drawn": 0,
           "team": "Uzbekistan",
-          "goals-against": 11,
+          "goals-against": 8,
           "position": 4,
-          "played": 3,
-          "goals-for": 2,
-          "goal-difference": -9
+          "played": 2,
+          "goals-for": 1,
+          "goal-difference": -7
         }
       ]
     },
@@ -727,62 +727,62 @@
         {
           "slug": "england",
           "group": "L",
-          "won": 2,
-          "team-conduct-score": -2,
+          "won": 1,
+          "team-conduct-score": -1,
           "lost": 0,
-          "points": 7,
+          "points": 4,
           "drawn": 1,
           "team": "England",
           "goals-against": 2,
           "position": 1,
-          "played": 3,
-          "goals-for": 6,
-          "goal-difference": 4
-        },
-        {
-          "slug": "croatia",
-          "group": "L",
-          "won": 2,
-          "team-conduct-score": -2,
-          "lost": 1,
-          "points": 6,
-          "drawn": 0,
-          "team": "Croatia",
-          "goals-against": 5,
-          "position": 2,
-          "played": 3,
-          "goals-for": 5,
-          "goal-difference": 0
+          "played": 2,
+          "goals-for": 4,
+          "goal-difference": 2
         },
         {
           "slug": "ghana",
           "group": "L",
           "won": 1,
-          "team-conduct-score": -3,
-          "lost": 1,
+          "team-conduct-score": -2,
+          "lost": 0,
           "points": 4,
           "drawn": 1,
           "team": "Ghana",
-          "goals-against": 2,
+          "goals-against": 0,
+          "position": 2,
+          "played": 2,
+          "goals-for": 1,
+          "goal-difference": 1
+        },
+        {
+          "slug": "croatia",
+          "group": "L",
+          "won": 1,
+          "team-conduct-score": -1,
+          "lost": 1,
+          "points": 3,
+          "drawn": 0,
+          "team": "Croatia",
+          "goals-against": 4,
           "position": 3,
-          "played": 3,
-          "goals-for": 2,
-          "goal-difference": 0
+          "played": 2,
+          "goals-for": 3,
+          "goal-difference": -1
         },
         {
           "slug": "panama",
           "group": "L",
           "won": 0,
-          "team-conduct-score": -5,
-          "lost": 3,
+          "team-conduct-score": -3,
+          "lost": 2,
           "points": 0,
           "drawn": 0,
           "team": "Panama",
-          "goals-against": 4,
+          "goals-against": 2,
           "position": 4,
-          "played": 3,
+          "played": 2,
           "goals-for": 0,
-          "goal-difference": -4
+          "goal-difference": -2
         }
       ]
     }
@@ -803,7 +803,7 @@
       },
       "homeScore": 2,
       "awayScore": 0,
-      "venue": "Mexico City Stadium",
+      "venue": "·",
       "label": "Mexico vs South Africa",
       "status": "FT"
     },
@@ -822,7 +822,7 @@
       },
       "homeScore": 2,
       "awayScore": 1,
-      "venue": "Guadalajara Stadium",
+      "venue": "·",
       "label": "Korea Republic vs Czechia",
       "status": "FT"
     },
@@ -841,7 +841,7 @@
       },
       "homeScore": 1,
       "awayScore": 1,
-      "venue": "Toronto Stadium",
+      "venue": "·",
       "label": "Canada vs Bosnia and Herzegovina",
       "status": "FT"
     },
@@ -860,7 +860,7 @@
       },
       "homeScore": 4,
       "awayScore": 1,
-      "venue": "Los Angeles Stadium",
+      "venue": "·",
       "label": "USA vs Paraguay",
       "status": "FT"
     },
@@ -879,7 +879,7 @@
       },
       "homeScore": 1,
       "awayScore": 1,
-      "venue": "San Francisco Bay Area Stadium",
+      "venue": "·",
       "label": "Qatar vs Switzerland",
       "status": "FT"
     },
@@ -898,7 +898,7 @@
       },
       "homeScore": 1,
       "awayScore": 1,
-      "venue": "New York/New Jersey Stadium",
+      "venue": "·",
       "label": "Brazil vs Morocco",
       "status": "FT"
     },
@@ -917,7 +917,7 @@
       },
       "homeScore": 0,
       "awayScore": 1,
-      "venue": "Boston Stadium",
+      "venue": "·",
       "label": "Haiti vs Scotland",
       "status": "FT"
     },
@@ -936,7 +936,7 @@
       },
       "homeScore": 2,
       "awayScore": 0,
-      "venue": "BC Place Vancouver",
+      "venue": "·",
       "label": "Australia vs Türkiye",
       "status": "FT"
     },
@@ -955,7 +955,7 @@
       },
       "homeScore": 7,
       "awayScore": 1,
-      "venue": "Houston Stadium",
+      "venue": "·",
       "label": "Germany vs Curaçao",
       "status": "FT"
     },
@@ -974,7 +974,7 @@
       },
       "homeScore": 2,
       "awayScore": 2,
-      "venue": "Dallas Stadium",
+      "venue": "·",
       "label": "Netherlands vs Japan",
       "status": "FT"
     },
@@ -993,7 +993,7 @@
       },
       "homeScore": 1,
       "awayScore": 0,
-      "venue": "Philadelphia Stadium",
+      "venue": "·",
       "label": "Côte d'Ivoire vs Ecuador",
       "status": "FT"
     },
@@ -1012,7 +1012,7 @@
       },
       "homeScore": 5,
       "awayScore": 1,
-      "venue": "Monterrey Stadium",
+      "venue": "·",
       "label": "Sweden vs Tunisia",
       "status": "FT"
     },
@@ -1031,7 +1031,7 @@
       },
       "homeScore": 0,
       "awayScore": 0,
-      "venue": "Atlanta Stadium",
+      "venue": "·",
       "label": "Spain vs Cabo Verde",
       "status": "FT"
     },
@@ -1050,7 +1050,7 @@
       },
       "homeScore": 1,
       "awayScore": 1,
-      "venue": "Seattle Stadium",
+      "venue": "·",
       "label": "Belgium vs Egypt",
       "status": "FT"
     },
@@ -1069,7 +1069,7 @@
       },
       "homeScore": 1,
       "awayScore": 1,
-      "venue": "Miami Stadium",
+      "venue": "·",
       "label": "Saudi Arabia vs Uruguay",
       "status": "FT"
     },
@@ -1088,7 +1088,7 @@
       },
       "homeScore": 2,
       "awayScore": 2,
-      "venue": "Los Angeles Stadium",
+      "venue": "·",
       "label": "IR Iran vs New Zealand",
       "status": "FT"
     },
@@ -1107,7 +1107,7 @@
       },
       "homeScore": 3,
       "awayScore": 1,
-      "venue": "New York/New Jersey Stadium",
+      "venue": "·",
       "label": "France vs Senegal",
       "status": "FT"
     },
@@ -1126,7 +1126,7 @@
       },
       "homeScore": 1,
       "awayScore": 4,
-      "venue": "Boston Stadium",
+      "venue": "·",
       "label": "Iraq vs Norway",
       "status": "FT"
     },
@@ -1145,7 +1145,7 @@
       },
       "homeScore": 3,
       "awayScore": 0,
-      "venue": "Kansas City Stadium",
+      "venue": "·",
       "label": "Argentina vs Algeria",
       "status": "FT"
     },
@@ -1164,7 +1164,7 @@
       },
       "homeScore": 3,
       "awayScore": 1,
-      "venue": "San Francisco Bay Area Stadium",
+      "venue": "·",
       "label": "Austria vs Jordan",
       "status": "FT"
     },
@@ -1183,7 +1183,7 @@
       },
       "homeScore": 1,
       "awayScore": 1,
-      "venue": "Houston Stadium",
+      "venue": "·",
       "label": "Portugal vs Congo DR",
       "status": "FT"
     },
@@ -1202,7 +1202,7 @@
       },
       "homeScore": 4,
       "awayScore": 2,
-      "venue": "Dallas Stadium",
+      "venue": "·",
       "label": "England vs Croatia",
       "status": "FT"
     },
@@ -1221,7 +1221,7 @@
       },
       "homeScore": 1,
       "awayScore": 0,
-      "venue": "Toronto Stadium",
+      "venue": "·",
       "label": "Ghana vs Panama",
       "status": "FT"
     },
@@ -1240,7 +1240,7 @@
       },
       "homeScore": 1,
       "awayScore": 3,
-      "venue": "Mexico City Stadium",
+      "venue": "·",
       "label": "Uzbekistan vs Colombia",
       "status": "FT"
     },
@@ -1259,7 +1259,7 @@
       },
       "homeScore": 1,
       "awayScore": 1,
-      "venue": "Atlanta Stadium",
+      "venue": "·",
       "label": "Czechia vs South Africa",
       "status": "FT"
     },
@@ -1278,7 +1278,7 @@
       },
       "homeScore": 4,
       "awayScore": 1,
-      "venue": "Los Angeles Stadium",
+      "venue": "·",
       "label": "Switzerland vs Bosnia and Herzegovina",
       "status": "FT"
     },
@@ -1297,7 +1297,7 @@
       },
       "homeScore": 6,
       "awayScore": 0,
-      "venue": "BC Place Vancouver",
+      "venue": "·",
       "label": "Canada vs Qatar",
       "status": "FT"
     },
@@ -1316,7 +1316,7 @@
       },
       "homeScore": 1,
       "awayScore": 0,
-      "venue": "Guadalajara Stadium",
+      "venue": "·",
       "label": "Mexico vs Korea Republic",
       "status": "FT"
     },
@@ -1335,7 +1335,7 @@
       },
       "homeScore": 2,
       "awayScore": 0,
-      "venue": "Seattle Stadium",
+      "venue": "·",
       "label": "USA vs Australia",
       "status": "FT"
     },
@@ -1354,7 +1354,7 @@
       },
       "homeScore": 0,
       "awayScore": 1,
-      "venue": "Boston Stadium",
+      "venue": "·",
       "label": "Scotland vs Morocco",
       "status": "FT"
     },
@@ -1373,7 +1373,7 @@
       },
       "homeScore": 3,
       "awayScore": 0,
-      "venue": "Philadelphia Stadium",
+      "venue": "·",
       "label": "Brazil vs Haiti",
       "status": "FT"
     },
@@ -1392,7 +1392,7 @@
       },
       "homeScore": 0,
       "awayScore": 1,
-      "venue": "San Francisco Bay Area Stadium",
+      "venue": "·",
       "label": "Türkiye vs Paraguay",
       "status": "FT"
     },
@@ -1411,7 +1411,7 @@
       },
       "homeScore": 5,
       "awayScore": 1,
-      "venue": "Houston Stadium",
+      "venue": "·",
       "label": "Netherlands vs Sweden",
       "status": "FT"
     },
@@ -1430,7 +1430,7 @@
       },
       "homeScore": 2,
       "awayScore": 1,
-      "venue": "Toronto Stadium",
+      "venue": "·",
       "label": "Germany vs Côte d'Ivoire",
       "status": "FT"
     },
@@ -1449,7 +1449,7 @@
       },
       "homeScore": 0,
       "awayScore": 0,
-      "venue": "Kansas City Stadium",
+      "venue": "·",
       "label": "Ecuador vs Curaçao",
       "status": "FT"
     },
@@ -1468,7 +1468,7 @@
       },
       "homeScore": 0,
       "awayScore": 4,
-      "venue": "Monterrey Stadium",
+      "venue": "·",
       "label": "Tunisia vs Japan",
       "status": "FT"
     },
@@ -1487,7 +1487,7 @@
       },
       "homeScore": 4,
       "awayScore": 0,
-      "venue": "Atlanta Stadium",
+      "venue": "·",
       "label": "Spain vs Saudi Arabia",
       "status": "FT"
     },
@@ -1506,7 +1506,7 @@
       },
       "homeScore": 0,
       "awayScore": 0,
-      "venue": "Los Angeles Stadium",
+      "venue": "·",
       "label": "Belgium vs IR Iran",
       "status": "FT"
     },
@@ -1525,7 +1525,7 @@
       },
       "homeScore": 2,
       "awayScore": 2,
-      "venue": "Miami Stadium",
+      "venue": "·",
       "label": "Uruguay vs Cabo Verde",
       "status": "FT"
     },
@@ -1544,7 +1544,7 @@
       },
       "homeScore": 1,
       "awayScore": 3,
-      "venue": "BC Place Vancouver",
+      "venue": "·",
       "label": "New Zealand vs Egypt",
       "status": "FT"
     },
@@ -1563,7 +1563,7 @@
       },
       "homeScore": 2,
       "awayScore": 0,
-      "venue": "Dallas Stadium",
+      "venue": "·",
       "label": "Argentina vs Austria",
       "status": "FT"
     },
@@ -1582,7 +1582,7 @@
       },
       "homeScore": 3,
       "awayScore": 0,
-      "venue": "Philadelphia Stadium",
+      "venue": "·",
       "label": "France vs Iraq",
       "status": "FT"
     },
@@ -1601,7 +1601,7 @@
       },
       "homeScore": 3,
       "awayScore": 2,
-      "venue": "New York/New Jersey Stadium",
+      "venue": "·",
       "label": "Norway vs Senegal",
       "status": "FT"
     },
@@ -1620,7 +1620,7 @@
       },
       "homeScore": 1,
       "awayScore": 2,
-      "venue": "San Francisco Bay Area Stadium",
+      "venue": "·",
       "label": "Jordan vs Algeria",
       "status": "FT"
     },
@@ -1639,7 +1639,7 @@
       },
       "homeScore": 5,
       "awayScore": 0,
-      "venue": "Houston Stadium",
+      "venue": "·",
       "label": "Portugal vs Uzbekistan",
       "status": "FT"
     },
@@ -1658,7 +1658,7 @@
       },
       "homeScore": 0,
       "awayScore": 0,
-      "venue": "Boston Stadium",
+      "venue": "·",
       "label": "England vs Ghana",
       "status": "FT"
     },
@@ -1677,7 +1677,7 @@
       },
       "homeScore": 0,
       "awayScore": 1,
-      "venue": "Toronto Stadium",
+      "venue": "·",
       "label": "Panama vs Croatia",
       "status": "FT"
     },
@@ -1696,7 +1696,7 @@
       },
       "homeScore": 1,
       "awayScore": 0,
-      "venue": "Guadalajara Stadium",
+      "venue": "·",
       "label": "Colombia vs Congo DR",
       "status": "FT"
     },
@@ -1715,7 +1715,7 @@
       },
       "homeScore": 2,
       "awayScore": 1,
-      "venue": "BC Place Vancouver",
+      "venue": "·",
       "label": "Switzerland vs Canada",
       "status": "FT"
     },
@@ -1734,7 +1734,7 @@
       },
       "homeScore": 3,
       "awayScore": 1,
-      "venue": "Seattle Stadium",
+      "venue": "·",
       "label": "Bosnia and Herzegovina vs Qatar",
       "status": "FT"
     },
@@ -1753,7 +1753,7 @@
       },
       "homeScore": 0,
       "awayScore": 3,
-      "venue": "Miami Stadium",
+      "venue": "·",
       "label": "Scotland vs Brazil",
       "status": "FT"
     },
@@ -1772,7 +1772,7 @@
       },
       "homeScore": 4,
       "awayScore": 2,
-      "venue": "Atlanta Stadium",
+      "venue": "·",
       "label": "Morocco vs Haiti",
       "status": "FT"
     },
@@ -1791,7 +1791,7 @@
       },
       "homeScore": 0,
       "awayScore": 3,
-      "venue": "Mexico City Stadium",
+      "venue": "·",
       "label": "Czechia vs Mexico",
       "status": "FT"
     },
@@ -1810,7 +1810,7 @@
       },
       "homeScore": 1,
       "awayScore": 0,
-      "venue": "Monterrey Stadium",
+      "venue": "·",
       "label": "South Africa vs Korea Republic",
       "status": "FT"
     },
@@ -1829,7 +1829,7 @@
       },
       "homeScore": 0,
       "awayScore": 2,
-      "venue": "Philadelphia Stadium",
+      "venue": "·",
       "label": "Curaçao vs Côte d'Ivoire",
       "status": "FT"
     },
@@ -1848,7 +1848,7 @@
       },
       "homeScore": 2,
       "awayScore": 1,
-      "venue": "New York/New Jersey Stadium",
+      "venue": "·",
       "label": "Ecuador vs Germany",
       "status": "FT"
     },
@@ -1867,7 +1867,7 @@
       },
       "homeScore": 1,
       "awayScore": 1,
-      "venue": "Dallas Stadium",
+      "venue": "·",
       "label": "Japan vs Sweden",
       "status": "FT"
     },
@@ -1886,7 +1886,7 @@
       },
       "homeScore": 1,
       "awayScore": 3,
-      "venue": "Kansas City Stadium",
+      "venue": "·",
       "label": "Tunisia vs Netherlands",
       "status": "FT"
     },
@@ -1905,7 +1905,7 @@
       },
       "homeScore": 3,
       "awayScore": 2,
-      "venue": "Los Angeles Stadium",
+      "venue": "·",
       "label": "Türkiye vs USA",
       "status": "FT"
     },
@@ -1924,7 +1924,7 @@
       },
       "homeScore": 0,
       "awayScore": 0,
-      "venue": "San Francisco Bay Area Stadium",
+      "venue": "·",
       "label": "Paraguay vs Australia",
       "status": "FT"
     },
@@ -1943,7 +1943,7 @@
       },
       "homeScore": 1,
       "awayScore": 4,
-      "venue": "Boston Stadium",
+      "venue": "·",
       "label": "Norway vs France",
       "status": "FT"
     },
@@ -1962,14 +1962,14 @@
       },
       "homeScore": 5,
       "awayScore": 0,
-      "venue": "Toronto Stadium",
+      "venue": "·",
       "label": "Senegal vs Iraq",
       "status": "FT"
     },
     {
       "id": "fixture-63",
       "match": 63,
-      "date": "2026-06-27T00:00:00.000Z",
+      "date": "2026-06-26T18:00:00.000Z",
       "round": "Group H",
       "home": {
         "name": "Cabo Verde",
@@ -1979,14 +1979,16 @@
         "name": "Saudi Arabia",
         "slug": "saudi-arabia"
       },
-      "venue": "Houston Stadium",
+      "homeScore": 0,
+      "awayScore": 0,
+      "venue": "·",
       "label": "Cabo Verde vs Saudi Arabia",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-64",
       "match": 64,
-      "date": "2026-06-27T00:00:00.000Z",
+      "date": "2026-06-26T18:00:00.000Z",
       "round": "Group H",
       "home": {
         "name": "Uruguay",
@@ -1996,9 +1998,11 @@
         "name": "Spain",
         "slug": "spain"
       },
-      "venue": "Guadalajara Stadium",
+      "homeScore": 0,
+      "awayScore": 1,
+      "venue": "·",
       "label": "Uruguay vs Spain",
-      "status": "scheduled"
+      "status": "FT"
     },
     {
       "id": "fixture-65",
@@ -2013,7 +2017,7 @@
         "name": "IR Iran",
         "slug": "ir-iran"
       },
-      "venue": "Seattle Stadium",
+      "venue": "·",
       "label": "Egypt vs IR Iran",
       "status": "scheduled"
     },
@@ -2030,7 +2034,7 @@
         "name": "Belgium",
         "slug": "belgium"
       },
-      "venue": "BC Place Vancouver",
+      "venue": "·",
       "label": "New Zealand vs Belgium",
       "status": "scheduled"
     },
@@ -2047,7 +2051,7 @@
         "name": "England",
         "slug": "england"
       },
-      "venue": "New York/New Jersey Stadium",
+      "venue": "·",
       "label": "Panama vs England",
       "status": "scheduled"
     },
@@ -2064,7 +2068,7 @@
         "name": "Ghana",
         "slug": "ghana"
       },
-      "venue": "Philadelphia Stadium",
+      "venue": "·",
       "label": "Croatia vs Ghana",
       "status": "scheduled"
     },
@@ -2081,7 +2085,7 @@
         "name": "Portugal",
         "slug": "portugal"
       },
-      "venue": "Miami Stadium",
+      "venue": "·",
       "label": "Colombia vs Portugal",
       "status": "scheduled"
     },
@@ -2098,7 +2102,7 @@
         "name": "Uzbekistan",
         "slug": "uzbekistan"
       },
-      "venue": "Atlanta Stadium",
+      "venue": "·",
       "label": "Congo DR vs Uzbekistan",
       "status": "scheduled"
     },
@@ -2115,7 +2119,7 @@
         "name": "Austria",
         "slug": "austria"
       },
-      "venue": "Kansas City Stadium",
+      "venue": "·",
       "label": "Algeria vs Austria",
       "status": "scheduled"
     },
@@ -2132,7 +2136,7 @@
         "name": "Argentina",
         "slug": "argentina"
       },
-      "venue": "Dallas Stadium",
+      "venue": "·",
       "label": "Jordan vs Argentina",
       "status": "scheduled"
     },
@@ -2149,7 +2153,7 @@
         "name": "Canada",
         "slug": "canada"
       },
-      "venue": "Los Angeles Stadium",
+      "venue": "·",
       "label": "South Africa vs Canada",
       "status": "scheduled"
     },
@@ -2159,21 +2163,38 @@
       "date": "2026-06-29T17:00:00.000Z",
       "round": "Round of 32",
       "home": {
-        "name": "Germany",
-        "slug": "germany"
+        "name": "Brazil",
+        "slug": "brazil"
       },
       "away": {
-        "name": "Sweden",
-        "slug": "sweden"
+        "name": "Japan",
+        "slug": "japan"
       },
-      "venue": "Houston Stadium",
-      "label": "Germany vs Sweden",
+      "venue": "·",
+      "label": "Brazil vs Japan",
       "status": "scheduled"
     },
     {
       "id": "fixture-75",
       "match": 75,
       "date": "2026-06-29T20:30:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "Germany",
+        "slug": "germany"
+      },
+      "away": {
+        "name": "Paraguay",
+        "slug": "paraguay"
+      },
+      "venue": "·",
+      "label": "Germany vs Paraguay",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-76",
+      "match": 76,
+      "date": "2026-06-30T01:00:00.000Z",
       "round": "Round of 32",
       "home": {
         "name": "Netherlands",
@@ -2183,48 +2204,14 @@
         "name": "Morocco",
         "slug": "morocco"
       },
-      "venue": "Boston Stadium",
+      "venue": "·",
       "label": "Netherlands vs Morocco",
-      "status": "scheduled"
-    },
-    {
-      "id": "fixture-76",
-      "match": 76,
-      "date": "2026-06-30T01:00:00.000Z",
-      "round": "Round of 32",
-      "home": {
-        "name": "Brazil",
-        "slug": "brazil"
-      },
-      "away": {
-        "name": "Japan",
-        "slug": "japan"
-      },
-      "venue": "Monterrey Stadium",
-      "label": "Brazil vs Japan",
       "status": "scheduled"
     },
     {
       "id": "fixture-77",
       "match": 77,
       "date": "2026-06-30T17:00:00.000Z",
-      "round": "Round of 32",
-      "home": {
-        "name": "France",
-        "slug": "france"
-      },
-      "away": {
-        "name": "Paraguay",
-        "slug": "paraguay"
-      },
-      "venue": "Dallas Stadium",
-      "label": "France vs Paraguay",
-      "status": "scheduled"
-    },
-    {
-      "id": "fixture-78",
-      "match": 78,
-      "date": "2026-06-30T21:00:00.000Z",
       "round": "Round of 32",
       "home": {
         "name": "Côte d'Ivoire",
@@ -2234,8 +2221,25 @@
         "name": "Norway",
         "slug": "norway"
       },
-      "venue": "New York/New Jersey Stadium",
+      "venue": "·",
       "label": "Côte d'Ivoire vs Norway",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-78",
+      "match": 78,
+      "date": "2026-06-30T21:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "France",
+        "slug": "france"
+      },
+      "away": {
+        "name": "Sweden",
+        "slug": "sweden"
+      },
+      "venue": "·",
+      "label": "France vs Sweden",
       "status": "scheduled"
     },
     {
@@ -2248,11 +2252,11 @@
         "slug": "mexico"
       },
       "away": {
-        "name": "Ecuador",
-        "slug": "ecuador"
+        "name": "3CEFHI",
+        "slug": "3cefhi"
       },
-      "venue": "Mexico City Stadium",
-      "label": "Mexico vs Ecuador",
+      "venue": "·",
+      "label": "Mexico vs 3CEFHI",
       "status": "scheduled"
     },
     {
@@ -2261,21 +2265,38 @@
       "date": "2026-07-01T16:00:00.000Z",
       "round": "Round of 32",
       "home": {
-        "name": "England",
-        "slug": "england"
+        "name": "1L",
+        "slug": "1l"
       },
       "away": {
-        "name": "Congo DR",
-        "slug": "congo-dr"
+        "name": "3EHIJK",
+        "slug": "3ehijk"
       },
-      "venue": "Atlanta Stadium",
-      "label": "England vs Congo DR",
+      "venue": "·",
+      "label": "1L vs 3EHIJK",
       "status": "scheduled"
     },
     {
       "id": "fixture-81",
       "match": 81,
       "date": "2026-07-01T20:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "1G",
+        "slug": "1g"
+      },
+      "away": {
+        "name": "3AEHIJ",
+        "slug": "3aehij"
+      },
+      "venue": "·",
+      "label": "1G vs 3AEHIJ",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-82",
+      "match": 82,
+      "date": "2026-07-02T00:00:00.000Z",
       "round": "Round of 32",
       "home": {
         "name": "USA",
@@ -2285,25 +2306,8 @@
         "name": "Bosnia and Herzegovina",
         "slug": "bosnia-and-herzegovina"
       },
-      "venue": "Seattle Stadium",
+      "venue": "·",
       "label": "USA vs Bosnia and Herzegovina",
-      "status": "scheduled"
-    },
-    {
-      "id": "fixture-82",
-      "match": 82,
-      "date": "2026-07-02T00:00:00.000Z",
-      "round": "Round of 32",
-      "home": {
-        "name": "Belgium",
-        "slug": "belgium"
-      },
-      "away": {
-        "name": "Algeria",
-        "slug": "algeria"
-      },
-      "venue": "San Francisco Bay Area Stadium",
-      "label": "Belgium vs Algeria",
       "status": "scheduled"
     },
     {
@@ -2312,15 +2316,15 @@
       "date": "2026-07-02T19:00:00.000Z",
       "round": "Round of 32",
       "home": {
-        "name": "Portugal",
-        "slug": "portugal"
+        "name": "Spain",
+        "slug": "spain"
       },
       "away": {
-        "name": "Croatia",
-        "slug": "croatia"
+        "name": "2J",
+        "slug": "2j"
       },
-      "venue": "Los Angeles Stadium",
-      "label": "Portugal vs Croatia",
+      "venue": "·",
+      "label": "Spain vs 2J",
       "status": "scheduled"
     },
     {
@@ -2329,15 +2333,15 @@
       "date": "2026-07-02T23:00:00.000Z",
       "round": "Round of 32",
       "home": {
-        "name": "Spain",
-        "slug": "spain"
+        "name": "2K",
+        "slug": "2k"
       },
       "away": {
-        "name": "Austria",
-        "slug": "austria"
+        "name": "2L",
+        "slug": "2l"
       },
-      "venue": "Toronto Stadium",
-      "label": "Spain vs Austria",
+      "venue": "·",
+      "label": "2K vs 2L",
       "status": "scheduled"
     },
     {
@@ -2350,17 +2354,34 @@
         "slug": "switzerland"
       },
       "away": {
-        "name": "Senegal",
-        "slug": "senegal"
+        "name": "3EFGIJ",
+        "slug": "3efgij"
       },
-      "venue": "BC Place Vancouver",
-      "label": "Switzerland vs Senegal",
+      "venue": "·",
+      "label": "Switzerland vs 3EFGIJ",
       "status": "scheduled"
     },
     {
       "id": "fixture-86",
       "match": 86,
       "date": "2026-07-03T18:00:00.000Z",
+      "round": "Round of 32",
+      "home": {
+        "name": "Australia",
+        "slug": "australia"
+      },
+      "away": {
+        "name": "2G",
+        "slug": "2g"
+      },
+      "venue": "·",
+      "label": "Australia vs 2G",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-87",
+      "match": 87,
+      "date": "2026-07-03T22:00:00.000Z",
       "round": "Round of 32",
       "home": {
         "name": "Argentina",
@@ -2370,25 +2391,8 @@
         "name": "Cabo Verde",
         "slug": "cabo-verde"
       },
-      "venue": "Dallas Stadium",
+      "venue": "·",
       "label": "Argentina vs Cabo Verde",
-      "status": "scheduled"
-    },
-    {
-      "id": "fixture-87",
-      "match": 87,
-      "date": "2026-07-03T22:00:00.000Z",
-      "round": "Round of 32",
-      "home": {
-        "name": "Colombia",
-        "slug": "colombia"
-      },
-      "away": {
-        "name": "Ghana",
-        "slug": "ghana"
-      },
-      "venue": "Miami Stadium",
-      "label": "Colombia vs Ghana",
       "status": "scheduled"
     },
     {
@@ -2397,38 +2401,21 @@
       "date": "2026-07-04T01:30:00.000Z",
       "round": "Round of 32",
       "home": {
-        "name": "Australia",
-        "slug": "australia"
+        "name": "1K",
+        "slug": "1k"
       },
       "away": {
-        "name": "Egypt",
-        "slug": "egypt"
+        "name": "3DEIJL",
+        "slug": "3deijl"
       },
-      "venue": "Kansas City Stadium",
-      "label": "Australia vs Egypt",
+      "venue": "·",
+      "label": "1K vs 3DEIJL",
       "status": "scheduled"
     },
     {
       "id": "fixture-89",
       "match": 89,
       "date": "2026-07-04T17:00:00.000Z",
-      "round": "Round of 16",
-      "home": {
-        "name": "W74",
-        "slug": "w74"
-      },
-      "away": {
-        "name": "W77",
-        "slug": "w77"
-      },
-      "venue": "Houston Stadium",
-      "label": "W74 vs W77",
-      "status": "scheduled"
-    },
-    {
-      "id": "fixture-90",
-      "match": 90,
-      "date": "2026-07-04T21:00:00.000Z",
       "round": "Round of 16",
       "home": {
         "name": "W73",
@@ -2438,8 +2425,25 @@
         "name": "W75",
         "slug": "w75"
       },
-      "venue": "Philadelphia Stadium",
+      "venue": "·",
       "label": "W73 vs W75",
+      "status": "scheduled"
+    },
+    {
+      "id": "fixture-90",
+      "match": 90,
+      "date": "2026-07-04T21:00:00.000Z",
+      "round": "Round of 16",
+      "home": {
+        "name": "W74",
+        "slug": "w74"
+      },
+      "away": {
+        "name": "W77",
+        "slug": "w77"
+      },
+      "venue": "·",
+      "label": "W74 vs W77",
       "status": "scheduled"
     },
     {
@@ -2455,7 +2459,7 @@
         "name": "W78",
         "slug": "w78"
       },
-      "venue": "New York/New Jersey Stadium",
+      "venue": "·",
       "label": "W76 vs W78",
       "status": "scheduled"
     },
@@ -2472,7 +2476,7 @@
         "name": "W80",
         "slug": "w80"
       },
-      "venue": "Mexico City Stadium",
+      "venue": "·",
       "label": "W79 vs W80",
       "status": "scheduled"
     },
@@ -2489,7 +2493,7 @@
         "name": "W84",
         "slug": "w84"
       },
-      "venue": "Dallas Stadium",
+      "venue": "·",
       "label": "W83 vs W84",
       "status": "scheduled"
     },
@@ -2506,7 +2510,7 @@
         "name": "W82",
         "slug": "w82"
       },
-      "venue": "Seattle Stadium",
+      "venue": "·",
       "label": "W81 vs W82",
       "status": "scheduled"
     },
@@ -2523,7 +2527,7 @@
         "name": "W88",
         "slug": "w88"
       },
-      "venue": "Atlanta Stadium",
+      "venue": "·",
       "label": "W86 vs W88",
       "status": "scheduled"
     },
@@ -2540,7 +2544,7 @@
         "name": "W87",
         "slug": "w87"
       },
-      "venue": "BC Place Vancouver",
+      "venue": "·",
       "label": "W85 vs W87",
       "status": "scheduled"
     },
@@ -2557,7 +2561,7 @@
         "name": "W90",
         "slug": "w90"
       },
-      "venue": "Boston Stadium",
+      "venue": "·",
       "label": "W89 vs W90",
       "status": "scheduled"
     },
@@ -2574,7 +2578,7 @@
         "name": "W94",
         "slug": "w94"
       },
-      "venue": "Los Angeles Stadium",
+      "venue": "·",
       "label": "W93 vs W94",
       "status": "scheduled"
     },
@@ -2591,7 +2595,7 @@
         "name": "W92",
         "slug": "w92"
       },
-      "venue": "Miami Stadium",
+      "venue": "·",
       "label": "W91 vs W92",
       "status": "scheduled"
     },
@@ -2608,7 +2612,7 @@
         "name": "W96",
         "slug": "w96"
       },
-      "venue": "Kansas City Stadium",
+      "venue": "·",
       "label": "W95 vs W96",
       "status": "scheduled"
     },
@@ -2625,7 +2629,7 @@
         "name": "W98",
         "slug": "w98"
       },
-      "venue": "Dallas Stadium",
+      "venue": "·",
       "label": "W97 vs W98",
       "status": "scheduled"
     },
@@ -2642,7 +2646,7 @@
         "name": "W100",
         "slug": "w100"
       },
-      "venue": "Atlanta Stadium",
+      "venue": "·",
       "label": "W99 vs W100",
       "status": "scheduled"
     },
@@ -2650,17 +2654,17 @@
       "id": "fixture-103",
       "match": 103,
       "date": "2026-07-18T21:00:00.000Z",
-      "round": "Third place",
+      "round": "Play-off for third place",
       "home": {
-        "name": "L101",
-        "slug": "l101"
+        "name": "RU101",
+        "slug": "ru101"
       },
       "away": {
-        "name": "L102",
-        "slug": "l102"
+        "name": "RU102",
+        "slug": "ru102"
       },
-      "venue": "Miami Stadium",
-      "label": "L101 vs L102",
+      "venue": "·",
+      "label": "RU101 vs RU102",
       "status": "scheduled"
     },
     {
@@ -2676,7 +2680,7 @@
         "name": "W102",
         "slug": "w102"
       },
-      "venue": "New York/New Jersey Stadium",
+      "venue": "·",
       "label": "W101 vs W102",
       "status": "scheduled"
     }
@@ -2865,34 +2869,34 @@
           "goal-difference": 4
         },
         {
-          "slug": "belgium",
-          "group": "G",
-          "won": 1,
-          "team-conduct-score": -7,
-          "lost": 0,
-          "points": 5,
-          "drawn": 2,
-          "team": "Belgium",
-          "goals-against": 2,
-          "position": 1,
-          "played": 3,
-          "goals-for": 6,
-          "goal-difference": 4
-        },
-        {
           "slug": "egypt",
           "group": "G",
           "won": 1,
-          "team-conduct-score": -6,
+          "team-conduct-score": -3,
           "lost": 0,
-          "points": 5,
-          "drawn": 2,
+          "points": 4,
+          "drawn": 1,
           "team": "Egypt",
-          "goals-against": 3,
-          "position": 2,
-          "played": 3,
-          "goals-for": 5,
+          "goals-against": 2,
+          "position": 1,
+          "played": 2,
+          "goals-for": 4,
           "goal-difference": 2
+        },
+        {
+          "slug": "ir-iran",
+          "group": "G",
+          "won": 0,
+          "team-conduct-score": -2,
+          "lost": 0,
+          "points": 2,
+          "drawn": 2,
+          "team": "IR Iran",
+          "goals-against": 2,
+          "position": 2,
+          "played": 2,
+          "goals-for": 2,
+          "goal-difference": 0
         },
         {
           "slug": "spain",
@@ -2957,45 +2961,45 @@
         {
           "slug": "argentina",
           "group": "J",
-          "won": 3,
+          "won": 2,
           "team-conduct-score": -2,
           "lost": 0,
-          "points": 9,
+          "points": 6,
           "drawn": 0,
           "team": "Argentina",
-          "goals-against": 1,
+          "goals-against": 0,
           "position": 1,
-          "played": 3,
-          "goals-for": 8,
-          "goal-difference": 7
+          "played": 2,
+          "goals-for": 5,
+          "goal-difference": 5
         },
         {
           "slug": "austria",
           "group": "J",
           "won": 1,
-          "team-conduct-score": -4,
+          "team-conduct-score": -3,
           "lost": 1,
-          "points": 4,
-          "drawn": 1,
+          "points": 3,
+          "drawn": 0,
           "team": "Austria",
-          "goals-against": 6,
+          "goals-against": 3,
           "position": 2,
-          "played": 3,
-          "goals-for": 6,
+          "played": 2,
+          "goals-for": 3,
           "goal-difference": 0
         },
         {
           "slug": "colombia",
           "group": "K",
           "won": 2,
-          "team-conduct-score": -4,
+          "team-conduct-score": -3,
           "lost": 0,
-          "points": 7,
-          "drawn": 1,
+          "points": 6,
+          "drawn": 0,
           "team": "Colombia",
           "goals-against": 1,
           "position": 1,
-          "played": 3,
+          "played": 2,
           "goals-for": 4,
           "goal-difference": 3
         },
@@ -3005,63 +3009,48 @@
           "won": 1,
           "team-conduct-score": -4,
           "lost": 0,
-          "points": 5,
-          "drawn": 2,
+          "points": 4,
+          "drawn": 1,
           "team": "Portugal",
           "goals-against": 1,
           "position": 2,
-          "played": 3,
+          "played": 2,
           "goals-for": 6,
           "goal-difference": 5
         },
         {
           "slug": "england",
           "group": "L",
-          "won": 2,
-          "team-conduct-score": -2,
+          "won": 1,
+          "team-conduct-score": -1,
           "lost": 0,
-          "points": 7,
+          "points": 4,
           "drawn": 1,
           "team": "England",
           "goals-against": 2,
           "position": 1,
-          "played": 3,
-          "goals-for": 6,
-          "goal-difference": 4
+          "played": 2,
+          "goals-for": 4,
+          "goal-difference": 2
         },
         {
-          "slug": "croatia",
+          "slug": "ghana",
           "group": "L",
-          "won": 2,
+          "won": 1,
           "team-conduct-score": -2,
-          "lost": 1,
-          "points": 6,
-          "drawn": 0,
-          "team": "Croatia",
-          "goals-against": 5,
+          "lost": 0,
+          "points": 4,
+          "drawn": 1,
+          "team": "Ghana",
+          "goals-against": 0,
           "position": 2,
-          "played": 3,
-          "goals-for": 5,
-          "goal-difference": 0
+          "played": 2,
+          "goals-for": 1,
+          "goal-difference": 1
         }
       ],
       "best-thirds": [
         {
-          "slug": "congo-dr",
-          "group": "K",
-          "won": 1,
-          "team-conduct-score": -5,
-          "lost": 1,
-          "points": 4,
-          "drawn": 1,
-          "team": "Congo DR",
-          "goals-against": 3,
-          "position": 3,
-          "played": 3,
-          "goals-for": 4,
-          "goal-difference": 1
-        },
-        {
           "slug": "sweden",
           "group": "F",
           "won": 1,
@@ -3074,21 +3063,6 @@
           "position": 3,
           "played": 3,
           "goals-for": 7,
-          "goal-difference": 0
-        },
-        {
-          "slug": "ghana",
-          "group": "L",
-          "won": 1,
-          "team-conduct-score": -3,
-          "lost": 1,
-          "points": 4,
-          "drawn": 1,
-          "team": "Ghana",
-          "goals-against": 2,
-          "position": 3,
-          "played": 3,
-          "goals-for": 2,
           "goal-difference": 0
         },
         {
@@ -3107,7 +3081,7 @@
           "goal-difference": 0
         },
         {
-          "slug": "bosnia-and-herzegovina",
+          "slug": "bosnia-herzegovina",
           "group": "B",
           "won": 1,
           "team-conduct-score": -10,
@@ -3120,143 +3094,6 @@
           "played": 3,
           "goals-for": 5,
           "goal-difference": -1
-        },
-        {
-          "slug": "algeria",
-          "group": "J",
-          "won": 1,
-          "team-conduct-score": -1,
-          "lost": 1,
-          "points": 4,
-          "drawn": 1,
-          "team": "Algeria",
-          "goals-against": 7,
-          "position": 3,
-          "played": 3,
-          "goals-for": 5,
-          "goal-difference": -2
-        },
-        {
-          "slug": "paraguay",
-          "group": "D",
-          "won": 1,
-          "team-conduct-score": -12,
-          "lost": 1,
-          "points": 4,
-          "drawn": 1,
-          "team": "Paraguay",
-          "goals-against": 4,
-          "position": 3,
-          "played": 3,
-          "goals-for": 2,
-          "goal-difference": -2
-        },
-        {
-          "slug": "senegal",
-          "group": "I",
-          "won": 1,
-          "team-conduct-score": -2,
-          "lost": 2,
-          "points": 3,
-          "drawn": 0,
-          "team": "Senegal",
-          "goals-against": 6,
-          "position": 3,
-          "played": 3,
-          "goals-for": 8,
-          "goal-difference": 2
-        }
-      ],
-      "third-place-table": [
-        {
-          "slug": "congo-dr",
-          "group": "K",
-          "won": 1,
-          "team-conduct-score": -5,
-          "lost": 1,
-          "points": 4,
-          "drawn": 1,
-          "team": "Congo DR",
-          "goals-against": 3,
-          "position": 3,
-          "played": 3,
-          "goals-for": 4,
-          "goal-difference": 1
-        },
-        {
-          "slug": "sweden",
-          "group": "F",
-          "won": 1,
-          "team-conduct-score": -5,
-          "lost": 1,
-          "points": 4,
-          "drawn": 1,
-          "team": "Sweden",
-          "goals-against": 7,
-          "position": 3,
-          "played": 3,
-          "goals-for": 7,
-          "goal-difference": 0
-        },
-        {
-          "slug": "ghana",
-          "group": "L",
-          "won": 1,
-          "team-conduct-score": -3,
-          "lost": 1,
-          "points": 4,
-          "drawn": 1,
-          "team": "Ghana",
-          "goals-against": 2,
-          "position": 3,
-          "played": 3,
-          "goals-for": 2,
-          "goal-difference": 0
-        },
-        {
-          "slug": "ecuador",
-          "group": "E",
-          "won": 1,
-          "team-conduct-score": -5,
-          "lost": 1,
-          "points": 4,
-          "drawn": 1,
-          "team": "Ecuador",
-          "goals-against": 2,
-          "position": 3,
-          "played": 3,
-          "goals-for": 2,
-          "goal-difference": 0
-        },
-        {
-          "slug": "bosnia-and-herzegovina",
-          "group": "B",
-          "won": 1,
-          "team-conduct-score": -10,
-          "lost": 1,
-          "points": 4,
-          "drawn": 1,
-          "team": "Bosnia and Herzegovina",
-          "goals-against": 6,
-          "position": 3,
-          "played": 3,
-          "goals-for": 5,
-          "goal-difference": -1
-        },
-        {
-          "slug": "algeria",
-          "group": "J",
-          "won": 1,
-          "team-conduct-score": -1,
-          "lost": 1,
-          "points": 4,
-          "drawn": 1,
-          "team": "Algeria",
-          "goals-against": 7,
-          "position": 3,
-          "played": 3,
-          "goals-for": 5,
-          "goal-difference": -2
         },
         {
           "slug": "paraguay",
@@ -3289,19 +3126,19 @@
           "goal-difference": 2
         },
         {
-          "slug": "ir-iran",
-          "group": "G",
-          "won": 0,
-          "team-conduct-score": -6,
-          "lost": 0,
+          "slug": "croatia",
+          "group": "L",
+          "won": 1,
+          "team-conduct-score": -1,
+          "lost": 1,
           "points": 3,
-          "drawn": 3,
-          "team": "IR Iran",
-          "goals-against": 3,
+          "drawn": 0,
+          "team": "Croatia",
+          "goals-against": 4,
           "position": 3,
-          "played": 3,
+          "played": 2,
           "goals-for": 3,
-          "goal-difference": 0
+          "goal-difference": -1
         },
         {
           "slug": "korea-republic",
@@ -3319,6 +3156,143 @@
           "goal-difference": -1
         },
         {
+          "slug": "algeria",
+          "group": "J",
+          "won": 1,
+          "team-conduct-score": -1,
+          "lost": 1,
+          "points": 3,
+          "drawn": 0,
+          "team": "Algeria",
+          "goals-against": 4,
+          "position": 3,
+          "played": 2,
+          "goals-for": 2,
+          "goal-difference": -2
+        }
+      ],
+      "third-place-table": [
+        {
+          "slug": "sweden",
+          "group": "F",
+          "won": 1,
+          "team-conduct-score": -5,
+          "lost": 1,
+          "points": 4,
+          "drawn": 1,
+          "team": "Sweden",
+          "goals-against": 7,
+          "position": 3,
+          "played": 3,
+          "goals-for": 7,
+          "goal-difference": 0
+        },
+        {
+          "slug": "ecuador",
+          "group": "E",
+          "won": 1,
+          "team-conduct-score": -5,
+          "lost": 1,
+          "points": 4,
+          "drawn": 1,
+          "team": "Ecuador",
+          "goals-against": 2,
+          "position": 3,
+          "played": 3,
+          "goals-for": 2,
+          "goal-difference": 0
+        },
+        {
+          "slug": "bosnia-herzegovina",
+          "group": "B",
+          "won": 1,
+          "team-conduct-score": -10,
+          "lost": 1,
+          "points": 4,
+          "drawn": 1,
+          "team": "Bosnia and Herzegovina",
+          "goals-against": 6,
+          "position": 3,
+          "played": 3,
+          "goals-for": 5,
+          "goal-difference": -1
+        },
+        {
+          "slug": "paraguay",
+          "group": "D",
+          "won": 1,
+          "team-conduct-score": -12,
+          "lost": 1,
+          "points": 4,
+          "drawn": 1,
+          "team": "Paraguay",
+          "goals-against": 4,
+          "position": 3,
+          "played": 3,
+          "goals-for": 2,
+          "goal-difference": -2
+        },
+        {
+          "slug": "senegal",
+          "group": "I",
+          "won": 1,
+          "team-conduct-score": -2,
+          "lost": 2,
+          "points": 3,
+          "drawn": 0,
+          "team": "Senegal",
+          "goals-against": 6,
+          "position": 3,
+          "played": 3,
+          "goals-for": 8,
+          "goal-difference": 2
+        },
+        {
+          "slug": "croatia",
+          "group": "L",
+          "won": 1,
+          "team-conduct-score": -1,
+          "lost": 1,
+          "points": 3,
+          "drawn": 0,
+          "team": "Croatia",
+          "goals-against": 4,
+          "position": 3,
+          "played": 2,
+          "goals-for": 3,
+          "goal-difference": -1
+        },
+        {
+          "slug": "korea-republic",
+          "group": "A",
+          "won": 1,
+          "team-conduct-score": -4,
+          "lost": 2,
+          "points": 3,
+          "drawn": 0,
+          "team": "Korea Republic",
+          "goals-against": 3,
+          "position": 3,
+          "played": 3,
+          "goals-for": 2,
+          "goal-difference": -1
+        },
+        {
+          "slug": "algeria",
+          "group": "J",
+          "won": 1,
+          "team-conduct-score": -1,
+          "lost": 1,
+          "points": 3,
+          "drawn": 0,
+          "team": "Algeria",
+          "goals-against": 4,
+          "position": 3,
+          "played": 2,
+          "goals-for": 2,
+          "goal-difference": -2
+        },
+        {
           "slug": "scotland",
           "group": "C",
           "won": 1,
@@ -3334,6 +3308,21 @@
           "goal-difference": -3
         },
         {
+          "slug": "belgium",
+          "group": "G",
+          "won": 0,
+          "team-conduct-score": -7,
+          "lost": 0,
+          "points": 2,
+          "drawn": 2,
+          "team": "Belgium",
+          "goals-against": 1,
+          "position": 3,
+          "played": 2,
+          "goals-for": 1,
+          "goal-difference": 0
+        },
+        {
           "slug": "uruguay",
           "group": "H",
           "won": 0,
@@ -3347,9 +3336,24 @@
           "played": 3,
           "goals-for": 3,
           "goal-difference": -1
+        },
+        {
+          "slug": "congo-dr",
+          "group": "K",
+          "won": 0,
+          "team-conduct-score": -2,
+          "lost": 1,
+          "points": 1,
+          "drawn": 1,
+          "team": "Congo DR",
+          "goals-against": 2,
+          "position": 3,
+          "played": 2,
+          "goals-for": 1,
+          "goal-difference": -1
         }
       ],
-      "provisional?": false
+      "provisional?": true
     },
     "rounds": {
       "round-of-32": [
@@ -3419,13 +3423,29 @@
           },
           "away": {
             "candidate-groups": [
+              "A",
               "B",
               "D",
               "F"
             ],
             "candidate-teams": [
               {
-                "slug": "bosnia-and-herzegovina",
+                "slug": "korea-republic",
+                "group": "A",
+                "won": 1,
+                "team-conduct-score": -4,
+                "lost": 2,
+                "points": 3,
+                "drawn": 0,
+                "team": "Korea Republic",
+                "goals-against": 3,
+                "position": 3,
+                "played": 3,
+                "goals-for": 2,
+                "goal-difference": -1
+              },
+              {
+                "slug": "bosnia-herzegovina",
                 "group": "B",
                 "won": 1,
                 "team-conduct-score": -10,
@@ -3756,37 +3776,74 @@
             "team": {
               "slug": "england",
               "group": "L",
-              "won": 2,
-              "team-conduct-score": -2,
+              "won": 1,
+              "team-conduct-score": -1,
               "lost": 0,
-              "points": 7,
+              "points": 4,
               "drawn": 1,
               "team": "England",
               "goals-against": 2,
               "position": 1,
-              "played": 3,
-              "goals-for": 6,
-              "goal-difference": 4
+              "played": 2,
+              "goals-for": 4,
+              "goal-difference": 2
             },
             "resolved?": true
           },
           "away": {
-            "team": {
-              "slug": "congo-dr",
-              "group": "K",
-              "won": 1,
-              "team-conduct-score": -5,
-              "lost": 1,
-              "points": 4,
-              "drawn": 1,
-              "team": "Congo DR",
-              "goals-against": 3,
-              "position": 3,
-              "played": 3,
-              "goals-for": 4,
-              "goal-difference": 1
-            },
-            "resolved?": true,
+            "candidate-groups": [
+              "E",
+              "I",
+              "J"
+            ],
+            "candidate-teams": [
+              {
+                "slug": "ecuador",
+                "group": "E",
+                "won": 1,
+                "team-conduct-score": -5,
+                "lost": 1,
+                "points": 4,
+                "drawn": 1,
+                "team": "Ecuador",
+                "goals-against": 2,
+                "position": 3,
+                "played": 3,
+                "goals-for": 2,
+                "goal-difference": 0
+              },
+              {
+                "slug": "senegal",
+                "group": "I",
+                "won": 1,
+                "team-conduct-score": -2,
+                "lost": 2,
+                "points": 3,
+                "drawn": 0,
+                "team": "Senegal",
+                "goals-against": 6,
+                "position": 3,
+                "played": 3,
+                "goals-for": 8,
+                "goal-difference": 2
+              },
+              {
+                "slug": "algeria",
+                "group": "J",
+                "won": 1,
+                "team-conduct-score": -1,
+                "lost": 1,
+                "points": 3,
+                "drawn": 0,
+                "team": "Algeria",
+                "goals-against": 4,
+                "position": 3,
+                "played": 2,
+                "goals-for": 2,
+                "goal-difference": -2
+              }
+            ],
+            "resolved?": false,
             "slot": "3EHIJK"
           },
           "date": "2026-07-01",
@@ -3823,7 +3880,7 @@
             ],
             "candidate-teams": [
               {
-                "slug": "bosnia-and-herzegovina",
+                "slug": "bosnia-herzegovina",
                 "group": "B",
                 "won": 1,
                 "team-conduct-score": -10,
@@ -3888,13 +3945,13 @@
                 "won": 1,
                 "team-conduct-score": -1,
                 "lost": 1,
-                "points": 4,
-                "drawn": 1,
+                "points": 3,
+                "drawn": 0,
                 "team": "Algeria",
-                "goals-against": 7,
+                "goals-against": 4,
                 "position": 3,
-                "played": 3,
-                "goals-for": 5,
+                "played": 2,
+                "goals-for": 2,
                 "goal-difference": -2
               }
             ],
@@ -3909,29 +3966,45 @@
           "home": {
             "slot": "1G",
             "team": {
-              "slug": "belgium",
+              "slug": "egypt",
               "group": "G",
               "won": 1,
-              "team-conduct-score": -7,
+              "team-conduct-score": -3,
               "lost": 0,
-              "points": 5,
-              "drawn": 2,
-              "team": "Belgium",
+              "points": 4,
+              "drawn": 1,
+              "team": "Egypt",
               "goals-against": 2,
               "position": 1,
-              "played": 3,
-              "goals-for": 6,
-              "goal-difference": 4
+              "played": 2,
+              "goals-for": 4,
+              "goal-difference": 2
             },
             "resolved?": true
           },
           "away": {
             "candidate-groups": [
+              "A",
               "E",
               "I",
               "J"
             ],
             "candidate-teams": [
+              {
+                "slug": "korea-republic",
+                "group": "A",
+                "won": 1,
+                "team-conduct-score": -4,
+                "lost": 2,
+                "points": 3,
+                "drawn": 0,
+                "team": "Korea Republic",
+                "goals-against": 3,
+                "position": 3,
+                "played": 3,
+                "goals-for": 2,
+                "goal-difference": -1
+              },
               {
                 "slug": "ecuador",
                 "group": "E",
@@ -3968,13 +4041,13 @@
                 "won": 1,
                 "team-conduct-score": -1,
                 "lost": 1,
-                "points": 4,
-                "drawn": 1,
+                "points": 3,
+                "drawn": 0,
                 "team": "Algeria",
-                "goals-against": 7,
+                "goals-against": 4,
                 "position": 3,
-                "played": 3,
-                "goals-for": 5,
+                "played": 2,
+                "goals-for": 2,
                 "goal-difference": -2
               }
             ],
@@ -3994,12 +4067,12 @@
               "won": 1,
               "team-conduct-score": -4,
               "lost": 0,
-              "points": 5,
-              "drawn": 2,
+              "points": 4,
+              "drawn": 1,
               "team": "Portugal",
               "goals-against": 1,
               "position": 2,
-              "played": 3,
+              "played": 2,
               "goals-for": 6,
               "goal-difference": 5
             },
@@ -4008,19 +4081,19 @@
           "away": {
             "slot": "2L",
             "team": {
-              "slug": "croatia",
+              "slug": "ghana",
               "group": "L",
-              "won": 2,
+              "won": 1,
               "team-conduct-score": -2,
-              "lost": 1,
-              "points": 6,
-              "drawn": 0,
-              "team": "Croatia",
-              "goals-against": 5,
+              "lost": 0,
+              "points": 4,
+              "drawn": 1,
+              "team": "Ghana",
+              "goals-against": 0,
               "position": 2,
-              "played": 3,
-              "goals-for": 5,
-              "goal-difference": 0
+              "played": 2,
+              "goals-for": 1,
+              "goal-difference": 1
             },
             "resolved?": true
           },
@@ -4054,15 +4127,15 @@
               "slug": "austria",
               "group": "J",
               "won": 1,
-              "team-conduct-score": -4,
+              "team-conduct-score": -3,
               "lost": 1,
-              "points": 4,
-              "drawn": 1,
+              "points": 3,
+              "drawn": 0,
               "team": "Austria",
-              "goals-against": 6,
+              "goals-against": 3,
               "position": 2,
-              "played": 3,
-              "goals-for": 6,
+              "played": 2,
+              "goals-for": 3,
               "goal-difference": 0
             },
             "resolved?": true
@@ -4150,13 +4223,13 @@
                 "won": 1,
                 "team-conduct-score": -1,
                 "lost": 1,
-                "points": 4,
-                "drawn": 1,
+                "points": 3,
+                "drawn": 0,
                 "team": "Algeria",
-                "goals-against": 7,
+                "goals-against": 4,
                 "position": 3,
-                "played": 3,
-                "goals-for": 5,
+                "played": 2,
+                "goals-for": 2,
                 "goal-difference": -2
               }
             ],
@@ -4173,17 +4246,17 @@
             "team": {
               "slug": "argentina",
               "group": "J",
-              "won": 3,
+              "won": 2,
               "team-conduct-score": -2,
               "lost": 0,
-              "points": 9,
+              "points": 6,
               "drawn": 0,
               "team": "Argentina",
-              "goals-against": 1,
+              "goals-against": 0,
               "position": 1,
-              "played": 3,
-              "goals-for": 8,
-              "goal-difference": 7
+              "played": 2,
+              "goals-for": 5,
+              "goal-difference": 5
             },
             "resolved?": true
           },
@@ -4217,14 +4290,14 @@
               "slug": "colombia",
               "group": "K",
               "won": 2,
-              "team-conduct-score": -4,
+              "team-conduct-score": -3,
               "lost": 0,
-              "points": 7,
-              "drawn": 1,
+              "points": 6,
+              "drawn": 0,
               "team": "Colombia",
               "goals-against": 1,
               "position": 1,
-              "played": 3,
+              "played": 2,
               "goals-for": 4,
               "goal-difference": 3
             },
@@ -4232,19 +4305,19 @@
           },
           "away": {
             "team": {
-              "slug": "ghana",
+              "slug": "croatia",
               "group": "L",
               "won": 1,
-              "team-conduct-score": -3,
+              "team-conduct-score": -1,
               "lost": 1,
-              "points": 4,
-              "drawn": 1,
-              "team": "Ghana",
-              "goals-against": 2,
+              "points": 3,
+              "drawn": 0,
+              "team": "Croatia",
+              "goals-against": 4,
               "position": 3,
-              "played": 3,
-              "goals-for": 2,
-              "goal-difference": 0
+              "played": 2,
+              "goals-for": 3,
+              "goal-difference": -1
             },
             "resolved?": true,
             "slot": "3DEIJL"
@@ -4276,19 +4349,19 @@
           "away": {
             "slot": "2G",
             "team": {
-              "slug": "egypt",
+              "slug": "ir-iran",
               "group": "G",
-              "won": 1,
-              "team-conduct-score": -6,
+              "won": 0,
+              "team-conduct-score": -2,
               "lost": 0,
-              "points": 5,
+              "points": 2,
               "drawn": 2,
-              "team": "Egypt",
-              "goals-against": 3,
+              "team": "IR Iran",
+              "goals-against": 2,
               "position": 2,
-              "played": 3,
-              "goals-for": 5,
-              "goal-difference": 2
+              "played": 2,
+              "goals-for": 2,
+              "goal-difference": 0
             },
             "resolved?": true
           },

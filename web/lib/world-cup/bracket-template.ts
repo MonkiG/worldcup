@@ -1,3 +1,5 @@
+import type { Match } from "../types";
+
 export const roundOf32 = [
   { match: 73, home: "2A", away: "2B", date: "2026-06-28" },
   { match: 74, home: "1E", away: "3ABCDF", date: "2026-06-29" },
@@ -15,9 +17,9 @@ export const roundOf32 = [
   { match: 86, home: "1J", away: "2H", date: "2026-07-03" },
   { match: 87, home: "1K", away: "3DEIJL", date: "2026-07-03" },
   { match: 88, home: "2D", away: "2G", date: "2026-07-03" },
-];
+] as const;
 
-export const laterRounds = [
+export const laterRounds: Match[] = [
   { round: "round-of-16", match: 89, home: "W74", away: "W77" },
   { round: "round-of-16", match: 90, home: "W73", away: "W75" },
   { round: "round-of-16", match: 91, home: "W76", away: "W78" },

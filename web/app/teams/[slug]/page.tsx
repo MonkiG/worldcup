@@ -5,12 +5,7 @@ import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
 import { TeamFlag } from "@/components/team-flag";
 import { TeamReference } from "@/components/team-reference";
-import { enrichCalendarMatches } from "@/lib/calendar";
-import {
-  getBracketPredictions,
-  isQualifiedTeam,
-} from "@/lib/bracket-predictions";
-import { getWorldCupData } from "@/lib/data";
+import { getTeamPageData } from "@/lib/server/world-cup-services";
 import { getFifaCode } from "@/lib/team-codes";
 import type { BracketPrediction } from "@/lib/bracket-predictions";
 import type { FixtureMatch, Team } from "@/lib/types";
@@ -23,22 +18,12 @@ type TeamPageProps = {
   }>;
 };
 
-function findTeam(data: Awaited<ReturnType<typeof getWorldCupData>>, slug: string) {
-  return data.groups
-    .flatMap((group) => group.teams)
-    .find((candidate) => candidate.slug === slug);
-}
-
 function hasResult(match: FixtureMatch) {
   return (
     match.status === "FT" &&
     typeof match.homeScore === "number" &&
     typeof match.awayScore === "number"
   );
-}
-
-function fixtureIncludesTeam(match: FixtureMatch, team: Team) {
-  return match.home?.slug === team.slug || match.away?.slug === team.slug;
 }
 
 function qualificationLabel(team: Team, automatic: Team[], bestThirds: Team[]) {
@@ -124,9 +109,8 @@ function OpponentList({ prediction }: { prediction: BracketPrediction }) {
 export async function generateMetadata({
   params,
 }: TeamPageProps): Promise<Metadata> {
-  const data = getWorldCupData();
   const { slug } = await params;
-  const team = findTeam(data, slug);
+  const { data, team } = getTeamPageData(slug);
 
   if (!team) {
     return {
@@ -159,17 +143,12 @@ export async function generateMetadata({
 }
 
 export default async function TeamPage({ params }: TeamPageProps) {
-  const data = getWorldCupData();
   const { slug } = await params;
-  const team = findTeam(data, slug);
+  const { data, team, fixtures, bracketPredictions, qualified } =
+    getTeamPageData(slug);
 
   if (!team) notFound();
 
-  const fixtures = enrichCalendarMatches(data).filter((match) =>
-    fixtureIncludesTeam(match, team),
-  );
-  const bracketPredictions = getBracketPredictions(data, team);
-  const qualified = isQualifiedTeam(data, team);
   const qualification = qualificationLabel(
     team,
     data.bracket.qualification.automatic,

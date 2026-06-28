@@ -1,7 +1,7 @@
-import { chromium } from "playwright-core";
-import { logger } from "./logger.mjs";
+import { chromium, type LaunchOptions } from "playwright-core";
+import { logger } from "./logger";
 
-export function browserLaunchOptions() {
+export function browserLaunchOptions(): LaunchOptions {
   const executablePath =
     process.env.CHROME_BIN ??
     process.env.CHROME_PATH ??

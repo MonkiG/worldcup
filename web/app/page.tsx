@@ -2,8 +2,7 @@ import { DashboardHero, FeatureLinks } from "@/components/home-dashboard";
 import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
 import { formatGeneratedAt } from "@/lib/format";
-import { getWorldCupData } from "@/lib/data";
-import { enrichCalendarMatches, getCalendarFocus } from "@/lib/calendar";
+import { getHomePageData } from "@/lib/server/world-cup-services";
 import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
@@ -20,9 +19,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const data = getWorldCupData();
+  const { data, focusMatches } = getHomePageData();
   const generated = formatGeneratedAt(data["generated-at"]);
-  const { focusMatches } = getCalendarFocus(enrichCalendarMatches(data));
 
   return (
     <PageShell active="home" data={data} source={data.source}>

@@ -7,14 +7,14 @@
     "build": "next build",
     "start": "next start",
     "check": "tsc --noEmit",
-    "scrape": "npm --prefix ../scraper run scrape",
-    "scrape:groups": "npm --prefix ../scraper run scrape:groups",
-    "scrape:fixtures": "npm --prefix ../scraper run scrape:fixtures",
-    "scrape:all": "npm --prefix ../scraper run scrape:all",
-    "test:scraper": "npm --prefix ../scraper run test"
+    "scrape": "tsx lib/scraper/cli.ts refresh",
+    "scrape:refresh": "tsx lib/scraper/cli.ts refresh",
+    "scrape:all": "tsx lib/scraper/cli.ts refresh",
+    "snapshot": "tsx lib/scraper/cli.ts snapshot"
   },
   "dependencies": {
     "next": "^16.2.9",
+    "playwright-core": "^1.61.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
@@ -22,6 +22,7 @@
     "@types/node": "^22.15.30",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.5",
+    "tsx": "^4.20.6",
     "typescript": "^5.8.3"
   },
   "overrides": {

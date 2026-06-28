@@ -1,0 +1,2952 @@
+{
+  "version": 1,
+  "sources": {
+    "standings": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
+    "fixtures": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=&wtw-filter=ALL"
+  },
+  "generated-at": "2026-06-27T02:30:18.715Z",
+  "fixtures": {
+    "generated-at": "2026-06-27T02:30:18.715Z",
+    "matches": [
+      {
+        "id": "fixture-1",
+        "match": 1,
+        "date": "2026-06-11T18:00:00.000Z",
+        "round": "Group A",
+        "home": {
+          "name": "Mexico",
+          "slug": "mexico"
+        },
+        "away": {
+          "name": "South Africa",
+          "slug": "south-africa"
+        },
+        "venue": "·",
+        "label": "Mexico vs South Africa"
+      },
+      {
+        "id": "fixture-2",
+        "match": 2,
+        "date": "2026-06-11T18:00:00.000Z",
+        "round": "Group A",
+        "home": {
+          "name": "Korea Republic",
+          "slug": "korea-republic"
+        },
+        "away": {
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "venue": "·",
+        "label": "Korea Republic vs Czechia"
+      },
+      {
+        "id": "fixture-3",
+        "match": 3,
+        "date": "2026-06-12T18:00:00.000Z",
+        "round": "Group B",
+        "home": {
+          "name": "Canada",
+          "slug": "canada"
+        },
+        "away": {
+          "name": "Bosnia and Herzegovina",
+          "slug": "bosnia-and-herzegovina"
+        },
+        "venue": "·",
+        "label": "Canada vs Bosnia and Herzegovina"
+      },
+      {
+        "id": "fixture-4",
+        "match": 4,
+        "date": "2026-06-12T18:00:00.000Z",
+        "round": "Group D",
+        "home": {
+          "name": "USA",
+          "slug": "usa"
+        },
+        "away": {
+          "name": "Paraguay",
+          "slug": "paraguay"
+        },
+        "venue": "·",
+        "label": "USA vs Paraguay"
+      },
+      {
+        "id": "fixture-5",
+        "match": 5,
+        "date": "2026-06-13T18:00:00.000Z",
+        "round": "Group B",
+        "home": {
+          "name": "Qatar",
+          "slug": "qatar"
+        },
+        "away": {
+          "name": "Switzerland",
+          "slug": "switzerland"
+        },
+        "venue": "·",
+        "label": "Qatar vs Switzerland"
+      },
+      {
+        "id": "fixture-6",
+        "match": 6,
+        "date": "2026-06-13T18:00:00.000Z",
+        "round": "Group C",
+        "home": {
+          "name": "Brazil",
+          "slug": "brazil"
+        },
+        "away": {
+          "name": "Morocco",
+          "slug": "morocco"
+        },
+        "venue": "·",
+        "label": "Brazil vs Morocco"
+      },
+      {
+        "id": "fixture-7",
+        "match": 7,
+        "date": "2026-06-13T18:00:00.000Z",
+        "round": "Group C",
+        "home": {
+          "name": "Haiti",
+          "slug": "haiti"
+        },
+        "away": {
+          "name": "Scotland",
+          "slug": "scotland"
+        },
+        "venue": "·",
+        "label": "Haiti vs Scotland"
+      },
+      {
+        "id": "fixture-8",
+        "match": 8,
+        "date": "2026-06-13T18:00:00.000Z",
+        "round": "Group D",
+        "home": {
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "away": {
+          "name": "Türkiye",
+          "slug": "turkiye"
+        },
+        "venue": "·",
+        "label": "Australia vs Türkiye"
+      },
+      {
+        "id": "fixture-9",
+        "match": 9,
+        "date": "2026-06-14T18:00:00.000Z",
+        "round": "Group E",
+        "home": {
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "away": {
+          "name": "Curaçao",
+          "slug": "curacao"
+        },
+        "venue": "·",
+        "label": "Germany vs Curaçao"
+      },
+      {
+        "id": "fixture-10",
+        "match": 10,
+        "date": "2026-06-14T18:00:00.000Z",
+        "round": "Group F",
+        "home": {
+          "name": "Netherlands",
+          "slug": "netherlands"
+        },
+        "away": {
+          "name": "Japan",
+          "slug": "japan"
+        },
+        "venue": "·",
+        "label": "Netherlands vs Japan"
+      },
+      {
+        "id": "fixture-11",
+        "match": 11,
+        "date": "2026-06-14T18:00:00.000Z",
+        "round": "Group E",
+        "home": {
+          "name": "Côte d'Ivoire",
+          "slug": "cote-d-ivoire"
+        },
+        "away": {
+          "name": "Ecuador",
+          "slug": "ecuador"
+        },
+        "venue": "·",
+        "label": "Côte d'Ivoire vs Ecuador"
+      },
+      {
+        "id": "fixture-12",
+        "match": 12,
+        "date": "2026-06-14T18:00:00.000Z",
+        "round": "Group F",
+        "home": {
+          "name": "Sweden",
+          "slug": "sweden"
+        },
+        "away": {
+          "name": "Tunisia",
+          "slug": "tunisia"
+        },
+        "venue": "·",
+        "label": "Sweden vs Tunisia"
+      },
+      {
+        "id": "fixture-13",
+        "match": 13,
+        "date": "2026-06-15T18:00:00.000Z",
+        "round": "Group H",
+        "home": {
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "away": {
+          "name": "Cabo Verde",
+          "slug": "cabo-verde"
+        },
+        "venue": "·",
+        "label": "Spain vs Cabo Verde"
+      },
+      {
+        "id": "fixture-14",
+        "match": 14,
+        "date": "2026-06-15T18:00:00.000Z",
+        "round": "Group G",
+        "home": {
+          "name": "Belgium",
+          "slug": "belgium"
+        },
+        "away": {
+          "name": "Egypt",
+          "slug": "egypt"
+        },
+        "venue": "·",
+        "label": "Belgium vs Egypt"
+      },
+      {
+        "id": "fixture-15",
+        "match": 15,
+        "date": "2026-06-15T18:00:00.000Z",
+        "round": "Group H",
+        "home": {
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "away": {
+          "name": "Uruguay",
+          "slug": "uruguay"
+        },
+        "venue": "·",
+        "label": "Saudi Arabia vs Uruguay"
+      },
+      {
+        "id": "fixture-16",
+        "match": 16,
+        "date": "2026-06-15T18:00:00.000Z",
+        "round": "Group G",
+        "home": {
+          "name": "IR Iran",
+          "slug": "ir-iran"
+        },
+        "away": {
+          "name": "New Zealand",
+          "slug": "new-zealand"
+        },
+        "venue": "·",
+        "label": "IR Iran vs New Zealand"
+      },
+      {
+        "id": "fixture-17",
+        "match": 17,
+        "date": "2026-06-16T18:00:00.000Z",
+        "round": "Group I",
+        "home": {
+          "name": "France",
+          "slug": "france"
+        },
+        "away": {
+          "name": "Senegal",
+          "slug": "senegal"
+        },
+        "venue": "·",
+        "label": "France vs Senegal"
+      },
+      {
+        "id": "fixture-18",
+        "match": 18,
+        "date": "2026-06-16T18:00:00.000Z",
+        "round": "Group I",
+        "home": {
+          "name": "Iraq",
+          "slug": "iraq"
+        },
+        "away": {
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "venue": "·",
+        "label": "Iraq vs Norway"
+      },
+      {
+        "id": "fixture-19",
+        "match": 19,
+        "date": "2026-06-16T18:00:00.000Z",
+        "round": "Group J",
+        "home": {
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "away": {
+          "name": "Algeria",
+          "slug": "algeria"
+        },
+        "venue": "·",
+        "label": "Argentina vs Algeria"
+      },
+      {
+        "id": "fixture-20",
+        "match": 20,
+        "date": "2026-06-16T18:00:00.000Z",
+        "round": "Group J",
+        "home": {
+          "name": "Austria",
+          "slug": "austria"
+        },
+        "away": {
+          "name": "Jordan",
+          "slug": "jordan"
+        },
+        "venue": "·",
+        "label": "Austria vs Jordan"
+      },
+      {
+        "id": "fixture-21",
+        "match": 21,
+        "date": "2026-06-17T18:00:00.000Z",
+        "round": "Group K",
+        "home": {
+          "name": "Portugal",
+          "slug": "portugal"
+        },
+        "away": {
+          "name": "Congo DR",
+          "slug": "congo-dr"
+        },
+        "venue": "·",
+        "label": "Portugal vs Congo DR"
+      },
+      {
+        "id": "fixture-22",
+        "match": 22,
+        "date": "2026-06-17T18:00:00.000Z",
+        "round": "Group L",
+        "home": {
+          "name": "England",
+          "slug": "england"
+        },
+        "away": {
+          "name": "Croatia",
+          "slug": "croatia"
+        },
+        "venue": "·",
+        "label": "England vs Croatia"
+      },
+      {
+        "id": "fixture-23",
+        "match": 23,
+        "date": "2026-06-17T18:00:00.000Z",
+        "round": "Group L",
+        "home": {
+          "name": "Ghana",
+          "slug": "ghana"
+        },
+        "away": {
+          "name": "Panama",
+          "slug": "panama"
+        },
+        "venue": "·",
+        "label": "Ghana vs Panama"
+      },
+      {
+        "id": "fixture-24",
+        "match": 24,
+        "date": "2026-06-17T18:00:00.000Z",
+        "round": "Group K",
+        "home": {
+          "name": "Uzbekistan",
+          "slug": "uzbekistan"
+        },
+        "away": {
+          "name": "Colombia",
+          "slug": "colombia"
+        },
+        "venue": "·",
+        "label": "Uzbekistan vs Colombia"
+      },
+      {
+        "id": "fixture-25",
+        "match": 25,
+        "date": "2026-06-18T18:00:00.000Z",
+        "round": "Group A",
+        "home": {
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "away": {
+          "name": "South Africa",
+          "slug": "south-africa"
+        },
+        "venue": "·",
+        "label": "Czechia vs South Africa"
+      },
+      {
+        "id": "fixture-26",
+        "match": 26,
+        "date": "2026-06-18T18:00:00.000Z",
+        "round": "Group B",
+        "home": {
+          "name": "Switzerland",
+          "slug": "switzerland"
+        },
+        "away": {
+          "name": "Bosnia and Herzegovina",
+          "slug": "bosnia-and-herzegovina"
+        },
+        "venue": "·",
+        "label": "Switzerland vs Bosnia and Herzegovina"
+      },
+      {
+        "id": "fixture-27",
+        "match": 27,
+        "date": "2026-06-18T18:00:00.000Z",
+        "round": "Group B",
+        "home": {
+          "name": "Canada",
+          "slug": "canada"
+        },
+        "away": {
+          "name": "Qatar",
+          "slug": "qatar"
+        },
+        "venue": "·",
+        "label": "Canada vs Qatar"
+      },
+      {
+        "id": "fixture-28",
+        "match": 28,
+        "date": "2026-06-18T18:00:00.000Z",
+        "round": "Group A",
+        "home": {
+          "name": "Mexico",
+          "slug": "mexico"
+        },
+        "away": {
+          "name": "Korea Republic",
+          "slug": "korea-republic"
+        },
+        "venue": "·",
+        "label": "Mexico vs Korea Republic"
+      },
+      {
+        "id": "fixture-29",
+        "match": 29,
+        "date": "2026-06-19T18:00:00.000Z",
+        "round": "Group D",
+        "home": {
+          "name": "USA",
+          "slug": "usa"
+        },
+        "away": {
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "venue": "·",
+        "label": "USA vs Australia"
+      },
+      {
+        "id": "fixture-30",
+        "match": 30,
+        "date": "2026-06-19T18:00:00.000Z",
+        "round": "Group C",
+        "home": {
+          "name": "Scotland",
+          "slug": "scotland"
+        },
+        "away": {
+          "name": "Morocco",
+          "slug": "morocco"
+        },
+        "venue": "·",
+        "label": "Scotland vs Morocco"
+      },
+      {
+        "id": "fixture-31",
+        "match": 31,
+        "date": "2026-06-19T18:00:00.000Z",
+        "round": "Group C",
+        "home": {
+          "name": "Brazil",
+          "slug": "brazil"
+        },
+        "away": {
+          "name": "Haiti",
+          "slug": "haiti"
+        },
+        "venue": "·",
+        "label": "Brazil vs Haiti"
+      },
+      {
+        "id": "fixture-32",
+        "match": 32,
+        "date": "2026-06-19T18:00:00.000Z",
+        "round": "Group D",
+        "home": {
+          "name": "Türkiye",
+          "slug": "turkiye"
+        },
+        "away": {
+          "name": "Paraguay",
+          "slug": "paraguay"
+        },
+        "venue": "·",
+        "label": "Türkiye vs Paraguay"
+      },
+      {
+        "id": "fixture-33",
+        "match": 33,
+        "date": "2026-06-20T18:00:00.000Z",
+        "round": "Group F",
+        "home": {
+          "name": "Netherlands",
+          "slug": "netherlands"
+        },
+        "away": {
+          "name": "Sweden",
+          "slug": "sweden"
+        },
+        "venue": "·",
+        "label": "Netherlands vs Sweden"
+      },
+      {
+        "id": "fixture-34",
+        "match": 34,
+        "date": "2026-06-20T18:00:00.000Z",
+        "round": "Group E",
+        "home": {
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "away": {
+          "name": "Côte d'Ivoire",
+          "slug": "cote-d-ivoire"
+        },
+        "venue": "·",
+        "label": "Germany vs Côte d'Ivoire"
+      },
+      {
+        "id": "fixture-35",
+        "match": 35,
+        "date": "2026-06-20T18:00:00.000Z",
+        "round": "Group E",
+        "home": {
+          "name": "Ecuador",
+          "slug": "ecuador"
+        },
+        "away": {
+          "name": "Curaçao",
+          "slug": "curacao"
+        },
+        "venue": "·",
+        "label": "Ecuador vs Curaçao"
+      },
+      {
+        "id": "fixture-36",
+        "match": 36,
+        "date": "2026-06-20T18:00:00.000Z",
+        "round": "Group F",
+        "home": {
+          "name": "Tunisia",
+          "slug": "tunisia"
+        },
+        "away": {
+          "name": "Japan",
+          "slug": "japan"
+        },
+        "venue": "·",
+        "label": "Tunisia vs Japan"
+      },
+      {
+        "id": "fixture-37",
+        "match": 37,
+        "date": "2026-06-21T18:00:00.000Z",
+        "round": "Group H",
+        "home": {
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "away": {
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "venue": "·",
+        "label": "Spain vs Saudi Arabia"
+      },
+      {
+        "id": "fixture-38",
+        "match": 38,
+        "date": "2026-06-21T18:00:00.000Z",
+        "round": "Group G",
+        "home": {
+          "name": "Belgium",
+          "slug": "belgium"
+        },
+        "away": {
+          "name": "IR Iran",
+          "slug": "ir-iran"
+        },
+        "venue": "·",
+        "label": "Belgium vs IR Iran"
+      },
+      {
+        "id": "fixture-39",
+        "match": 39,
+        "date": "2026-06-21T18:00:00.000Z",
+        "round": "Group H",
+        "home": {
+          "name": "Uruguay",
+          "slug": "uruguay"
+        },
+        "away": {
+          "name": "Cabo Verde",
+          "slug": "cabo-verde"
+        },
+        "venue": "·",
+        "label": "Uruguay vs Cabo Verde"
+      },
+      {
+        "id": "fixture-40",
+        "match": 40,
+        "date": "2026-06-21T18:00:00.000Z",
+        "round": "Group G",
+        "home": {
+          "name": "New Zealand",
+          "slug": "new-zealand"
+        },
+        "away": {
+          "name": "Egypt",
+          "slug": "egypt"
+        },
+        "venue": "·",
+        "label": "New Zealand vs Egypt"
+      },
+      {
+        "id": "fixture-41",
+        "match": 41,
+        "date": "2026-06-22T18:00:00.000Z",
+        "round": "Group J",
+        "home": {
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "away": {
+          "name": "Austria",
+          "slug": "austria"
+        },
+        "venue": "·",
+        "label": "Argentina vs Austria"
+      },
+      {
+        "id": "fixture-42",
+        "match": 42,
+        "date": "2026-06-22T18:00:00.000Z",
+        "round": "Group I",
+        "home": {
+          "name": "France",
+          "slug": "france"
+        },
+        "away": {
+          "name": "Iraq",
+          "slug": "iraq"
+        },
+        "venue": "·",
+        "label": "France vs Iraq"
+      },
+      {
+        "id": "fixture-43",
+        "match": 43,
+        "date": "2026-06-22T18:00:00.000Z",
+        "round": "Group I",
+        "home": {
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "away": {
+          "name": "Senegal",
+          "slug": "senegal"
+        },
+        "venue": "·",
+        "label": "Norway vs Senegal"
+      },
+      {
+        "id": "fixture-44",
+        "match": 44,
+        "date": "2026-06-22T18:00:00.000Z",
+        "round": "Group J",
+        "home": {
+          "name": "Jordan",
+          "slug": "jordan"
+        },
+        "away": {
+          "name": "Algeria",
+          "slug": "algeria"
+        },
+        "venue": "·",
+        "label": "Jordan vs Algeria"
+      },
+      {
+        "id": "fixture-45",
+        "match": 45,
+        "date": "2026-06-23T18:00:00.000Z",
+        "round": "Group K",
+        "home": {
+          "name": "Portugal",
+          "slug": "portugal"
+        },
+        "away": {
+          "name": "Uzbekistan",
+          "slug": "uzbekistan"
+        },
+        "venue": "·",
+        "label": "Portugal vs Uzbekistan"
+      },
+      {
+        "id": "fixture-46",
+        "match": 46,
+        "date": "2026-06-23T18:00:00.000Z",
+        "round": "Group L",
+        "home": {
+          "name": "England",
+          "slug": "england"
+        },
+        "away": {
+          "name": "Ghana",
+          "slug": "ghana"
+        },
+        "venue": "·",
+        "label": "England vs Ghana"
+      },
+      {
+        "id": "fixture-47",
+        "match": 47,
+        "date": "2026-06-23T18:00:00.000Z",
+        "round": "Group L",
+        "home": {
+          "name": "Panama",
+          "slug": "panama"
+        },
+        "away": {
+          "name": "Croatia",
+          "slug": "croatia"
+        },
+        "venue": "·",
+        "label": "Panama vs Croatia"
+      },
+      {
+        "id": "fixture-48",
+        "match": 48,
+        "date": "2026-06-23T18:00:00.000Z",
+        "round": "Group K",
+        "home": {
+          "name": "Colombia",
+          "slug": "colombia"
+        },
+        "away": {
+          "name": "Congo DR",
+          "slug": "congo-dr"
+        },
+        "venue": "·",
+        "label": "Colombia vs Congo DR"
+      },
+      {
+        "id": "fixture-49",
+        "match": 49,
+        "date": "2026-06-24T18:00:00.000Z",
+        "round": "Group B",
+        "home": {
+          "name": "Switzerland",
+          "slug": "switzerland"
+        },
+        "away": {
+          "name": "Canada",
+          "slug": "canada"
+        },
+        "venue": "·",
+        "label": "Switzerland vs Canada"
+      },
+      {
+        "id": "fixture-50",
+        "match": 50,
+        "date": "2026-06-24T18:00:00.000Z",
+        "round": "Group B",
+        "home": {
+          "name": "Bosnia and Herzegovina",
+          "slug": "bosnia-and-herzegovina"
+        },
+        "away": {
+          "name": "Qatar",
+          "slug": "qatar"
+        },
+        "venue": "·",
+        "label": "Bosnia and Herzegovina vs Qatar"
+      },
+      {
+        "id": "fixture-51",
+        "match": 51,
+        "date": "2026-06-24T18:00:00.000Z",
+        "round": "Group C",
+        "home": {
+          "name": "Scotland",
+          "slug": "scotland"
+        },
+        "away": {
+          "name": "Brazil",
+          "slug": "brazil"
+        },
+        "venue": "·",
+        "label": "Scotland vs Brazil"
+      },
+      {
+        "id": "fixture-52",
+        "match": 52,
+        "date": "2026-06-24T18:00:00.000Z",
+        "round": "Group C",
+        "home": {
+          "name": "Morocco",
+          "slug": "morocco"
+        },
+        "away": {
+          "name": "Haiti",
+          "slug": "haiti"
+        },
+        "venue": "·",
+        "label": "Morocco vs Haiti"
+      },
+      {
+        "id": "fixture-53",
+        "match": 53,
+        "date": "2026-06-24T18:00:00.000Z",
+        "round": "Group A",
+        "home": {
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "away": {
+          "name": "Mexico",
+          "slug": "mexico"
+        },
+        "venue": "·",
+        "label": "Czechia vs Mexico"
+      },
+      {
+        "id": "fixture-54",
+        "match": 54,
+        "date": "2026-06-24T18:00:00.000Z",
+        "round": "Group A",
+        "home": {
+          "name": "South Africa",
+          "slug": "south-africa"
+        },
+        "away": {
+          "name": "Korea Republic",
+          "slug": "korea-republic"
+        },
+        "venue": "·",
+        "label": "South Africa vs Korea Republic"
+      },
+      {
+        "id": "fixture-55",
+        "match": 55,
+        "date": "2026-06-25T18:00:00.000Z",
+        "round": "Group E",
+        "home": {
+          "name": "Curaçao",
+          "slug": "curacao"
+        },
+        "away": {
+          "name": "Côte d'Ivoire",
+          "slug": "cote-d-ivoire"
+        },
+        "venue": "·",
+        "label": "Curaçao vs Côte d'Ivoire"
+      },
+      {
+        "id": "fixture-56",
+        "match": 56,
+        "date": "2026-06-25T18:00:00.000Z",
+        "round": "Group E",
+        "home": {
+          "name": "Ecuador",
+          "slug": "ecuador"
+        },
+        "away": {
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "venue": "·",
+        "label": "Ecuador vs Germany"
+      },
+      {
+        "id": "fixture-57",
+        "match": 57,
+        "date": "2026-06-25T18:00:00.000Z",
+        "round": "Group F",
+        "home": {
+          "name": "Japan",
+          "slug": "japan"
+        },
+        "away": {
+          "name": "Sweden",
+          "slug": "sweden"
+        },
+        "venue": "·",
+        "label": "Japan vs Sweden"
+      },
+      {
+        "id": "fixture-58",
+        "match": 58,
+        "date": "2026-06-25T18:00:00.000Z",
+        "round": "Group F",
+        "home": {
+          "name": "Tunisia",
+          "slug": "tunisia"
+        },
+        "away": {
+          "name": "Netherlands",
+          "slug": "netherlands"
+        },
+        "venue": "·",
+        "label": "Tunisia vs Netherlands"
+      },
+      {
+        "id": "fixture-59",
+        "match": 59,
+        "date": "2026-06-25T18:00:00.000Z",
+        "round": "Group D",
+        "home": {
+          "name": "Türkiye",
+          "slug": "turkiye"
+        },
+        "away": {
+          "name": "USA",
+          "slug": "usa"
+        },
+        "venue": "·",
+        "label": "Türkiye vs USA"
+      },
+      {
+        "id": "fixture-60",
+        "match": 60,
+        "date": "2026-06-25T18:00:00.000Z",
+        "round": "Group D",
+        "home": {
+          "name": "Paraguay",
+          "slug": "paraguay"
+        },
+        "away": {
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "venue": "·",
+        "label": "Paraguay vs Australia"
+      },
+      {
+        "id": "fixture-61",
+        "match": 61,
+        "date": "2026-06-26T18:00:00.000Z",
+        "round": "Group I",
+        "home": {
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "away": {
+          "name": "France",
+          "slug": "france"
+        },
+        "venue": "·",
+        "label": "Norway vs France"
+      },
+      {
+        "id": "fixture-62",
+        "match": 62,
+        "date": "2026-06-26T18:00:00.000Z",
+        "round": "Group I",
+        "home": {
+          "name": "Senegal",
+          "slug": "senegal"
+        },
+        "away": {
+          "name": "Iraq",
+          "slug": "iraq"
+        },
+        "venue": "·",
+        "label": "Senegal vs Iraq"
+      },
+      {
+        "id": "fixture-63",
+        "match": 63,
+        "date": "2026-06-26T18:00:00.000Z",
+        "round": "Group H",
+        "home": {
+          "name": "Cabo Verde",
+          "slug": "cabo-verde"
+        },
+        "away": {
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "venue": "·",
+        "label": "Cabo Verde vs Saudi Arabia"
+      },
+      {
+        "id": "fixture-64",
+        "match": 64,
+        "date": "2026-06-26T18:00:00.000Z",
+        "round": "Group H",
+        "home": {
+          "name": "Uruguay",
+          "slug": "uruguay"
+        },
+        "away": {
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "venue": "·",
+        "label": "Uruguay vs Spain"
+      },
+      {
+        "id": "fixture-65",
+        "match": 65,
+        "date": "2026-06-27T03:00:00.000Z",
+        "round": "Group G",
+        "home": {
+          "name": "Egypt",
+          "slug": "egypt"
+        },
+        "away": {
+          "name": "IR Iran",
+          "slug": "ir-iran"
+        },
+        "venue": "·",
+        "label": "Egypt vs IR Iran",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-66",
+        "match": 66,
+        "date": "2026-06-27T03:00:00.000Z",
+        "round": "Group G",
+        "home": {
+          "name": "New Zealand",
+          "slug": "new-zealand"
+        },
+        "away": {
+          "name": "Belgium",
+          "slug": "belgium"
+        },
+        "venue": "·",
+        "label": "New Zealand vs Belgium",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-67",
+        "match": 67,
+        "date": "2026-06-27T21:00:00.000Z",
+        "round": "Group L",
+        "home": {
+          "name": "Panama",
+          "slug": "panama"
+        },
+        "away": {
+          "name": "England",
+          "slug": "england"
+        },
+        "venue": "·",
+        "label": "Panama vs England",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-68",
+        "match": 68,
+        "date": "2026-06-27T21:00:00.000Z",
+        "round": "Group L",
+        "home": {
+          "name": "Croatia",
+          "slug": "croatia"
+        },
+        "away": {
+          "name": "Ghana",
+          "slug": "ghana"
+        },
+        "venue": "·",
+        "label": "Croatia vs Ghana",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-69",
+        "match": 69,
+        "date": "2026-06-27T23:30:00.000Z",
+        "round": "Group K",
+        "home": {
+          "name": "Colombia",
+          "slug": "colombia"
+        },
+        "away": {
+          "name": "Portugal",
+          "slug": "portugal"
+        },
+        "venue": "·",
+        "label": "Colombia vs Portugal",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-70",
+        "match": 70,
+        "date": "2026-06-27T23:30:00.000Z",
+        "round": "Group K",
+        "home": {
+          "name": "Congo DR",
+          "slug": "congo-dr"
+        },
+        "away": {
+          "name": "Uzbekistan",
+          "slug": "uzbekistan"
+        },
+        "venue": "·",
+        "label": "Congo DR vs Uzbekistan",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-71",
+        "match": 71,
+        "date": "2026-06-28T02:00:00.000Z",
+        "round": "Group J",
+        "home": {
+          "name": "Algeria",
+          "slug": "algeria"
+        },
+        "away": {
+          "name": "Austria",
+          "slug": "austria"
+        },
+        "venue": "·",
+        "label": "Algeria vs Austria",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-72",
+        "match": 72,
+        "date": "2026-06-28T02:00:00.000Z",
+        "round": "Group J",
+        "home": {
+          "name": "Jordan",
+          "slug": "jordan"
+        },
+        "away": {
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "venue": "·",
+        "label": "Jordan vs Argentina",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-73",
+        "match": 73,
+        "date": "2026-06-28T19:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "South Africa",
+          "slug": "south-africa"
+        },
+        "away": {
+          "name": "Canada",
+          "slug": "canada"
+        },
+        "venue": "·",
+        "label": "South Africa vs Canada",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-74",
+        "match": 74,
+        "date": "2026-06-29T17:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "Brazil",
+          "slug": "brazil"
+        },
+        "away": {
+          "name": "Japan",
+          "slug": "japan"
+        },
+        "venue": "·",
+        "label": "Brazil vs Japan",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-75",
+        "match": 75,
+        "date": "2026-06-29T20:30:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "away": {
+          "name": "Paraguay",
+          "slug": "paraguay"
+        },
+        "venue": "·",
+        "label": "Germany vs Paraguay",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-76",
+        "match": 76,
+        "date": "2026-06-30T01:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "Netherlands",
+          "slug": "netherlands"
+        },
+        "away": {
+          "name": "Morocco",
+          "slug": "morocco"
+        },
+        "venue": "·",
+        "label": "Netherlands vs Morocco",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-77",
+        "match": 77,
+        "date": "2026-06-30T17:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "Côte d'Ivoire",
+          "slug": "cote-d-ivoire"
+        },
+        "away": {
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "venue": "·",
+        "label": "Côte d'Ivoire vs Norway",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-78",
+        "match": 78,
+        "date": "2026-06-30T21:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "France",
+          "slug": "france"
+        },
+        "away": {
+          "name": "Sweden",
+          "slug": "sweden"
+        },
+        "venue": "·",
+        "label": "France vs Sweden",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-79",
+        "match": 79,
+        "date": "2026-07-01T01:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "Mexico",
+          "slug": "mexico"
+        },
+        "away": {
+          "name": "3CEFHI",
+          "slug": "3cefhi"
+        },
+        "venue": "·",
+        "label": "Mexico vs 3CEFHI",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-80",
+        "match": 80,
+        "date": "2026-07-01T16:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "1L",
+          "slug": "1l"
+        },
+        "away": {
+          "name": "3EHIJK",
+          "slug": "3ehijk"
+        },
+        "venue": "·",
+        "label": "1L vs 3EHIJK",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-81",
+        "match": 81,
+        "date": "2026-07-01T20:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "1G",
+          "slug": "1g"
+        },
+        "away": {
+          "name": "3AEHIJ",
+          "slug": "3aehij"
+        },
+        "venue": "·",
+        "label": "1G vs 3AEHIJ",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-82",
+        "match": 82,
+        "date": "2026-07-02T00:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "USA",
+          "slug": "usa"
+        },
+        "away": {
+          "name": "Bosnia and Herzegovina",
+          "slug": "bosnia-and-herzegovina"
+        },
+        "venue": "·",
+        "label": "USA vs Bosnia and Herzegovina",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-83",
+        "match": 83,
+        "date": "2026-07-02T19:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "away": {
+          "name": "2J",
+          "slug": "2j"
+        },
+        "venue": "·",
+        "label": "Spain vs 2J",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-84",
+        "match": 84,
+        "date": "2026-07-02T23:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "2K",
+          "slug": "2k"
+        },
+        "away": {
+          "name": "2L",
+          "slug": "2l"
+        },
+        "venue": "·",
+        "label": "2K vs 2L",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-85",
+        "match": 85,
+        "date": "2026-07-03T03:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "Switzerland",
+          "slug": "switzerland"
+        },
+        "away": {
+          "name": "3EFGIJ",
+          "slug": "3efgij"
+        },
+        "venue": "·",
+        "label": "Switzerland vs 3EFGIJ",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-86",
+        "match": 86,
+        "date": "2026-07-03T18:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "away": {
+          "name": "2G",
+          "slug": "2g"
+        },
+        "venue": "·",
+        "label": "Australia vs 2G",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-87",
+        "match": 87,
+        "date": "2026-07-03T22:00:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "away": {
+          "name": "Cabo Verde",
+          "slug": "cabo-verde"
+        },
+        "venue": "·",
+        "label": "Argentina vs Cabo Verde",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-88",
+        "match": 88,
+        "date": "2026-07-04T01:30:00.000Z",
+        "round": "Round of 32",
+        "home": {
+          "name": "1K",
+          "slug": "1k"
+        },
+        "away": {
+          "name": "3DEIJL",
+          "slug": "3deijl"
+        },
+        "venue": "·",
+        "label": "1K vs 3DEIJL",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-89",
+        "match": 89,
+        "date": "2026-07-04T17:00:00.000Z",
+        "round": "Round of 16",
+        "home": {
+          "name": "W73",
+          "slug": "w73"
+        },
+        "away": {
+          "name": "W75",
+          "slug": "w75"
+        },
+        "venue": "·",
+        "label": "W73 vs W75",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-90",
+        "match": 90,
+        "date": "2026-07-04T21:00:00.000Z",
+        "round": "Round of 16",
+        "home": {
+          "name": "W74",
+          "slug": "w74"
+        },
+        "away": {
+          "name": "W77",
+          "slug": "w77"
+        },
+        "venue": "·",
+        "label": "W74 vs W77",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-91",
+        "match": 91,
+        "date": "2026-07-05T20:00:00.000Z",
+        "round": "Round of 16",
+        "home": {
+          "name": "W76",
+          "slug": "w76"
+        },
+        "away": {
+          "name": "W78",
+          "slug": "w78"
+        },
+        "venue": "·",
+        "label": "W76 vs W78",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-92",
+        "match": 92,
+        "date": "2026-07-06T00:00:00.000Z",
+        "round": "Round of 16",
+        "home": {
+          "name": "W79",
+          "slug": "w79"
+        },
+        "away": {
+          "name": "W80",
+          "slug": "w80"
+        },
+        "venue": "·",
+        "label": "W79 vs W80",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-93",
+        "match": 93,
+        "date": "2026-07-06T19:00:00.000Z",
+        "round": "Round of 16",
+        "home": {
+          "name": "W83",
+          "slug": "w83"
+        },
+        "away": {
+          "name": "W84",
+          "slug": "w84"
+        },
+        "venue": "·",
+        "label": "W83 vs W84",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-94",
+        "match": 94,
+        "date": "2026-07-07T00:00:00.000Z",
+        "round": "Round of 16",
+        "home": {
+          "name": "W81",
+          "slug": "w81"
+        },
+        "away": {
+          "name": "W82",
+          "slug": "w82"
+        },
+        "venue": "·",
+        "label": "W81 vs W82",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-95",
+        "match": 95,
+        "date": "2026-07-07T16:00:00.000Z",
+        "round": "Round of 16",
+        "home": {
+          "name": "W86",
+          "slug": "w86"
+        },
+        "away": {
+          "name": "W88",
+          "slug": "w88"
+        },
+        "venue": "·",
+        "label": "W86 vs W88",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-96",
+        "match": 96,
+        "date": "2026-07-07T20:00:00.000Z",
+        "round": "Round of 16",
+        "home": {
+          "name": "W85",
+          "slug": "w85"
+        },
+        "away": {
+          "name": "W87",
+          "slug": "w87"
+        },
+        "venue": "·",
+        "label": "W85 vs W87",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-97",
+        "match": 97,
+        "date": "2026-07-09T20:00:00.000Z",
+        "round": "Quarter-final",
+        "home": {
+          "name": "W89",
+          "slug": "w89"
+        },
+        "away": {
+          "name": "W90",
+          "slug": "w90"
+        },
+        "venue": "·",
+        "label": "W89 vs W90",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-98",
+        "match": 98,
+        "date": "2026-07-10T19:00:00.000Z",
+        "round": "Quarter-final",
+        "home": {
+          "name": "W93",
+          "slug": "w93"
+        },
+        "away": {
+          "name": "W94",
+          "slug": "w94"
+        },
+        "venue": "·",
+        "label": "W93 vs W94",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-99",
+        "match": 99,
+        "date": "2026-07-11T21:00:00.000Z",
+        "round": "Quarter-final",
+        "home": {
+          "name": "W91",
+          "slug": "w91"
+        },
+        "away": {
+          "name": "W92",
+          "slug": "w92"
+        },
+        "venue": "·",
+        "label": "W91 vs W92",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-100",
+        "match": 100,
+        "date": "2026-07-12T01:00:00.000Z",
+        "round": "Quarter-final",
+        "home": {
+          "name": "W95",
+          "slug": "w95"
+        },
+        "away": {
+          "name": "W96",
+          "slug": "w96"
+        },
+        "venue": "·",
+        "label": "W95 vs W96",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-101",
+        "match": 101,
+        "date": "2026-07-14T19:00:00.000Z",
+        "round": "Semi-final",
+        "home": {
+          "name": "W97",
+          "slug": "w97"
+        },
+        "away": {
+          "name": "W98",
+          "slug": "w98"
+        },
+        "venue": "·",
+        "label": "W97 vs W98",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-102",
+        "match": 102,
+        "date": "2026-07-15T19:00:00.000Z",
+        "round": "Semi-final",
+        "home": {
+          "name": "W99",
+          "slug": "w99"
+        },
+        "away": {
+          "name": "W100",
+          "slug": "w100"
+        },
+        "venue": "·",
+        "label": "W99 vs W100",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-103",
+        "match": 103,
+        "date": "2026-07-18T21:00:00.000Z",
+        "round": "Play-off for third place",
+        "home": {
+          "name": "RU101",
+          "slug": "ru101"
+        },
+        "away": {
+          "name": "RU102",
+          "slug": "ru102"
+        },
+        "venue": "·",
+        "label": "RU101 vs RU102",
+        "status": "scheduled"
+      },
+      {
+        "id": "fixture-104",
+        "match": 104,
+        "date": "2026-07-19T19:00:00.000Z",
+        "round": "Final",
+        "home": {
+          "name": "W101",
+          "slug": "w101"
+        },
+        "away": {
+          "name": "W102",
+          "slug": "w102"
+        },
+        "venue": "·",
+        "label": "W101 vs W102",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "live": {
+    "generated-at": "2026-06-27T02:30:18.715Z",
+    "groups": [
+      {
+        "group": "A",
+        "teams": [
+          {
+            "slug": "mexico",
+            "group": "A",
+            "won": 3,
+            "team-conduct-score": -6,
+            "lost": 0,
+            "points": 9,
+            "drawn": 0,
+            "team": "Mexico",
+            "goals-against": 0,
+            "position": 1,
+            "played": 3,
+            "goals-for": 6,
+            "goal-difference": 6
+          },
+          {
+            "slug": "south-africa",
+            "group": "A",
+            "won": 1,
+            "team-conduct-score": -13,
+            "lost": 1,
+            "points": 4,
+            "drawn": 1,
+            "team": "South Africa",
+            "goals-against": 3,
+            "position": 2,
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": -1
+          },
+          {
+            "slug": "korea-republic",
+            "group": "A",
+            "won": 1,
+            "team-conduct-score": -4,
+            "lost": 2,
+            "points": 3,
+            "drawn": 0,
+            "team": "Korea Republic",
+            "goals-against": 3,
+            "position": 3,
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": -1
+          },
+          {
+            "slug": "czechia",
+            "group": "A",
+            "won": 0,
+            "team-conduct-score": -1,
+            "lost": 2,
+            "points": 1,
+            "drawn": 1,
+            "team": "Czechia",
+            "goals-against": 6,
+            "position": 4,
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": -4
+          }
+        ]
+      },
+      {
+        "group": "B",
+        "teams": [
+          {
+            "slug": "switzerland",
+            "group": "B",
+            "won": 2,
+            "team-conduct-score": -3,
+            "lost": 0,
+            "points": 7,
+            "drawn": 1,
+            "team": "Switzerland",
+            "goals-against": 3,
+            "position": 1,
+            "played": 3,
+            "goals-for": 7,
+            "goal-difference": 4
+          },
+          {
+            "slug": "canada",
+            "group": "B",
+            "won": 1,
+            "team-conduct-score": -5,
+            "lost": 1,
+            "points": 4,
+            "drawn": 1,
+            "team": "Canada",
+            "goals-against": 3,
+            "position": 2,
+            "played": 3,
+            "goals-for": 8,
+            "goal-difference": 5
+          },
+          {
+            "slug": "bosnia-herzegovina",
+            "group": "B",
+            "won": 1,
+            "team-conduct-score": -10,
+            "lost": 1,
+            "points": 4,
+            "drawn": 1,
+            "team": "Bosnia and Herzegovina",
+            "goals-against": 6,
+            "position": 3,
+            "played": 3,
+            "goals-for": 5,
+            "goal-difference": -1
+          },
+          {
+            "slug": "qatar",
+            "group": "B",
+            "won": 0,
+            "team-conduct-score": -12,
+            "lost": 2,
+            "points": 1,
+            "drawn": 1,
+            "team": "Qatar",
+            "goals-against": 10,
+            "position": 4,
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": -8
+          }
+        ]
+      },
+      {
+        "group": "C",
+        "teams": [
+          {
+            "slug": "brazil",
+            "group": "C",
+            "won": 2,
+            "team-conduct-score": -5,
+            "lost": 0,
+            "points": 7,
+            "drawn": 1,
+            "team": "Brazil",
+            "goals-against": 1,
+            "position": 1,
+            "played": 3,
+            "goals-for": 7,
+            "goal-difference": 6
+          },
+          {
+            "slug": "morocco",
+            "group": "C",
+            "won": 2,
+            "team-conduct-score": -1,
+            "lost": 0,
+            "points": 7,
+            "drawn": 1,
+            "team": "Morocco",
+            "goals-against": 3,
+            "position": 2,
+            "played": 3,
+            "goals-for": 6,
+            "goal-difference": 3
+          },
+          {
+            "slug": "scotland",
+            "group": "C",
+            "won": 1,
+            "team-conduct-score": -5,
+            "lost": 2,
+            "points": 3,
+            "drawn": 0,
+            "team": "Scotland",
+            "goals-against": 4,
+            "position": 3,
+            "played": 3,
+            "goals-for": 1,
+            "goal-difference": -3
+          },
+          {
+            "slug": "haiti",
+            "group": "C",
+            "won": 0,
+            "team-conduct-score": -7,
+            "lost": 3,
+            "points": 0,
+            "drawn": 0,
+            "team": "Haiti",
+            "goals-against": 8,
+            "position": 4,
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": -6
+          }
+        ]
+      },
+      {
+        "group": "D",
+        "teams": [
+          {
+            "slug": "usa",
+            "group": "D",
+            "won": 2,
+            "team-conduct-score": -5,
+            "lost": 1,
+            "points": 6,
+            "drawn": 0,
+            "team": "USA",
+            "goals-against": 4,
+            "position": 1,
+            "played": 3,
+            "goals-for": 8,
+            "goal-difference": 4
+          },
+          {
+            "slug": "australia",
+            "group": "D",
+            "won": 1,
+            "team-conduct-score": -5,
+            "lost": 1,
+            "points": 4,
+            "drawn": 1,
+            "team": "Australia",
+            "goals-against": 2,
+            "position": 2,
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": 0
+          },
+          {
+            "slug": "paraguay",
+            "group": "D",
+            "won": 1,
+            "team-conduct-score": -12,
+            "lost": 1,
+            "points": 4,
+            "drawn": 1,
+            "team": "Paraguay",
+            "goals-against": 4,
+            "position": 3,
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": -2
+          },
+          {
+            "slug": "turkiye",
+            "group": "D",
+            "won": 1,
+            "team-conduct-score": -3,
+            "lost": 2,
+            "points": 3,
+            "drawn": 0,
+            "team": "Türkiye",
+            "goals-against": 5,
+            "position": 4,
+            "played": 3,
+            "goals-for": 3,
+            "goal-difference": -2
+          }
+        ]
+      },
+      {
+        "group": "E",
+        "teams": [
+          {
+            "slug": "germany",
+            "group": "E",
+            "won": 2,
+            "team-conduct-score": -1,
+            "lost": 1,
+            "points": 6,
+            "drawn": 0,
+            "team": "Germany",
+            "goals-against": 4,
+            "position": 1,
+            "played": 3,
+            "goals-for": 10,
+            "goal-difference": 6
+          },
+          {
+            "slug": "cote-d-ivoire",
+            "group": "E",
+            "won": 2,
+            "team-conduct-score": -4,
+            "lost": 1,
+            "points": 6,
+            "drawn": 0,
+            "team": "Côte d'Ivoire",
+            "goals-against": 2,
+            "position": 2,
+            "played": 3,
+            "goals-for": 4,
+            "goal-difference": 2
+          },
+          {
+            "slug": "ecuador",
+            "group": "E",
+            "won": 1,
+            "team-conduct-score": -5,
+            "lost": 1,
+            "points": 4,
+            "drawn": 1,
+            "team": "Ecuador",
+            "goals-against": 2,
+            "position": 3,
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": 0
+          },
+          {
+            "slug": "curacao",
+            "group": "E",
+            "won": 0,
+            "team-conduct-score": -7,
+            "lost": 2,
+            "points": 1,
+            "drawn": 1,
+            "team": "Curaçao",
+            "goals-against": 9,
+            "position": 4,
+            "played": 3,
+            "goals-for": 1,
+            "goal-difference": -8
+          }
+        ]
+      },
+      {
+        "group": "F",
+        "teams": [
+          {
+            "slug": "netherlands",
+            "group": "F",
+            "won": 2,
+            "team-conduct-score": -3,
+            "lost": 0,
+            "points": 7,
+            "drawn": 1,
+            "team": "Netherlands",
+            "goals-against": 4,
+            "position": 1,
+            "played": 3,
+            "goals-for": 10,
+            "goal-difference": 6
+          },
+          {
+            "slug": "japan",
+            "group": "F",
+            "won": 1,
+            "team-conduct-score": -1,
+            "lost": 0,
+            "points": 5,
+            "drawn": 2,
+            "team": "Japan",
+            "goals-against": 3,
+            "position": 2,
+            "played": 3,
+            "goals-for": 7,
+            "goal-difference": 4
+          },
+          {
+            "slug": "sweden",
+            "group": "F",
+            "won": 1,
+            "team-conduct-score": -5,
+            "lost": 1,
+            "points": 4,
+            "drawn": 1,
+            "team": "Sweden",
+            "goals-against": 7,
+            "position": 3,
+            "played": 3,
+            "goals-for": 7,
+            "goal-difference": 0
+          },
+          {
+            "slug": "tunisia",
+            "group": "F",
+            "won": 0,
+            "team-conduct-score": -1,
+            "lost": 3,
+            "points": 0,
+            "drawn": 0,
+            "team": "Tunisia",
+            "goals-against": 12,
+            "position": 4,
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": -10
+          }
+        ]
+      },
+      {
+        "group": "G",
+        "teams": [
+          {
+            "slug": "egypt",
+            "group": "G",
+            "won": 1,
+            "team-conduct-score": -3,
+            "lost": 0,
+            "points": 4,
+            "drawn": 1,
+            "team": "Egypt",
+            "goals-against": 2,
+            "position": 1,
+            "played": 2,
+            "goals-for": 4,
+            "goal-difference": 2
+          },
+          {
+            "slug": "ir-iran",
+            "group": "G",
+            "won": 0,
+            "team-conduct-score": -2,
+            "lost": 0,
+            "points": 2,
+            "drawn": 2,
+            "team": "IR Iran",
+            "goals-against": 2,
+            "position": 2,
+            "played": 2,
+            "goals-for": 2,
+            "goal-difference": 0
+          },
+          {
+            "slug": "belgium",
+            "group": "G",
+            "won": 0,
+            "team-conduct-score": -7,
+            "lost": 0,
+            "points": 2,
+            "drawn": 2,
+            "team": "Belgium",
+            "goals-against": 1,
+            "position": 3,
+            "played": 2,
+            "goals-for": 1,
+            "goal-difference": 0
+          },
+          {
+            "slug": "new-zealand",
+            "group": "G",
+            "won": 0,
+            "team-conduct-score": -2,
+            "lost": 1,
+            "points": 1,
+            "drawn": 1,
+            "team": "New Zealand",
+            "goals-against": 5,
+            "position": 4,
+            "played": 2,
+            "goals-for": 3,
+            "goal-difference": -2
+          }
+        ]
+      },
+      {
+        "group": "H",
+        "teams": [
+          {
+            "slug": "spain",
+            "group": "H",
+            "won": 2,
+            "team-conduct-score": -2,
+            "lost": 0,
+            "points": 7,
+            "drawn": 1,
+            "team": "Spain",
+            "goals-against": 0,
+            "position": 1,
+            "played": 3,
+            "goals-for": 5,
+            "goal-difference": 5
+          },
+          {
+            "slug": "cabo-verde",
+            "group": "H",
+            "won": 0,
+            "team-conduct-score": -4,
+            "lost": 0,
+            "points": 3,
+            "drawn": 3,
+            "team": "Cabo Verde",
+            "goals-against": 2,
+            "position": 2,
+            "played": 3,
+            "goals-for": 2,
+            "goal-difference": 0
+          },
+          {
+            "slug": "uruguay",
+            "group": "H",
+            "won": 0,
+            "team-conduct-score": -9,
+            "lost": 1,
+            "points": 2,
+            "drawn": 2,
+            "team": "Uruguay",
+            "goals-against": 4,
+            "position": 3,
+            "played": 3,
+            "goals-for": 3,
+            "goal-difference": -1
+          },
+          {
+            "slug": "saudi-arabia",
+            "group": "H",
+            "won": 0,
+            "team-conduct-score": -6,
+            "lost": 1,
+            "points": 2,
+            "drawn": 2,
+            "team": "Saudi Arabia",
+            "goals-against": 5,
+            "position": 4,
+            "played": 3,
+            "goals-for": 1,
+            "goal-difference": -4
+          }
+        ]
+      },
+      {
+        "group": "I",
+        "teams": [
+          {
+            "slug": "france",
+            "group": "I",
+            "won": 3,
+            "team-conduct-score": -1,
+            "lost": 0,
+            "points": 9,
+            "drawn": 0,
+            "team": "France",
+            "goals-against": 2,
+            "position": 1,
+            "played": 3,
+            "goals-for": 10,
+            "goal-difference": 8
+          },
+          {
+            "slug": "norway",
+            "group": "I",
+            "won": 2,
+            "team-conduct-score": -1,
+            "lost": 1,
+            "points": 6,
+            "drawn": 0,
+            "team": "Norway",
+            "goals-against": 7,
+            "position": 2,
+            "played": 3,
+            "goals-for": 8,
+            "goal-difference": 1
+          },
+          {
+            "slug": "senegal",
+            "group": "I",
+            "won": 1,
+            "team-conduct-score": -2,
+            "lost": 2,
+            "points": 3,
+            "drawn": 0,
+            "team": "Senegal",
+            "goals-against": 6,
+            "position": 3,
+            "played": 3,
+            "goals-for": 8,
+            "goal-difference": 2
+          },
+          {
+            "slug": "iraq",
+            "group": "I",
+            "won": 0,
+            "team-conduct-score": -8,
+            "lost": 3,
+            "points": 0,
+            "drawn": 0,
+            "team": "Iraq",
+            "goals-against": 12,
+            "position": 4,
+            "played": 3,
+            "goals-for": 1,
+            "goal-difference": -11
+          }
+        ]
+      },
+      {
+        "group": "J",
+        "teams": [
+          {
+            "slug": "argentina",
+            "group": "J",
+            "won": 2,
+            "team-conduct-score": -2,
+            "lost": 0,
+            "points": 6,
+            "drawn": 0,
+            "team": "Argentina",
+            "goals-against": 0,
+            "position": 1,
+            "played": 2,
+            "goals-for": 5,
+            "goal-difference": 5
+          },
+          {
+            "slug": "austria",
+            "group": "J",
+            "won": 1,
+            "team-conduct-score": -3,
+            "lost": 1,
+            "points": 3,
+            "drawn": 0,
+            "team": "Austria",
+            "goals-against": 3,
+            "position": 2,
+            "played": 2,
+            "goals-for": 3,
+            "goal-difference": 0
+          },
+          {
+            "slug": "algeria",
+            "group": "J",
+            "won": 1,
+            "team-conduct-score": -1,
+            "lost": 1,
+            "points": 3,
+            "drawn": 0,
+            "team": "Algeria",
+            "goals-against": 4,
+            "position": 3,
+            "played": 2,
+            "goals-for": 2,
+            "goal-difference": -2
+          },
+          {
+            "slug": "jordan",
+            "group": "J",
+            "won": 0,
+            "team-conduct-score": -1,
+            "lost": 2,
+            "points": 0,
+            "drawn": 0,
+            "team": "Jordan",
+            "goals-against": 5,
+            "position": 4,
+            "played": 2,
+            "goals-for": 2,
+            "goal-difference": -3
+          }
+        ]
+      },
+      {
+        "group": "K",
+        "teams": [
+          {
+            "slug": "colombia",
+            "group": "K",
+            "won": 2,
+            "team-conduct-score": -3,
+            "lost": 0,
+            "points": 6,
+            "drawn": 0,
+            "team": "Colombia",
+            "goals-against": 1,
+            "position": 1,
+            "played": 2,
+            "goals-for": 4,
+            "goal-difference": 3
+          },
+          {
+            "slug": "portugal",
+            "group": "K",
+            "won": 1,
+            "team-conduct-score": -4,
+            "lost": 0,
+            "points": 4,
+            "drawn": 1,
+            "team": "Portugal",
+            "goals-against": 1,
+            "position": 2,
+            "played": 2,
+            "goals-for": 6,
+            "goal-difference": 5
+          },
+          {
+            "slug": "congo-dr",
+            "group": "K",
+            "won": 0,
+            "team-conduct-score": -2,
+            "lost": 1,
+            "points": 1,
+            "drawn": 1,
+            "team": "Congo DR",
+            "goals-against": 2,
+            "position": 3,
+            "played": 2,
+            "goals-for": 1,
+            "goal-difference": -1
+          },
+          {
+            "slug": "uzbekistan",
+            "group": "K",
+            "won": 0,
+            "team-conduct-score": -2,
+            "lost": 2,
+            "points": 0,
+            "drawn": 0,
+            "team": "Uzbekistan",
+            "goals-against": 8,
+            "position": 4,
+            "played": 2,
+            "goals-for": 1,
+            "goal-difference": -7
+          }
+        ]
+      },
+      {
+        "group": "L",
+        "teams": [
+          {
+            "slug": "england",
+            "group": "L",
+            "won": 1,
+            "team-conduct-score": -1,
+            "lost": 0,
+            "points": 4,
+            "drawn": 1,
+            "team": "England",
+            "goals-against": 2,
+            "position": 1,
+            "played": 2,
+            "goals-for": 4,
+            "goal-difference": 2
+          },
+          {
+            "slug": "ghana",
+            "group": "L",
+            "won": 1,
+            "team-conduct-score": -2,
+            "lost": 0,
+            "points": 4,
+            "drawn": 1,
+            "team": "Ghana",
+            "goals-against": 0,
+            "position": 2,
+            "played": 2,
+            "goals-for": 1,
+            "goal-difference": 1
+          },
+          {
+            "slug": "croatia",
+            "group": "L",
+            "won": 1,
+            "team-conduct-score": -1,
+            "lost": 1,
+            "points": 3,
+            "drawn": 0,
+            "team": "Croatia",
+            "goals-against": 4,
+            "position": 3,
+            "played": 2,
+            "goals-for": 3,
+            "goal-difference": -1
+          },
+          {
+            "slug": "panama",
+            "group": "L",
+            "won": 0,
+            "team-conduct-score": -3,
+            "lost": 2,
+            "points": 0,
+            "drawn": 0,
+            "team": "Panama",
+            "goals-against": 2,
+            "position": 4,
+            "played": 2,
+            "goals-for": 0,
+            "goal-difference": -2
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "match": 1,
+        "homeScore": 2,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 2,
+        "homeScore": 2,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 3,
+        "homeScore": 1,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 4,
+        "homeScore": 4,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 5,
+        "homeScore": 1,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 6,
+        "homeScore": 1,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 7,
+        "homeScore": 0,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 8,
+        "homeScore": 2,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 9,
+        "homeScore": 7,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 10,
+        "homeScore": 2,
+        "awayScore": 2,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 11,
+        "homeScore": 1,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 12,
+        "homeScore": 5,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 13,
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 14,
+        "homeScore": 1,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 15,
+        "homeScore": 1,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 16,
+        "homeScore": 2,
+        "awayScore": 2,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 17,
+        "homeScore": 3,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 18,
+        "homeScore": 1,
+        "awayScore": 4,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 19,
+        "homeScore": 3,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 20,
+        "homeScore": 3,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 21,
+        "homeScore": 1,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 22,
+        "homeScore": 4,
+        "awayScore": 2,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 23,
+        "homeScore": 1,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 24,
+        "homeScore": 1,
+        "awayScore": 3,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 25,
+        "homeScore": 1,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 26,
+        "homeScore": 4,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 27,
+        "homeScore": 6,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 28,
+        "homeScore": 1,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 29,
+        "homeScore": 2,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 30,
+        "homeScore": 0,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 31,
+        "homeScore": 3,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 32,
+        "homeScore": 0,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 33,
+        "homeScore": 5,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 34,
+        "homeScore": 2,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 35,
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 36,
+        "homeScore": 0,
+        "awayScore": 4,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 37,
+        "homeScore": 4,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 38,
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 39,
+        "homeScore": 2,
+        "awayScore": 2,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 40,
+        "homeScore": 1,
+        "awayScore": 3,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 41,
+        "homeScore": 2,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 42,
+        "homeScore": 3,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 43,
+        "homeScore": 3,
+        "awayScore": 2,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 44,
+        "homeScore": 1,
+        "awayScore": 2,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 45,
+        "homeScore": 5,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 46,
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 47,
+        "homeScore": 0,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 48,
+        "homeScore": 1,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 49,
+        "homeScore": 2,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 50,
+        "homeScore": 3,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 51,
+        "homeScore": 0,
+        "awayScore": 3,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 52,
+        "homeScore": 4,
+        "awayScore": 2,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 53,
+        "homeScore": 0,
+        "awayScore": 3,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 54,
+        "homeScore": 1,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 55,
+        "homeScore": 0,
+        "awayScore": 2,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 56,
+        "homeScore": 2,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 57,
+        "homeScore": 1,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 58,
+        "homeScore": 1,
+        "awayScore": 3,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 59,
+        "homeScore": 3,
+        "awayScore": 2,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 60,
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 61,
+        "homeScore": 1,
+        "awayScore": 4,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 62,
+        "homeScore": 5,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 63,
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      },
+      {
+        "match": 64,
+        "homeScore": 0,
+        "awayScore": 1,
+        "status": "FT",
+        "updatedAt": "2026-06-27T02:30:18.714Z"
+      }
+    ]
+  }
+}
