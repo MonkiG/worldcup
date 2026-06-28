@@ -1,17 +1,13 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { calendarPageSize } from "@/lib/calendar";
+import { calendarPageSize, fixtureDayKey } from "@/lib/calendar";
 import type { FixtureMatch } from "@/lib/types";
 
 const weekdayLabels = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-function dateKey(value: string) {
-  return value.slice(0, 10);
-}
-
 function monthKey(value: string) {
-  return value.slice(0, 7);
+  return fixtureDayKey(value).slice(0, 7);
 }
 
 function monthLabel(value: string) {
@@ -64,10 +60,10 @@ function dayTone(matches: FixtureMatch[]) {
 }
 
 export function FixtureMiniCalendar({
-  focusMatchId,
+  focusDate,
   matches,
 }: {
-  focusMatchId?: string;
+  focusDate?: string;
   matches: FixtureMatch[];
 }) {
   const sorted = useMemo(
@@ -80,11 +76,7 @@ export function FixtureMiniCalendar({
   );
   const initialMonth = Math.max(
     0,
-    months.findIndex((month) =>
-      sorted.some(
-        (match) => match.id === focusMatchId && monthKey(match.date) === month,
-      ),
-    ),
+    months.findIndex((month) => Boolean(focusDate && monthKey(focusDate) === month)),
   );
   const [monthIndex, setMonthIndex] = useState(initialMonth);
   const activeMonth = months[monthIndex] ?? months[0];
@@ -92,7 +84,7 @@ export function FixtureMiniCalendar({
   const matchesByDay = new Map<string, FixtureMatch[]>();
 
   for (const match of sorted) {
-    const key = dateKey(match.date);
+    const key = fixtureDayKey(match.date);
     matchesByDay.set(key, [...(matchesByDay.get(key) ?? []), match]);
   }
 
@@ -164,7 +156,7 @@ export function FixtureMiniCalendar({
                 className={`fixture-calendar__day fixture-calendar__day--match${
                   tone ? ` fixture-calendar__day--${tone}` : ""
                 }`}
-                href={`/calendar?page=${targetPage}#${firstMatch.id}`}
+                href={`/calendar?page=${targetPage}#day-${key}`}
                 key={key}
               >
                 <strong>{day}</strong>

@@ -1061,6 +1061,31 @@ a.team-name__label:hover { color: var(--blue); }
   font: 700 8px/1 var(--font-mono);
   text-transform: uppercase;
 }
+.fixture-day-group {
+  display: contents;
+}
+.fixture-day-separator {
+  scroll-margin-top: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 42px;
+  padding: 0 20px;
+  background: #f4f6f8;
+  border-top: 1px solid var(--line);
+  box-shadow: inset 4px 0 0 var(--blue);
+}
+.fixture-day-separator strong {
+  color: var(--ink);
+  font-size: 12px;
+  letter-spacing: -.02em;
+}
+.fixture-day-separator span {
+  color: #777c85;
+  font: 850 8px/1 var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
 .fixture-row {
   scroll-margin-top: 96px;
   min-height: 72px;

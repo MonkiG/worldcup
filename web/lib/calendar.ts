@@ -11,6 +11,7 @@ import {
 } from "./qualification-rules";
 
 export const calendarPageSize = 24;
+export const fixtureCalendarTimeZone = "America/Mexico_City";
 
 function slugify(value: string) {
   return value
@@ -135,6 +136,28 @@ export function venueLabel(value?: string) {
   const venue = value?.trim();
   if (!venue || venue === "·" || venue === "Â·") return "Venue TBD";
   return venue;
+}
+
+export function fixtureDayKey(value: string) {
+  const parts = new Intl.DateTimeFormat("en", {
+    day: "2-digit",
+    month: "2-digit",
+    timeZone: fixtureCalendarTimeZone,
+    year: "numeric",
+  }).formatToParts(new Date(value));
+  const get = (type: string) =>
+    parts.find((part) => part.type === type)?.value ?? "";
+
+  return `${get("year")}-${get("month")}-${get("day")}`;
+}
+
+export function formatFixtureDay(value: string) {
+  return new Intl.DateTimeFormat("en", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    timeZone: fixtureCalendarTimeZone,
+  }).format(new Date(value));
 }
 
 export function matchTitle(match?: FixtureMatch | null) {

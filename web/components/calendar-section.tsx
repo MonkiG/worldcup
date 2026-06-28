@@ -1,5 +1,7 @@
 import {
   calendarPageSize,
+  fixtureDayKey,
+  formatFixtureDay,
   getCalendarFocus,
   matchTitle,
   venueLabel,
@@ -143,6 +145,7 @@ export function CalendarSection({
       : defaultPage;
   const start = (currentPage - 1) * calendarPageSize;
   const visibleMatches = sorted.slice(start, start + calendarPageSize);
+  const visibleDayKeys = new Set<string>();
 
   return (
     <section className="content-section calendar-section page-section">
@@ -199,7 +202,7 @@ export function CalendarSection({
           ) : (
             <p>No fixtures found in the latest data yet.</p>
           )}
-          <FixtureMiniCalendar focusMatchId={focus?.id} matches={sorted} />
+          <FixtureMiniCalendar focusDate={focus?.date} matches={sorted} />
         </aside>
 
         <div className="fixtures-list">
@@ -209,13 +212,30 @@ export function CalendarSection({
             <span>Round</span>
             <span>Venue</span>
           </div>
-          {visibleMatches.map((match) => (
-            <FixtureRow
-              key={match.id}
-              match={match}
-              focused={focusedIds.has(match.id)}
-            />
-          ))}
+          {visibleMatches.map((match) => {
+            const dayKey = fixtureDayKey(match.date);
+            const isFirstMatchOfDay = !visibleDayKeys.has(dayKey);
+            visibleDayKeys.add(dayKey);
+
+            return (
+              <div className="fixture-day-group" key={match.id}>
+                {isFirstMatchOfDay ? (
+                  <div className="fixture-day-separator" id={`day-${dayKey}`}>
+                    <strong>{formatFixtureDay(match.date)}</strong>
+                    <span>
+                      {
+                        sorted.filter(
+                          (candidate) => fixtureDayKey(candidate.date) === dayKey,
+                        ).length
+                      }{" "}
+                      matches
+                    </span>
+                  </div>
+                ) : null}
+                <FixtureRow match={match} focused={focusedIds.has(match.id)} />
+              </div>
+            );
+          })}
           {pageCount > 1 ? (
             <nav className="fixtures-pagination" aria-label="Fixture pages">
               <a
